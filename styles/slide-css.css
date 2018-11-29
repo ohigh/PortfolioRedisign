@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* HEADER / Landing page */
+.header-areea {
+	background-color: #000000;
+}
+.slider {
+	background-image: url(../images/header-slide1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 80vh;
+	animation: fade 20s infinite;
+	transition: all 1.5s ease-in-out;
+}
+.header-overlay {
+	width: 90%;
+	display: inline-block;
+	color: #FFFFFF;
+	position: relative;
+	left: 5vw;
+	top: 10vw;
+}
+.slider-text {
+	height: auto;
+	text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+}
+.slider-text h1 {
+	margin: 0;
+	line-height: 86px;
+	font-size: 60px;
+	text-transform: uppercase;
+}
+.slider-text h2 {
+	margin: 0;
+	line-height: 52px;
+	font-size: 36px;
+}
+.slide-text-1 {
+	position: absolute;
+	animation: layer1 20s infinite;
+}
+.slide-text-2 {
+	position: relative;
+	animation: layer2 20s infinite;
+}
+.slide-text-1, .slide-text-2 {
+	width: 50%;
+	top: 0px;
+	transition: all 1.5s ease-in-out;
+}
+
+
+
+/* Slider billede animation */
+
+ @keyframes fade {
+ 0% {
+ opacity: 1;
+ background-image: url(../images/header-slide1.jpg);
+}
+ 47% {
+ opacity: 1;
+ background-image: url(../images/header-slide1.jpg);
+}
+ 50.0% {
+ opacity: 1;
+ background-image: url(../images/header-slide2.jpg);
+}
+ 97% {
+ opacity: 1;
+ background-image: url(../images/header-slide2.jpg);
+}
+ 100% {
+ opacity: 1;
+ background-image: url(../images/header-slide1.jpg);
+}
+/* Slider overlay animation */
+	 
+}
+ @keyframes layer1 {
+ 0% {
+ opacity: 1;
+}
+ 47% {
+ opacity: 1;
+}
+ 50.0% {
+ opacity: 0;
+}
+ 97% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 1;
+}
+}
+ @keyframes layer2 {
+ 0% {
+ opacity: 0;
+}
+ 47% {
+ opacity: 0;
+}
+ 50.0% {
+ opacity: 1;
+}
+ 97% {
+ opacity: 1;
+}
+ 100% {
+ opacity: 0;
+}
+}
+
+/* Slider - On Load - zoom animation */
+
+ @keyframes zoomIn {
+ from {
+ opacity: 0;
+ -webkit-transform: scale3d(0.3, 0.3, 0.3);
+ transform: scale3d(0.3, 0.3, 0.3);
+}
+ 50% {
+ opacity: 1;
+}
+}
+.zoomIn {
+	-webkit-animation-name: zoomIn;
+	animation-name: zoomIn;
+	animation-duration: 1s;
+}
+/* Header bottom layout*/
+
+.layoutbox-1 {
+	text-align: center;
+	z-index: 2;
+	min-height: 20vh;
+	position: relative;
+}
+.header-image {
+	margin-top: -220px;
+	height: 300px;
+	width: 300px;
+	background-size: contain;
+	background-image: url(../images/profilimg.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 50%;
+	position: relative;
+	box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
+
+}
+.header-text-name {
+	color: #FFFFFF;
+	padding: 1em 0 2em;
+	position: relative;
+}
