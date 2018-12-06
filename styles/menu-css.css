@@ -1,0 +1,267 @@
+@charset "utf-8";
+/* CSS Document */
+
+.burgerMenu {
+	top: 20px;
+	right: 25px;
+	padding: 16px;
+    border-radius: 50%;
+	width: 70px;
+	height: 70px;
+	transition: .8s;
+
+}
+.burgerMenu:hover {
+		background: rgba(15, 91, 38, 0.75);
+}
+.open {
+	right: 50px;
+	width: 350px;
+	height: 350px;
+	border: 3px solid rgba(255,255,255,1.0);
+    border-radius: 50%;
+	background: rgba(15, 91, 38, 0.75);
+}
+ul {
+	width: 100%;
+	height: 100%;
+	border: 0;
+    border-radius: 50%;
+	padding-left: 0px;
+	overflow: hidden;
+}
+ul li {
+	list-style: none;
+	font-family: lato, arial, helvetica;
+}
+
+ul li a {
+	padding: 15px 20px;
+	color: #fff;
+	display: none;
+	text-decoration: none;
+	text-align: center;
+	line-height: 1.59;		
+	font-size: 1.3em;
+transition: all .8s ;
+
+}
+.open ul li a /*.open ul li a*/ {
+		display: block;
+
+}
+ul li a:hover {
+	color: rgba(15, 91, 38, 0.75);
+	background: #fff;
+	transition: 0.25s;
+}
+ input[type="submit"], button::-moz-focus-inner {
+ border: 0;
+ outline: none;
+}
+.homeButton, .burgerMenuButton, .burgerAskButton {
+	position: fixed;
+	width: 70px;
+	height: 70px;
+	box-sizing: border-box;
+	cursor: pointer;
+	background: transparent;
+	outline: none;
+	z-index: 110;
+	border: 3px solid rgba(255,255,255,1.00);
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+}
+.homeButton {
+	top: 20px;
+	left: 25px;
+}
+.burgerMenuButton {
+	top: 20px;
+	right: 25px;
+}
+.burgerMenuButton span {
+	display: block;
+	width: 35px;
+	height: 3px;
+	background: #FFFFFF;
+	position: absolute;
+	left: 14.5px;
+	top: 31px;
+	transition: .3s;
+}
+.burgerMenuButton span:before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #FFFFFF;
+	transition: .3s;
+}
+.burgerMenuButton span:after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 100%;
+	height: 3px;
+	background: #FFFFFF;
+	transition: .3s;
+}
+.burgerMenuButton.toggle span {
+	background: transparent
+}
+.burgerMenuButton.toggle span:before {
+	top: 0;
+	transform: rotate(45deg);
+}
+.burgerMenuButton.toggle span:after {
+	top: 0;
+	transform: rotate(-45deg);
+}
+.askForm {
+    top: 20px;
+    left: 120px;
+    padding: 16px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    transition: .8s;
+}
+
+.askForm form {
+	display: none;
+}
+
+.askForm-open {
+	padding: 55px 210px;
+	left: 25px;
+	width: 80vh;
+	height: 80vh;
+	border: 3px solid rgba(255,255,255,1.0);
+    border-radius: 50%;
+	background: rgba(2,25,114,0.90);
+}
+.askForm-open form {
+	display: block;
+}
+.burgerAskButton {
+	top: 20px;
+	left: 120px;
+}
+
+/* FORMULAR */
+
+#form_container {
+	padding: 6vw;
+	margin: 0 auto;
+	text-align: left;
+}
+input[type=text] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	font-size: 1.2em;
+}
+.formContainer {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* Hide the browser's default checkbox */
+.formContainer input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+}
+/* On mouse-over, add a grey background color */
+.formContainer:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+/* When the checkbox is checked, add a blue background */
+.formContainer input:checked ~ .checkmark {
+	background-color: rgba(2,25,114,1.00);
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+/* Show the checkmark when checked */
+.formContainer input:checked ~ .checkmark:after {
+	display: block;
+}
+/* Style the checkmark/indicator */
+.formContainer .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+/*input[type=button], input[type=submit], input[type=reset] {
+	background-color: rgba(223,155,103,1.00);
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-decoration: none;
+	margin: 4px 4px 4px 0;
+	cursor: pointer;
+	font-size: 1.2em;
+}*/
+textarea {
+	width: 100%;
+	height: 150px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	background-color: #f8f8f8;
+	resize: none;
+	font-size: 1.5em;
+}
+
+
+/* Placeholder og validering */
+
+textarea.formInvalid::-webkit-input-placeholder {
+ color: red;
+}
+ input.formInvalid::-webkit-input-placeholder {
+ color: red;
+}
+ input.formInvalid::-moz-placeholder { /* Firefox 19+ */
+ color: red;
+}
+input.formInvalid:-ms-input-placeholder { /* IE 10+ */
+ color: red;
+}
+input.formInvalid:-moz-placeholder { /* Firefox 18- */
+ color: red;
+}

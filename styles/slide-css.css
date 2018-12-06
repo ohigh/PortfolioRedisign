@@ -5,78 +5,93 @@
 /* HEADER / Landing page */
 .header-areea {
 	background-color: #000000;
+	transition: all 1.5s ease-in-out;
+}
+
+nav {
+	padding: 20px 25px 0;
+	position: fixed;
+	width: 100vw;
+	z-index: 100;
+		
+
 }
 .slider {
-	background-image: url(../images/header-slide1.jpg);
-	background-repeat: no-repeat;
+	position: relative;
+/*	background-image: url(../images/header-slide1.jpg);
+*/	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	background-position: right;
 	width: 100%;
 	height: 80vh;
-	animation: fade 20s infinite;
+	animation: fade 60s infinite;
 	transition: all 1.5s ease-in-out;
 }
 .header-overlay {
-	width: 90%;
-	display: inline-block;
+	position: absolute;
+	display: block;
 	color: #FFFFFF;
-	position: relative;
-	left: 5vw;
-	top: 10vw;
-}
-.slider-text {
-	height: auto;
-	text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
-}
-.slider-text h1 {
-	margin: 0;
-	line-height: 86px;
-	font-size: 60px;
-	text-transform: uppercase;
-}
-.slider-text h2 {
-	margin: 0;
-	line-height: 52px;
-	font-size: 36px;
-}
+	left: 20%;
+    top: -5vh;
+/*	transform: translate(-25%);
+*/}
+
 .slide-text-1 {
 	position: absolute;
-	animation: layer1 20s infinite;
+	animation: layer1 30s infinite;
 }
 .slide-text-2 {
-	position: relative;
-	animation: layer2 20s infinite;
+	position: absolute;
+	animation: layer2 30s infinite;
 }
-.slide-text-1, .slide-text-2 {
-	width: 50%;
-	top: 0px;
+.slide-text-3 {
+	position: absolute;
+	animation: layer3 30s infinite;
+}
+.slide-text-1, .slide-text-2 .slide-text-3 {
+	padding: 40px;
 	transition: all 1.5s ease-in-out;
 }
 
-
+.feature {
+	position: relative;
+	margin: auto;
+	top: 20%;
+	width: 90vw;
+	height: 100%;
+}
 
 /* Slider billede animation */
 
  @keyframes fade {
  0% {
  opacity: 1;
- background-image: url(../images/header-slide1.jpg);
+ background-image: url(../images/slider1.jpg);
 }
- 47% {
+ 26% {
  opacity: 1;
- background-image: url(../images/header-slide1.jpg);
+ background-image: url(../images/slider1.jpg);
 }
- 50.0% {
+ 34% {
  opacity: 1;
- background-image: url(../images/header-slide2.jpg);
+ background-image: url(../images/slider2.jpg);
 }
- 97% {
+ 59% {
  opacity: 1;
- background-image: url(../images/header-slide2.jpg);
+ background-image: url(../images/slider2.jpg);
 }
- 100% {
+ 67% {
  opacity: 1;
- background-image: url(../images/header-slide1.jpg);
+ background-image: url(../images/slider3.jpg);
+}
+ 92% {
+ opacity: 1;
+ background-image: url(../images/slider3.jpg);
+}
+100% {
+ opacity: 1;
+ background-image: url(../images/slider1.jpg);
 }
 /* Slider overlay animation */
 	 
@@ -85,13 +100,13 @@
  0% {
  opacity: 1;
 }
- 47% {
+ 26% {
  opacity: 1;
 }
- 50.0% {
+ 34.0% {
  opacity: 0;
 }
- 97% {
+ 92% {
  opacity: 0;
 }
  100% {
@@ -102,13 +117,33 @@
  0% {
  opacity: 0;
 }
- 47% {
+ 26% {
  opacity: 0;
 }
- 50.0% {
+ 34% {
  opacity: 1;
 }
- 97% {
+ 59% {
+ opacity: 1;
+}
+ 67% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+@keyframes layer3 {
+ 0% {
+ opacity: 0;
+}
+ 59% {
+ opacity: 0;
+}
+ 67.0% {
+ opacity: 1;
+}
+ 92% {
  opacity: 1;
 }
  100% {
@@ -141,23 +176,169 @@
 	min-height: 20vh;
 	position: relative;
 }
+/*Header Button  */
+.header-button { 
+	position: relative;
+	width: 135px;
+	height: 135px;
+	margin-top: 20px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 26px;
+    padding: 15px 0 10px;
+    font-weight: bold;
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);	
+}
+
+
+
+.header-button:hover, .semester-dot-button:hover {
+/*	background-color: rgba(15, 91, 38, 0.75);
+*/	transform: scale(1.1);
+}
+
+.semester1-work-dot {
+	position: absolute;
+    top: 13vh;
+    right: 27%;
+/*    transform: translate(-50%, -50%);
+*/}
+
+.flow1-work-dot {
+	position: absolute;
+    top: 0.9vh;
+    right: calc(27% - 5vh);
+/*    transform: translate(-50%, -50%);
+*/}
+.flow2-work-dot {
+	position: absolute;
+    top: 10vh;
+    right: calc(27% - 18vh);
+/*    transform: translate(-50%, -50%);
+*/}
+.flow3-work-dot {
+	position: absolute;
+    top: 26vh;
+    right: calc(27% - 16.4vh);
+/*    transform: translate(-50%, -50%);
+*/}
+.flow4-work-dot {
+	position: absolute;
+    top: 32.3vh;
+    right: calc(27% - 2vh);
+/*    transform: translate(-50%, -50%);
+*/}
+.latest-work-dot {
+	display: block;
+	position: absolute;
+    top: 1vh;
+    left: calc(20% - 24vh);
+/*    transform: translate(-50%, -50%);
+*/	
+}
+.early-work-dot {
+	display: block;
+	position: absolute;
+    top: 24vh;
+    left: calc(20% - 14.5vh);
+/*    transform: translate(-50%, -50%);
+*/	
+}
+.larger .header-button { /*Header button placement */
+	width: 200px;
+	height: 200px;
+	font-size: 200%;
+	line-height: 40px;
+	padding: 25px 0 15px;
+	font-weight: normal;
+}
+.medium .header-button { /*Header button placement */
+	width: 150px;
+	height: 150px;
+	font-size: 150%;
+	line-height: 25px;
+	padding: 25px 0 15px;
+	font-weight: normal;
+}
+
+
+/*#latest .header-button { 
+	width: 200px;
+	height: 200px;
+}
+
+#latest > a {
+	font-size: 250%;
+	line-height: 40px;
+	padding: 25px 0 15;
+}
+*/
 .header-image {
-	margin-top: -220px;
-	height: 300px;
-	width: 300px;
-	background-size: contain;
+	position: relative;
+	margin-top: -20vh;
+	height: 27.7vh;
+	width: 27.7vh;
+	background-size: cover;
+	background-color: rgba(237,237,237,1.00);
 	background-image: url(../images/profilimg.jpg);
 	background-repeat: no-repeat;
-	text-align: center;
 	display: inline-block;
 	vertical-align: middle;
+	border: 3px solid rgba(255,255,255,1.00);
 	border-radius: 50%;
 	position: relative;
 	box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
-
+	transition: all 300ms ease-in-out;
 }
+
+
+
 .header-text-name {
 	color: #FFFFFF;
 	padding: 1em 0 2em;
 	position: relative;
+}
+
+.orange {
+	background: rgba(245,83,11,0.75);
+}
+
+.blue {
+	background: rgba(34,115,240,0.50);
+}
+.dark-blue {
+	background: rgba(2,25,114,0.50);
+}
+
+.green {
+	background: rgba(38,165,28,0.50);
+}
+
+.red {
+	background: rgba(251,0,0,0.50);
+}
+
+.purple {
+	background: rgba(92,26,175,0.50);
+}
+.brown {
+	background: rgba(72,32,16,0.50);
+
+}
+.black {
+	background: rgba(0,0,0,0.50);
+}
+
+.transperant {
+	background-color: transparent;
+}
+
+
+@media only screen and (max-width: 768px) {
+	/* HEADER AREA */
+.header-image {
+	margin-top: -30vw;
+	height: 40vw;
+	width: 40vw;
+}
 }

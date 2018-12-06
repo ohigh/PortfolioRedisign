@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+.semester-description {
+	position: relative;
+	margin: auto;
+	max-width: 80vw;
+	height: 66vh;
+}
+@keyframes fade-dot {
+    0%, 50% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+@keyframes dot-anim {
+    0% {
+        top: -1vw;
+    }
+    50% {
+        top: 2vw;
+    }
+    100% {
+        top: -1vw;
+    }
+}
+
+@keyframes puls {
+    0% {
+        top: 44.8vh;
+    }
+    50% {
+        top: 46.8vh;
+    }
+    100% {
+        top: 44.8vh;
+    }
+}
+.flow-dot-container {
+	position: relative;
+    width: 100%;
+    animation: fade-dot 1s;
+}
+.semester-dot {
+/*    display: inline-block;
+*/    /*width: 10vw;
+    height: 10vw;
+    border-radius: 50%;*/
+	line-height: 135px;
+    transition: all .2s ease-in-out;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 1.6s;
+    animation-name: dot-anim;
+}
+/*.semester-dot *:before, .semester-dot *:after {
+    margin: auto;
+    padding: 0;
+    outline: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}*/
+.semester-dot-button {
+	width: 135px;
+	height: 135px;
+	line-height: 110px;
+	font-weight: bold;
+}
+.semester-dot, .semester-dot:before, .semester-dot:after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.flow1-dot {
+	left: -60vw;
+	animation-delay: 0s;
+
+}
+.flow2-dot {
+    left: -20vw;
+    animation-delay: .2s;
+}
+.flow3-dot {
+    left: 20vw;
+    animation-delay: .4s;
+}
+.flow4-dot {
+    left: 60vw;
+    animation-delay: .6s;
+}

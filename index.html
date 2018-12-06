@@ -5,9 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Designish by Ole Sandvang Høj</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="scripts/script.js"></script>
+<script src="scripts/valideringKontaktOs.js"></script>
+<script src="scripts/valideringKontaktMig.js"></script>
 <!--	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">-->
 <link href="styles/template.css" rel="stylesheet" type="text/css">
 <link href="styles/slide-css.css" rel="stylesheet" type="text/css">
+<link href="styles/menu-css.css" rel="stylesheet" type="text/css">
+<link href="styles/semester.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <link href="https://fonts.googleapis.com/css?family=The+Girl+Next+Door" rel="stylesheet">
 </head>
@@ -16,47 +22,586 @@
 <body>
 <!-- Header Start - Landing -->
 <header class="header-areea ">
-  <section id="landing-header" class="header-sec zoomIn">
+  <nav ><a class="homeButton button remowe-show" href="#home"><i class="fa fa-home" aria-hidden="true"></i></a> </nav>
+  <nav class="askForm">
+    <button class="burgerAskButton button"> <i class="fa fa-question" aria-hidden="true"></i> </button>
+    <form id="kontaktMig"	>
+      <div class="form_description">
+        <h2>Kontakt mig</h2>
+        <p>Send os navn og nummer, <br>
+          Så giver dig et kald.</p>
+      </div>
+      <label class="description" for="InputNavn2">Navn </label>
+      <div>
+        <input id="InputNavn2" name="navn1" class="element text medium" type="text" maxlength="255" value="" placeholder="Dit navn"/>
+      </div>
+      <label class="description" for="InputTelnummer2">Telefon </label>
+      <div>
+        <input id="InputTelnummer2" name="telefon1" class="element text medium" type="text" maxlength="255" value="" placeholder="Dit telefonnummer"/>
+      </div>
+      <p>Vedrørende</p>
+      <label class="formContainer">Min hjemmeside
+        <input type="checkbox" >
+        <span class="checkmark"></span> </label>
+      <label class="formContainer">Min webshop
+        <input type="checkbox">
+        <span class="checkmark"></span> </label>
+      <label class="formContainer">Mit brand
+        <input type="checkbox">
+        <span class="checkmark"></span> </label>
+      <label class="formContainer">Min sikkerhed
+        <input type="checkbox">
+        <span class="checkmark"></span> </label>
+      <input id="Formular02" class="button square-button" type="submit" value="Submit" name="submit"/>
+      
+    </form>
+  </nav>
+  <nav class="burgerMenu shadow">
+    <button	class="burgerMenuButton"> <span></span> </button>
+    <ul>
+      <li><a class="burgerLink remowe-show" href="#home">Here We Go</a></li>
+      <li><a class="burgerLink remowe-show" href="#seneste">Seneste Arbejde</a></li>
+      <li><a class="burgerLink remowe-show" href="#semester-1">Mul 1. Semester</a></li>
+      <li><a class="burgerLink remowe-show" href="#eksempler">Tidligere Arbejde</a></li>
+      <!--    <li><a class="burgerLink" href="#sikkerhed">Din sikkerhed</a></li>
+-->
+      <li><a class="burgerLink remowe-show" href="#profil">Min Profil</a></li>
+    </ul>
+  </nav>
+  
+  <!-- Pure css
+<nav> 
+			<input type="checkbox" id="menu-toggle"/>
+  <label id="trigger" for="menu-toggle"></label>
+  <label id="burger" for="menu-toggle"></label>
+  <ul id="menu">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+		
+</nav>
+-->
+  <section id="home" class="header-sec zoomIn">
     <div class="slider">
-      <div class="feature"> </div>
-      <div class="header-overlay">
-        <div class="slider-text">
-          <div class="slide-text-1">
-            <h1 > Designish </h1>
-            <h2 class="">Design inspireret af naturens former, farver og funktioner.</h2>
-          </div>
-          <div class="slide-text-2">
-            <h1 class=""> Designish </h1>
-            <h2 class="">Design med fokus på budskab, behov og brugervenlighed.</h2>
+      <div class="feature">
+        <div class="early-work-dot"><a href="#eksempler" class="content-dot-m brown button grow-on-hover remowe-show">
+          <h2>Mit<br>
+            tidligere<br>
+            arbejde</h2>
+          </a></div>
+        <div class="latest-work-dot"><a href="#seneste" class="content-dot-l button orange wobble grow-on-hover remowe-show">
+          <h2>Mit<br>
+            seneste<br>
+            arbejde<br>
+          </h2>
+          </a></div>
+        <div class="semester1-work-dot"><a href="#semester-1" class="content-dot-m button dark-blue grow-on-hover remowe-show">
+          <h3>MUL 1<br>
+            1. Semester</h3>
+          </a></div>
+        <div class="flow2-work-dot"><a href="#flow2" class="content-dot-s button green grow-on-hover remowe-show flow2-button">
+          <h3>Flow #2</h3>
+          </a></div>
+        <div class="flow3-work-dot"><a href="#flow3" class="content-dot-s button red grow-on-hover remowe-show flow3-button">
+          <h3>Flow #3</h3>
+          </a></div>
+        <div class="flow4-work-dot"><a href="#flow4" class="content-dot-s button purple grow-on-hover remowe-show flow4-button">
+          <h3>Flow #4</h3>
+          </a></div>
+        <div class="flow1-work-dot"><a href="#semester-1" class="content-dot-s button blue grow-on-hover remowe-show flow1-button">
+          <h3>Flow #1</h3>
+          </a></div>
+        <div class="header-overlay">
+          <div class="content-dot-xl">
+            <div class="slide-text-1">
+              <h1 > Webdesign </h1>
+              <h3>– inspireret af naturens funktioner, former og farver</h3>
+            </div>
+            <div class="slide-text-2">
+              <h1> Budskaber </h1>
+              <h3>– kommunikation målrettet brugersegmentet</h3>
+            </div>
+            <div class="slide-text-3">
+              <h1> Brugerflade </h1>
+              <h3>design med fokus <br>
+                på formål og brugervenlighed</h3>
+            </div>
           </div>
         </div>
-        <div><a href="#eksempler" class="header-button button wobble"><i class="fa fa-chevron-down"></i> Eksempler </a></div>
       </div>
     </div>
     <div class="layoutbox-1"> <a href="#profil">
-      <div class="header-image"> </div>
+      <div class="header-image  grow-on-hover"> </div>
       <h3 class="header-text-name "> Ole Sandvang Høj </h3>
       </a> </div>
   </section>
 </header>
 <!-- MAIN AREA -->
+
 <main> 
-  <!-- Eksempler på hjemmesider -->
-  <section id="eksempler"> <a href="#" class="go-to-top"> <i class="fa fa-chevron-up"></i> </a>
-    <h1 class="uppercase">Design &amp; Prototype <br>
-      Eksempler</h1>
+  <!-- EKSAMEN1 - Dokumentation -->
+  <div class="eksamen1-container">
+    <section id="opgave" class="dark-blue-background">
+      <article>
+        <div class="inner-column-l-1">
+          <div class="go-to-top-row">
+            <div><a href="#eksamen1-oprindlige-flow2" class="button"><i class="fa fa-chevron-down"></i></a>&nbsp;<span class="go-to-top remowe-show"><i class="fa fa-chevron-right"></i></span></div>
+          </div>
+        </div>
+        <h1 class="">Eksamensprojekt – 1. Semester 2018</h1>
+        <div class="row ">
+          <div class="inner-column">
+            <h2>Opgavebeskrivelse</h2>
+          </div>
+          <div class="inner-column-l-2 inner-column-l-1">
+            <h3 >Formål</h3>
+            <p>Formålet med portfolien er at præsentere og dokumentere dit faglige niveau og vise din faglige udvikling samt gøre dig bevidst om, hvad du har arbejdet med og hvad du har lært.</p>
+            <p>Det afsluttende eksamensprojekt på 1. semester har to fokusområder:</p>
+            <p>1. Komplet redesign af din  portfolio</p>
+            <p>2. Opdatering af portfoliens indhold</p>
+            <br>
+            <h3 >Redesign af nuværende portfolio</h3>
+            <p>Med udgangspunkt i det du har lært i løbet af 1. semester, skal du viderevikle det website, der udgør din nuværende portfolio.</p>
+            <p>Den nye portfolio skal fungere som udstillingsvindue for alt det du indtil nu har arbejdet med på uddannelsen, samt fremover kunne indeholde det arbejde du kommer til at udføre i løbet af de kommende semestre. Din portfolio er dit ansigt udadtil, der viser hvem du er, og hvad du kan over for virksomheder, studiekammerater, lærere mv.</p>
+          </div>
+          <div class="inner-column-l-2 inner-column-l-1">
+            <p>Udformningen af din nye portfolio skal demonstrere dine evner inden for fagområderne design og visualisering samt interaktionsudvikling. Dokumentation af udviklingen skal desuden demonstrere at du kan planlægge dit projekt bl.a. ved at udarbejde PBS, WBS og Gantt-kor</p>
+            <p>Det er vigtigt, at du tager nogle konkrete beslutninger i forhold til portfoliens visuelle udtryk (typografi, farver, layout, ikoner, evt logo samt stemning osv.), og at du forholder dig konsekvent i forhold til disse beslutninger.</p>
+            <p>Du skal altså både designe websitet og begrunde dine designvalg og designprincipper ud fra de modeller og  metoder du har lært i undervisningen. Designbeslutninger og -udvikling skal begrundes og være indeholdt i portfolien.</p>
+            <p>Du skal ligeledes kunne redegøre for, hvordan dit re-design tager udgangspunkt i en brugertest af portfolien.</p>
+            <p>Den tekniske del af arbejdet skal demonstrere, at du er i stand til at anvende de redskaber og metoder, som har været gennemgået i undervisningen.</p>
+            <p>Det er derfor et krav, at portfolien udvikles fra grunden uden brug af content management systemer eller CSS-frameworks af nogen art (eks. Wordpress, Bootstrap  og lignende).</p>
+          </div>
+          <div class="inner-column-l-2 inner-column-l-1  extra-topmargin">
+            <h3>Opdatering af portfoliens indhold</h3>
+            <h4>1. Portfolioudvikling</h4>
+            <p>Portfolien skal dokumentere den udviklingsproces, der ligger til grund for det nye portfoliodesign, projektplan-lægning, informationsarkitektur, designskitser, wirefra-mes, mockups etc. Altså skal portfolien indeholde udviklingsdokumentation „fortælle om sin egen tilblivelse” – som 1. semester eksamensprojekt.</p>
+            <h4>2. Dokumentation af tidligere projekter</h4>
+            <p>Portfolien skal præsentere og dokumentere resultatet af de 4 flowprojekter, som du har arbejdet med på semestret:</p>
+            <p>• Drøm din portfolio<br>
+              • Byg din portfolio<br>
+              • Byg en app<br>
+              • Byg Sweetbot responsive website</p>
+            <p>Der skal som minimum være link til:</p>
+            <p>• Projektbeskrivelsen<br>
+              • Den oprindelige løsning<br>
+              • Rapporter (hvor de er udarbejdet som en del af et projekt)</p>
+            <h4>3. Remake af tidligere opgaver</h4>
+            <p>Du skal nu forholde dig til de resultater du tidligere er nået frem til i de tidligere projekter.</p>
+            <p>De produkter og projektrapporter, du har afleveret individuelt eller som gruppe, skal nu have en hel eller delvis „make over”.</p>
+          </div>
+          <div class="inner-column-l-2 inner-column-l-1 extra-topmargin">
+            <p>Udgangspunktet skal være de kommentarer og den feedback, du har modtaget i forbindelse med de enkelte projekter.</p>
+            <p>Der kan også være løsninger, som du undervejs mente kunne være blevet anderledes. Dette skal nu udføres og implementeres i portfolien. Forbedringer vil desuden kunne bygge på dialog med en vejleder mv. Du er også velkommen til at præsentere andre/egne design- og medieløsninger i portfolien.</p>
+            <p>Der skal altså være link til:</p>
+            <p>• Den forbedrede løsning (udover tidligere nævnte link til den oprindelige løsning)</p>
+            <h4>4.Reflektioner over din læring</h4>
+            <p>Portfolien skal præsentere din læring på en måde så man direkte og kronologisk kan se din udvikling. Du må selvfølgelig linke fra opgaverne til læringsdelen af portfolien, men det er vigtigt at læring har sit eget område/placering i portfolien.</p>
+            <p>Refleksionsspørgsmål du kan bruge, når du arbejder med din læring:</p>
+            <p>• Hvad har jeg lært under forløbet?<br>
+              • Hvordan hænger det sammen med min forhåndskendskab til emnet og denne opgavetype?<br>
+              • Hvad forventede jeg at lære?<br>
+              • Hvad har jeg mere brug for at lære?<br>
+              • Hvad vil jeg foretage mig for at komme til at lære dette?</p>
+          </div>
+          <div class="inner-column-l-2 inner-column-l-1 extra-topmargin">
+            <h3>Skema</h3>
+            <p>Check skemaet på Timeedit om vejledning vedrørende de enkelte underviseres tilstedeværelse. </p>
+            <p>Ditlev: dsk@cphbusiness.dk<br>
+              Frederik: fdta@cphbusiness.dk<br>
+              Jesper: jhi@cphbusiness.dk<br>
+              Marc: klu@cphbusiness.dk<br>
+              Merete: mli@cphbusiness.dk<br>
+              Morten: moro@cphbusiness.dk</p>
+            <br>
+            <h3>Formalia</h3>
+            <p>Den enkelte studerende er ansvarlig for egen portfolio og den afleveres individuelt. Arbejdet med opdatering af indhold i flow 4 kan udføres helt eller delvist i den gruppe der oprindeligt udarbejdede projektet.</p>
+            <p>Alle punkter skal præsenteres i din portfolio. Dokumentationen af portfolioens udvikling skal være tilgængelig på portfolien som en integreret del af indholdet og/eller som link til dokument i PDF-format.</p>
+          </div>
+          <div class="inner-column-l-2 inner-column-l-1 extra-topmargin">
+            <h3>Aflevering</h3>
+            <p>Du afleverer projektet ved at uploade en pdf-fil med dit navn, din Cphbusiness e-mailadresse samt et link til din portfolio på Wiseflow.Portfolien skal uploades senest:</p>
+            <h4>21. december 2018, kl. 12:00.</h4>
+            <br>
+            <h3>1. semester eksamen</h3>
+            <p>Eksamen er mundtlig og finder sted den </p>
+            <h4>14 - 16 januar 2018.</h4>
+            <p>Eksamen har en varighed af 25 minutter – 5 min præsentation fra den studerende med efterfølgende 15 min. diskussion af portfolien og 5 min votering.</p>
+            <p>Skema for eksamensrækkefølge vil blive uploadet på Moodle i starten af januar 2019.</p>
+          </div>
+        </div>
+        <br>
+      </article>
+    </section>
+    <section id="eksamen1-oprindlige-flow2" class="dark-blue-background">
+      <article>
+        <div class="go-to-top-row"> <a href="#opgave" class="go-to-top"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#semester-1" class="button"><i class="fa fa-chevron-down"></i></a></div>
+        <h1>Oprindlige løsning – FLOW #2 opgave</h1>
+		  <h3 class="grow-on-hover"><a href="https://school.ohigh.dk/portfolio/" target="_blank">Åben den oprinlige portfolio i en ny fane</a></h3>
+      </article>
+      <iframe src="https://school.ohigh.dk/portfolio"></iframe>
+    </section>
+    <section id="skitser">
+      <article>
+        <div class="row go-to-top-row">
+          <div> </div>
+          <a href="#ide" class="go-to-top"> <i class="fa fa-chevron-up"></i> </a>
+          <div> </div>
+        </div>
+        <div class="row">
+          <div class="inner-column-l-2 inner-column-l-1">
+            <h2 >Skitser, grafik og layout</h2>
+            <p>Da der nu var kommet nogenlunde styr på kampagne og indhold skulle jeg i gang med den egentlige designfase. Der skulle laves skitser, grafik og layout.</p>
+            <div class="row skitser">
+              <div class="inner-column-l-2 extra-topmargin"> <img src="images/skitseindex.jpg" alt="Skitse af index side"/> </div>
+              <div class="inner-column-l-2 extra-topmargin"> <img src="images/skitsebaisikeli.jpg" alt="Skitse af Baisikeli side"/> </div>
+              <div class="inner-column-l-2 extra-topmargin"> <img src="images/skitseforskel.jpg" alt="Skitse af forskel side"/> </div>
+              <div class="inner-column-l-2 extra-topmargin"> <img src="images/skitsedoner.jpg" alt="Skitse af doner side"/> </div>
+            </div>
+          </div>
+          <div class="inner-column-l-2 inner-column-l-1"> <img src="images/grafikbilleder.jpg" alt="Grafik elementer"/> <img class="extra-topmargin" src="images/up-cykle-layout.jpg" alt="Up-Cykle layout"/> </div>
+        </div>
+      </article>
+    </section>
+    <div class="row go-to-top-row">
+      <div> </div>
+      <a href="#ide" class="go-to-top"> <i class="fa fa-chevron-up"></i> </a>
+      <div> </div>
+    </div>
+    <section id="prototype">
+      <article>
+        <div class="row">
+          <div class="inner-column-l-1">
+            <h2 > Prototype </h2>
+            <div class="row">
+              <div class="inner-column"> <a href="https://school.ohigh.dk/up-cycle/" target="_blank"><img src="images/prototype-upcycle.dk.jpg" alt="Skærmdumpe af index side"/></a> </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+  
+  <!-- SENESTE ARBEJDE - SIDE START -->
+  <section id="seneste">
+    <div class="go-to-top-row"> <a href="#" class="go-to-top remowe-show"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#semester-1" class="button remowe-show"><i class="fa fa-chevron-down"></i></a></div>
+    <div class="semester-description">
+      <div class="eksamen1-sub"><a href="#opgave" class="content-dot-l black grow-on-hover remowe-show eksamen1-button">
+        <div class="">
+          <h3>Opgave-beskrivelse</h3>
+        </div>
+		  </a>
+      </div>
+      <div class="eksamen2-sub"><a href="#eksamen1-oprindlige-flow2" class="content-dot-l black grow-on-hover remowe-show eksamen1-button">
+        <div class="">
+          <h3>Oprindlige<br>
+løsning</h3><p>(Flow #2)</p>
+        </div>
+		  </a>
+      </div>
+      <div class="content-dot-l black eksamen5-sub">
+        <div class="">
+          <p>Illustrator<br>
+            Farver/typografi<br>
+            Designprincipper<br>
+            Dataindsamling<br>
+            Brugertest</p>
+        </div>
+      </div>
+      <div class="content-dot-l black eksamen6-sub">
+        <div class="">
+          <p>Style guide<br>
+            Visuel identitet<br>
+            Projektplanlægning<br>
+            Javascript/jQuery<br>
+            Responsive</p>
+        </div>
+      </div>
+      <div class="content-dot-xl seneste-header black">
+        <div>
+          <h3>Flow #5</h3>
+          <h1>Eksamens-<br>
+            projekt</h1>
+          <h2>1. Semester</h2>
+          <p>Efteråret 2018</p>
+        </div>
+      </div>
+    </div>
+    <div class="flow-dot-container">
+      <div class="flow1-dot semester-dot "><a href="#flow1" class="semester-dot-button button blue remowe-show flow1-button">Flow #1</a></div>
+      <div class="flow2-dot semester-dot "><a href="#flow2" class="semester-dot-button button green remowe-show flow2-button">Flow #2</a></div>
+      <div class="flow3-dot semester-dot "><a href="#opgave" class="semester-dot-button button red remowe-show eksamen1-button">Flow #3</a></div>
+      <div class="flow4-dot semester-dot "><a href="#flow4" class="semester-dot-button button purple remowe-show flow4-button">Flow #4</a></div>
+    </div>
+  </section>
+  <!-- 1. SEMESTER - START--> 
+  <!-- FLOW 1 -->
+  <div class="flow1-container">
+    <section id="flow1" class="blue-background">
+      <article>
+        <div class="inner-column-l-1">
+          <div class="go-to-top-row">
+            <div class="go-to-top remowe-show"><i class="fa fa-chevron-right"></i></div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+  
+  <!-- FLOW 2-->
+  <div class="flow2-container">
+    <section id="flow2" class="green-background">
+      <article>
+        <div class="inner-column-l-1">
+          <div class="go-to-top-row">
+            <div class="go-to-top remowe-show"><i class="fa fa-chevron-right"></i></div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+  <!-- FLOW 3-->
+  <div class="flow3-container">
+    <section id="flow3" class="red-background">
+      <article>
+        <div class="inner-column-l-1">
+          <div class="go-to-top-row">
+            <div class="go-to-top remowe-show"><i class="fa fa-chevron-right"></i></div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+  <!-- FLOW 4-->
+  <div class="flow4-container">
+    <section id="flow4" class="purple-background">
+      <article>
+        <div class="inner-column-l-1">
+          <div class="go-to-top-row">
+            <div class="go-to-top remowe-show"><i class="fa fa-chevron-right"></i></div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+  <!--SEMESTER 1 - SIDE START-->
+  <section id="semester-1">
+    <div class="go-to-top-row"> <a href="#seneste" class="go-to-top remowe-show"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#eksempler" class="button remowe-show"><i class="fa fa-chevron-down"></i></a></div>
+    <div class="semester-description">
+      <div class="content-dot-l blue flow1-sub">
+        <div class="">
+          <p>Photoshop<br>
+            Adobe XD<br>
+            Ophavsret<br>
+            Prototyping<br>
+            Designteori</p>
+        </div>
+      </div>
+      <div class="content-dot-l green flow2-sub">
+        <div class="">
+          <p>Dreamweaver<br>
+            HTML 5/CSS 3<br>
+            Billeder/grafik<br>
+            GitHub/FTP<br>
+            Layout</p>
+        </div>
+      </div>
+      <div class="content-dot-l red flow3-sub">
+        <div class="">
+          <p>Illustrator<br>
+            Farver/typografi<br>
+            Designprincipper<br>
+            Dataindsamling<br>
+            Brugertest</p>
+        </div>
+      </div>
+      <div class="content-dot-l purple flow4-sub">
+        <div class="">
+          <p>Style guide<br>
+            Visuel identitet<br>
+            Projektplanlægning<br>
+            Javascript/jQuery<br>
+            Responsive</p>
+        </div>
+      </div>
+      <div class="flow5-sub-load">
+        <div class="flow5-sub"><a href="#seneste" class="content-dot-m black grow-on-hover remowe-show">
+          <div class="">
+            <h3><strong>Flow #5</strong></h3>
+            <h4>Eksamensprojekt<br>
+              1. semester</h4>
+          </div>
+          </a> </div>
+      </div>
+      <div class="content-dot-xl dark-blue semester-header">
+        <div>
+          <h1 > Multimedia- designer </h1>
+          <h2>1. Semester</h2>
+          <p>Efteråret 2018</p>
+        </div>
+      </div>
+    </div>
+    <div class="flow-dot-container">
+      <div class="flow1-dot semester-dot "><a href="#flow1" class="semester-dot-button button blue remowe-show flow1-button">Flow #1</a></div>
+      <div class="flow2-dot semester-dot "><a href="#flow2" class="semester-dot-button button green remowe-show flow2-button">Flow #2</a></div>
+      <div class="flow3-dot semester-dot "><a href="#flow3" class="semester-dot-button button red remowe-show flow3-button">Flow #3</a></div>
+      <div class="flow4-dot semester-dot "><a href="#flow4" class="semester-dot-button button purple remowe-show flow4-button">Flow #4</a></div>
+    </div>
+  </section>
+  
+  <!-- EKSEMPLER PÅ TIDLIGERE ARBEJDE - SIDE START-->
+  <div class="up-cycling-rapport">
+    <section id="ide">
+      <article>
+        <div class="inner-column-l-1">
+          <div class="go-to-top-row">
+            <div class="go-to-top wobble up-cycling-rapport-hide-button"><i class="fa fa-chevron-right"></i></div>
+          </div>
+        </div>
+        <h1 class="">Upcycling – Design projekt</h1>
+        <div class="row ">
+          <div class="inner-column">
+            <h2>Fra ide til produkt</h2>
+          </div>
+          <div class="inner-column-l-2 inner-column-l-1">
+            <h3 > Dette projekt er lavet af: Ole Sandvang Høj </h3>
+            <p>Det er lavet i som et design projekt i forbindelse med – Design Valgfag
+              på Web-Integrator uddannelsen på RTS – November 2016. Indholdet må udelukkende benyttes i forbindelse med ovenstående skoleprojekt. Det indeholder materiale der kan være ophavsret beskyttet.</p>
+          </div>
+          <div class="inner-column-l-2 inner-column-l-1"> <img src="images/babus-on_bicycle.jpg" alt="Cykel bruges til transport af bambus"/> </div>
+          <div class="inner-column-l-2 inner-column-l-1">
+            <h4>Opgave: Upcycling</h4>
+            <p>Vi skulle lave et designoplæg til et upcykling projekt. Selve  projektet var valgfrit, det kunne være noget konkret eller det kunne være noget opdigtet, så længe det overordnede emne var upcycling.</p>
+            <h4>Emne</h4>
+            <p>Jeg lagde mig ret tidligt fast på at jeg ville lave et støtte projekt til “Baisikeli”. Baisikeli upcycler brugte danske cykler i Afrika, med lokal arbejdskræft, som de også står for uddannelsen af. Kampangen skulle få københavnere til at donere deres brugte cykler til dette projekt.</p>
+            <h4>Mision</h4>
+            <p>Kampagnen skal få Københavnere til at donerer deres brugte cykler til et bedre liv i Afrika. Målet er at skabe en bæredygtig cykelindustri i Afrika – intet mindre! </p>
+          </div>
+          <div class="inner-column-l-2 inner-column-l-1">
+            <h4>Produkt: Fysisk og digitalt (Web)</h4>
+            <p>Vi skulle lave mindst to produkter. Der skulle være mindst et fysisk produkt i form af en flyer, plakat, folder, sticker eller et visitkort. Der ud over skulle vi designe en tilhørende hjemmeside med index side og undersider.</p>
+            <h4>Vision</h4>
+            <p>Formålet med kampagnen er at skabe fokus på at de op i mod 400.000 cykler, der hvert år kasseres i Danmark, kan få et nyt liv til gavn for udviklingen i Afrika. Kampagnen skal formidle hvilken forskel en cykel kan gøre for en afrikansk familie og udviklingen i de fattigste del af Afrika. Der ud over skal den oplyse om forskellen på et socialt projekt og velgørenhed.</p>
+            <h4>Målgruppe</h4>
+            <p>Københavnske cyklister mellem 18 og 45 år, der er bosiddende i Københavns brokvarterer og på Amager.</p>
+          </div>
+          <div class="inner-column">
+            <h2>Målet er at skabe en bæredygtig cykelindustri i Afrika – intet mindre! </h2>
+          </div>
+        </div>
+      </article>
+    </section>
+    <section id="beskrivelse">
+      <article>
+        <div class="row go-to-top-row">
+          <div> </div>
+          <a href="#ide" class="go-to-top"> <i class="fa fa-chevron-up"></i> </a>
+          <div> </div>
+        </div>
+        <div class="row">
+          <div class="inner-column-l-2 inner-column-l-1">
+            <h2 >Beskrivelse af kampagnen</h2>
+            <p>Ved kampagne start skal der hænges plakater op, ved alle større læreanstalter, ved Metro og S-tog stationer og ved offentlige arbejdspladser. Målet med plakaterne er at skabe opmærksomhed og trafik på kampagnes hjemme side.</p>
+            <p>Hjemmesiden skal oplyse om den forskel en udrangeret dansk cykel kan gøre i Afrika, og give Københavnerne en let adgang til at donere deres brugte cykel til projekt ”Bikes for a Better World”.</p>
+            <h4>BASIKELI – Bikes for a better world</h4>
+            <p>Baisikeli betyder cykel på swahili – Baisikeli er en privat virksomhed, der er fokuseret på at udvikle cykelkulturen i Østafrika.</p>
+            <p>Ved at indsamle brugte danske cykler og sende dem til Afrika, hvor de bliver repareret og solgt af lokale, bidrager Baisikeli til at forbedre den Østafrikanske befolknings mulighed for transport og uddanne næste generation af Afrikanske cykelmekanikere.</p>
+          </div>
+          <div class="inner-column-l-2 inner-column-l-1">
+            <h2 >Design procesen</h2>
+            <img src="images/StoryBoard.jpg" alt="Storyboard over Up-Cycling"/> </div>
+          <div class="inner-column-l-2 inner-column-l-1">
+            <h4>Brainstorm</h4>
+            <p>For at få et overblik over hvilke emner jeg skulle fokuseres på, lavede jeg en "drejebog" som noget af det første. Det giver et visuelt overblik.</p>
+            <p>Da jeg nu havde en idé om srukturen, var det tid til at komme videre med selve design procesen. Her er et “Moodboard” et godt redskab til at få mig i den rigtige stemning  når jeg skal idé udvikle og “brainstorme”. Mens jeg laver det, får jeg samtidig inspiration til både former, farver  og indhold.</p>
+            <h4>Kampagnen skulle have et logo</h4>
+            <p>Jeg gik herefter i gang med at tænke i at kampagnen skulle have et logo. Det skulle være let genkendeligt og samtidig fortælle noget om hvad kampagnen gik ud på.</p>
+            <p>Jeg endte op med at lave hele to logoer. Det ene blev et overordnet projekt “UP-CYKLE” logo og det andet et decideret kampagne logo til “Doner din cykel – til et bedre liv”.</p>
+            <img src="images/logo-udklip.jpg" alt="Logoer - skitser og endelige resultat"/> </div>
+          <div class="inner-column-l-2 inner-column-l-1"> <img src="images/moodboard.jpg" alt="Mood Board"/> </div>
+        </div>
+      </article>
+    </section>
+    <section id="skitser">
+      <article>
+        <div class="row go-to-top-row">
+          <div> </div>
+          <a href="#ide" class="go-to-top"> <i class="fa fa-chevron-up"></i> </a>
+          <div> </div>
+        </div>
+        <div class="row">
+          <div class="inner-column-l-2 inner-column-l-1">
+            <h2 >Skitser, grafik og layout</h2>
+            <p>Da der nu var kommet nogenlunde styr på kampagne og indhold skulle jeg i gang med den egentlige designfase. Der skulle laves skitser, grafik og layout.</p>
+            <div class="row skitser">
+              <div class="inner-column-l-2 extra-topmargin"> <img src="images/skitseindex.jpg" alt="Skitse af index side"/> </div>
+              <div class="inner-column-l-2 extra-topmargin"> <img src="images/skitsebaisikeli.jpg" alt="Skitse af Baisikeli side"/> </div>
+              <div class="inner-column-l-2 extra-topmargin"> <img src="images/skitseforskel.jpg" alt="Skitse af forskel side"/> </div>
+              <div class="inner-column-l-2 extra-topmargin"> <img src="images/skitsedoner.jpg" alt="Skitse af doner side"/> </div>
+            </div>
+          </div>
+          <div class="inner-column-l-2 inner-column-l-1"> <img src="images/grafikbilleder.jpg" alt="Grafik elementer"/> <img class="extra-topmargin" src="images/up-cykle-layout.jpg" alt="Up-Cykle layout"/> </div>
+        </div>
+      </article>
+    </section>
+    <div class="row go-to-top-row">
+      <div> </div>
+      <a href="#ide" class="go-to-top"> <i class="fa fa-chevron-up"></i> </a>
+      <div> </div>
+    </div>
+    <section id="prototype">
+      <article>
+        <div class="row">
+          <div class="inner-column-l-1">
+            <h2 > Prototype </h2>
+            <div class="row">
+              <div class="inner-column"> <a href="https://school.ohigh.dk/up-cycle/" target="_blank"><img src="images/prototype-upcycle.dk.jpg" alt="Skærmdumpe af index side"/></a> </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </div>
+  
+  <!-- MUMS PDF -->
+  
+  <div class="mums-rapport">
+    <article>
+      <div class="inner-column-l-1">
+        <div class="go-to-top-row">
+          <div class="go-to-top wobble mums-rapport-hide-button"><i class="fa fa-chevron-left"></i></div>
+          <embed id="mums" src="documents/MUMSProjektplan.pdf"> 
+        </div>
+      </div>
+    </article>
+  </div>
+  
+  <!-- 1. Semester --> 
+  
+  <!-- Eksempler på tidligere hjemmesider -->
+  <section id="eksempler"> 
+    <!--SIDESCROLL TEST START-->
+    <div class="go-to-top-row"> <a href="#semester-1" class="go-to-top"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#profil" class="button remowe-show"><i class="fa fa-chevron-down"></i></a></div>
+    <h1 class="uppercase">Tidligere arbejde
+      <h1></h1>
+    </h1>
     <article>
       <div class="row">
         <div class="column-l-3 column-m-2 column-s-1">
-          <div class="inner-column"><a href="https://school.ohigh.dk/mums/" target="_blank"><img src="images/mums.dk.png" alt="Preview af MUMS hjemmeside"/></a></div>
+          <div class="inner-column round-image grow-on-hover"><a href="https://school.ohigh.dk/mums/" target="_blank"><img src="images/mums-dk.jpg" alt="Preview af MUMS hjemmeside"/></a></div>
           <div class="inner-column">
             <h3 class="uppercase">Stemning</h3>
             <p class="uppercase">Idé, Design &amp; Kode</p>
             <p>Frontend skoleprojekt på web-integrator uddannelsen.<br>
               (HTML, CSS, JavaScript)</p>
           </div>
-          <!-- Button on tablet and down-->
-          <div class="inner-column hide-on-desktop"> <a target="_blank" href="https://ohigh.dk/phocadownloadpap/Dokumentation/MUMS%20Projektplan.pdf" class="button wobble"> <i class="fa fa-chevron-left"></i> projektplan </a> </div>
+          <!-- Button -->
+          <div class="mums-rapport-button square-button">
+            <p><i class="fa fa-chevron-left"></i> Dokumentation</p>
+          </div>
         </div>
         <div class="column-l-3 column-m-2 column-s-1 last-item">
           <div class="inner-column">
@@ -66,84 +611,72 @@
               Design &amp; produktion.<br>
               (Live CMS site)</p>
           </div>
-          <div class="inner-column"><a href="https://hvalpe.kollensoevej.dk/" target="_blank"><img src="images/hvalpe.kollensoevej.dk.png" alt="Preview af Hvalpe på Kollensøvej hjemmeside"/></a></div>
-          <!-- Button on tablet and down-->
-          <div class="inner-column hide-on-desktop"><a href="#profil" class="button wobble"><i class="fa fa-chevron-down"></i> Min    Profil </a></div>
+          <div class="inner-column round-image grow-on-hover"><a href="https://hvalpe.kollensoevej.dk/" target="_blank"><img src="images/hvalpe-kollensoevej-dk.jpg" alt="Preview af Hvalpe på Kollensøvej hjemmeside"/></a></div>
         </div>
         <div class="column-l-3 column-m-2 column-s-1">
-          <div class="inner-column"><a href="https://school.ohigh.dk/up-cycle/" target="_blank"><img src="images/UpCycle.dk.png" alt="Preview af UpCycling hjemmeside"/></a></div>
+          <div class="inner-column round-image grow-on-hover"><a href="https://school.ohigh.dk/up-cycle/" target="_blank"><img src="images/up-cycle-dk.jpg" alt="Preview af UpCycling hjemmeside"/></a></div>
           <div class="inner-column">
             <h3 class="uppercase">Sybolik</h3>
             <p class="uppercase">Koncept &amp; Design</p>
-            <p>Prototype lavet til et designprojekt om up-cycling i forbindelse med web-integrator uddannelsen.</p>
+            <p>Prototype til designprojekt om up-cycling i forbindelse med web-integrator uddannelsen.</p>
           </div>
-          <!-- Button on tablet and down-->
-          <div class="inner-column hide-on-desktop"> <a href="pages/upcycling-dokumentation.html" class="button wobble">dokumentation <i class="fa fa-chevron-right"></i></a> </div>
-        </div>
-      </div>
-      <!-- Hide on tablet and down-->
-      <div class="row hide-on-tablet">
-        <div class="column-l-3 column-m-2 column-s-1">
-          <div class="inner-column"> <a target="_blank" href="https://ohigh.dk/phocadownloadpap/Dokumentation/MUMS%20Projektplan.pdf" class="button wobble"> <i class="fa fa-chevron-left"></i> projektplan </a> </div>
-        </div>
-        <div class="column-l-3 column-m-2 column-s-1">
-          <div class="inner-column"><a href="#profil" class="button wobble"><i class="fa fa-chevron-down"></i> Min Profil </a></div>
-        </div>
-        <div class="column-l-3 column-m-2 column-s-1">
-          <div class="inner-column"> <a href="pages/upcycling-dokumentation.html" class="button wobble">dokumentation <i class="fa fa-chevron-right"></i></a> </div>
+          <!-- Button -->
+          <div class="up-cycling-rapport-button square-button">
+            <p>Dokumentation <i class="fa fa-chevron-right"></i></p>
+          </div>
         </div>
       </div>
     </article>
   </section>
+  
+  <!-- Profil og Kontakt -->
+  <section id="profil"> <a href="#eksempler" class="go-to-top"> <i class="fa fa-chevron-up"></i> </a>
+    <h1 class="hide-on-desktop uppercase">Profil &amp;<br>
+      kontakt </h1>
+    <article>
+      <div class="row profile-row">
+        <div class="column-l-3 column-m-1">
+          <div class="inner-column"> <img class="kompetencer-image" src="images/Bliv-set-på-Tennis-net.jpg" alt="Bliv set på nettet"> </div>
+          <div class="inner-column profile-col-com">
+            <h4>Kompetencer:</h4>
+            <p>• Web-design <br>
+              • Logoer og grafik <br>
+              • Foto &amp;; <br>
+              • HTML5 &amp; CSS3<br>
+              • php &amp; MySql</p>
+          </div>
+        </div>
+        <div class="column-l-3 column-m-1">
+          <div class="inner-column profile-col-exp">
+            <h4>Erhvervserfaring:</h4>
+            <p>• Digital offsettryk <br>
+              • Storformat print <br>
+              • DtP / PrePress <br>
+              • Salg og suport<br>
+              • Produktionsledelse</p>
+          </div>
+          <div class="inner-column"> <img class="interesser-image" src="images/LuluOgFat.jpg" alt="Bliv set på nettet"> </div>
+          <div class="inner-column profile-col-int">
+            <h4>Interesser:</h4>
+            <p>• Hundetræning <br>
+              • Whisky <br>
+              • Friluftsliv</p>
+          </div>
+        </div>
+        <div class="column-l-3 column-m-1 contact">
+          <div class="inner-column"> <img class="profil-image" src="images/profilimg.jpg" alt="Profil foto"> </div>
+          <div class="inner-column profile-col-con">
+            <h4>Ole Sandvang Høj</h4>
+            <p>ole.hoj@gmail.com</p>
+          </div>
+          <div class="inner-column"> <img class="postit-image" src="images/Post-It_HM_1.png" alt="Telefonnummer"> </div>
+        </div>
+      </div>
+      <address>
+      <p>Kollensøvej • Buresø • 3550 Slangerup</p>
+      </address>
+    </article>
+  </section>
 </main>
-
-<!-- Profil og Kontakt -->
-<section id="profil"> <a href="#eksempler" class="go-to-top"> <i class="fa fa-chevron-up"></i> </a>
-  <h1 class="hide-on-desktop uppercase">Profil &amp;<br>
-    kontakt </h1>
-  <article>
-    <div class="row profile-row">
-      <div class="column-l-3 column-m-1">
-        <div class="inner-column"> <img class="kompetencer-image" src="images/Bliv-set-på-Tennis-net.jpg" alt="Bliv set på nettet"> </div>
-        <div class="inner-column profile-col-com">
-          <h4>Kompetencer:</h4>
-          <p>• Web-design <br>
-            • Logoer og grafik <br>
-            • Foto &amp;; <br>
-            • HTML5 &amp; CSS3<br>
-            • php &amp; MySql</p>
-        </div>
-      </div>
-      <div class="column-l-3 column-m-1">
-        <div class="inner-column profile-col-exp">
-          <h4>Erhvervserfaring:</h4>
-          <p>• Digital offsettryk <br>
-            • Storformat print <br>
-            • DtP / PrePress <br>
-            • Salg og suport<br>
-            • Produktionsledelse</p>
-        </div>
-        <div class="inner-column"> <img class="interesser-image" src="images/LuluOgFat.jpg" alt="Bliv set på nettet"> </div>
-        <div class="inner-column profile-col-int">
-          <h4>Interesser:</h4>
-          <p>• Hundetræning <br>
-            • Whisky <br>
-            • Friluftsliv</p>
-        </div>
-      </div>
-      <div class="column-l-3 column-m-1 contact">
-        <div class="inner-column"> <img class="profil-image" src="images/profilimg.jpg" alt="Profil foto"> </div>
-        <div class="inner-column profile-col-con">
-          <h4>Ole Sandvang Høj</h4>
-          <p>ole.hoj@gmail.com</p>
-        </div>
-        <div class="inner-column"> <img class="postit-image" src="images/Post-It_HM_1.png" alt="Telefonnummer"> </div>
-      </div>
-    </div>
-    <address>
-    <p>Kollensøvej • Buresø • 3550 Slangerup</p>
-    </address>
-  </article>
-</section>
 </body>
 </html>
