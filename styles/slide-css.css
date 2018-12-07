@@ -4,6 +4,7 @@
 
 /* HEADER / Landing page */
 .header-areea {
+	margin-top: -100px;
 	background-color: #000000;
 	transition: all 1.5s ease-in-out;
 }
@@ -13,9 +14,22 @@ nav {
 	position: fixed;
 	width: 100vw;
 	z-index: 100;
-		
-
 }
+.nav-bacground {
+height: 100px;	
+	background-color: transparent;
+	transition: all .5s ease-in-out;
+}
+.nav-bacground-scroll {
+	position: sticky;
+	top: 0;
+	width: 100%;
+	
+	z-index: 90;
+	background-color: rgba(0,0,0,0.40);
+	
+}
+
 .slider {
 	position: relative;
 /*	background-image: url(../images/header-slide1.jpg);

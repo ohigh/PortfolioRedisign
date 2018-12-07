@@ -20,6 +20,8 @@
 
 <!-- Indhold Start -->
 <body>
+<div class="nav-bacground"></div>
+
 <!-- Header Start - Landing -->
 <header class="header-areea ">
   <nav ><a class="homeButton button remowe-show" href="#home"><i class="fa fa-home" aria-hidden="true"></i></a> </nav>
@@ -53,14 +55,13 @@
         <input type="checkbox">
         <span class="checkmark"></span> </label>
       <input id="Formular02" class="button square-button" type="submit" value="Submit" name="submit"/>
-      
     </form>
   </nav>
   <nav class="burgerMenu shadow">
     <button	class="burgerMenuButton"> <span></span> </button>
     <ul>
       <li><a class="burgerLink remowe-show" href="#home">Here We Go</a></li>
-      <li><a class="burgerLink remowe-show" href="#seneste">Seneste Arbejde</a></li>
+      <li><a class="burgerLink remowe-show" href="#seneste">Seneste Projekt</a></li>
       <li><a class="burgerLink remowe-show" href="#semester-1">Mul 1. Semester</a></li>
       <li><a class="burgerLink remowe-show" href="#eksempler">Tidligere Arbejde</a></li>
       <!--    <li><a class="burgerLink" href="#sikkerhed">Din sikkerhed</a></li>
@@ -68,7 +69,6 @@
       <li><a class="burgerLink remowe-show" href="#profil">Min Profil</a></li>
     </ul>
   </nav>
-  
   <!-- Pure css
 <nav> 
 			<input type="checkbox" id="menu-toggle"/>
@@ -93,10 +93,11 @@
             arbejde</h2>
           </a></div>
         <div class="latest-work-dot"><a href="#seneste" class="content-dot-l button orange wobble grow-on-hover remowe-show">
-          <h2>Mit<br>
-            seneste<br>
-            arbejde<br>
-          </h2>
+          <div>
+            <h2> Seneste<br>
+              projekt </h2>
+            <h3>Flow #5</h3>
+          </div>
           </a></div>
         <div class="semester1-work-dot"><a href="#semester-1" class="content-dot-m button dark-blue grow-on-hover remowe-show">
           <h3>MUL 1<br>
@@ -145,12 +146,10 @@
   <!-- EKSAMEN1 - Dokumentation -->
   <div class="eksamen1-container">
     <section id="opgave" class="dark-blue-background">
+      <div class="go-to-row-overlay">
+        <div><a href="#eksamen1-oprindlige-flow2" class="button"><i class="fa fa-chevron-down"></i></a>&nbsp;<span class="go-to remowe-show"><i class="fa fa-chevron-right"></i></span></div>
+      </div>
       <article>
-        <div class="inner-column-l-1">
-          <div class="go-to-top-row">
-            <div><a href="#eksamen1-oprindlige-flow2" class="button"><i class="fa fa-chevron-down"></i></a>&nbsp;<span class="go-to-top remowe-show"><i class="fa fa-chevron-right"></i></span></div>
-          </div>
-        </div>
         <h1 class="">Eksamensprojekt – 1. Semester 2018</h1>
         <div class="row ">
           <div class="inner-column">
@@ -237,71 +236,34 @@
       </article>
     </section>
     <section id="eksamen1-oprindlige-flow2" class="dark-blue-background">
-      <article>
-        <div class="go-to-top-row"> <a href="#opgave" class="go-to-top"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#semester-1" class="button"><i class="fa fa-chevron-down"></i></a></div>
-        <h1>Oprindlige løsning – FLOW #2 opgave</h1>
-		  <h3 class="grow-on-hover"><a href="https://school.ohigh.dk/portfolio/" target="_blank">Åben den oprinlige portfolio i en ny fane</a></h3>
-      </article>
+      <div class="go-to-row-overlay"> <a href="#opgave" class="go-to"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#semester-1" class="button"><i class="fa fa-chevron-down"></i></a></div>
+      <h1>Oprindlige løsning – FLOW #2 opgave</h1>
+      <h3 class="grow-on-hover"><a href="https://school.ohigh.dk/portfolio/" target="_blank">Åben den oprinlige portfolio i en ny fane</a></h3>
       <iframe src="https://school.ohigh.dk/portfolio"></iframe>
     </section>
-    <section id="skitser">
+    <section id="">
       <article>
-        <div class="row go-to-top-row">
-          <div> </div>
-          <a href="#ide" class="go-to-top"> <i class="fa fa-chevron-up"></i> </a>
-          <div> </div>
-        </div>
-        <div class="row">
-          <div class="inner-column-l-2 inner-column-l-1">
-            <h2 >Skitser, grafik og layout</h2>
-            <p>Da der nu var kommet nogenlunde styr på kampagne og indhold skulle jeg i gang med den egentlige designfase. Der skulle laves skitser, grafik og layout.</p>
-            <div class="row skitser">
-              <div class="inner-column-l-2 extra-topmargin"> <img src="images/skitseindex.jpg" alt="Skitse af index side"/> </div>
-              <div class="inner-column-l-2 extra-topmargin"> <img src="images/skitsebaisikeli.jpg" alt="Skitse af Baisikeli side"/> </div>
-              <div class="inner-column-l-2 extra-topmargin"> <img src="images/skitseforskel.jpg" alt="Skitse af forskel side"/> </div>
-              <div class="inner-column-l-2 extra-topmargin"> <img src="images/skitsedoner.jpg" alt="Skitse af doner side"/> </div>
-            </div>
-          </div>
-          <div class="inner-column-l-2 inner-column-l-1"> <img src="images/grafikbilleder.jpg" alt="Grafik elementer"/> <img class="extra-topmargin" src="images/up-cykle-layout.jpg" alt="Up-Cykle layout"/> </div>
-        </div>
-      </article>
-    </section>
-    <div class="row go-to-top-row">
-      <div> </div>
-      <a href="#ide" class="go-to-top"> <i class="fa fa-chevron-up"></i> </a>
-      <div> </div>
-    </div>
-    <section id="prototype">
-      <article>
-        <div class="row">
-          <div class="inner-column-l-1">
-            <h2 > Prototype </h2>
-            <div class="row">
-              <div class="inner-column"> <a href="https://school.ohigh.dk/up-cycle/" target="_blank"><img src="images/prototype-upcycle.dk.jpg" alt="Skærmdumpe af index side"/></a> </div>
-            </div>
-          </div>
-        </div>
+       
       </article>
     </section>
   </div>
   
   <!-- SENESTE ARBEJDE - SIDE START -->
   <section id="seneste">
-    <div class="go-to-top-row"> <a href="#" class="go-to-top remowe-show"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#semester-1" class="button remowe-show"><i class="fa fa-chevron-down"></i></a></div>
+    <div class="go-to-row"> <a href="#" class="go-to remowe-show"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#semester-1" class="button remowe-show"><i class="fa fa-chevron-down"></i></a></div>
     <div class="semester-description">
       <div class="eksamen1-sub"><a href="#opgave" class="content-dot-l black grow-on-hover remowe-show eksamen1-button">
         <div class="">
           <h3>Opgave-beskrivelse</h3>
         </div>
-		  </a>
-      </div>
+        </a> </div>
       <div class="eksamen2-sub"><a href="#eksamen1-oprindlige-flow2" class="content-dot-l black grow-on-hover remowe-show eksamen1-button">
         <div class="">
           <h3>Oprindlige<br>
-løsning</h3><p>(Flow #2)</p>
+            løsning</h3>
+          <p>(Flow #2)</p>
         </div>
-		  </a>
-      </div>
+        </a> </div>
       <div class="content-dot-l black eksamen5-sub">
         <div class="">
           <p>Illustrator<br>
@@ -330,12 +292,7 @@ løsning</h3><p>(Flow #2)</p>
         </div>
       </div>
     </div>
-    <div class="flow-dot-container">
-      <div class="flow1-dot semester-dot "><a href="#flow1" class="semester-dot-button button blue remowe-show flow1-button">Flow #1</a></div>
-      <div class="flow2-dot semester-dot "><a href="#flow2" class="semester-dot-button button green remowe-show flow2-button">Flow #2</a></div>
-      <div class="flow3-dot semester-dot "><a href="#opgave" class="semester-dot-button button red remowe-show eksamen1-button">Flow #3</a></div>
-      <div class="flow4-dot semester-dot "><a href="#flow4" class="semester-dot-button button purple remowe-show flow4-button">Flow #4</a></div>
-    </div>
+    
   </section>
   <!-- 1. SEMESTER - START--> 
   <!-- FLOW 1 -->
@@ -343,8 +300,8 @@ løsning</h3><p>(Flow #2)</p>
     <section id="flow1" class="blue-background">
       <article>
         <div class="inner-column-l-1">
-          <div class="go-to-top-row">
-            <div class="go-to-top remowe-show"><i class="fa fa-chevron-right"></i></div>
+          <div class="go-to-row">
+            <div class="go-to remowe-show"><i class="fa fa-chevron-right"></i></div>
           </div>
         </div>
       </article>
@@ -356,8 +313,8 @@ løsning</h3><p>(Flow #2)</p>
     <section id="flow2" class="green-background">
       <article>
         <div class="inner-column-l-1">
-          <div class="go-to-top-row">
-            <div class="go-to-top remowe-show"><i class="fa fa-chevron-right"></i></div>
+          <div class="go-to-row">
+            <div class="go-to remowe-show"><i class="fa fa-chevron-right"></i></div>
           </div>
         </div>
       </article>
@@ -368,8 +325,8 @@ løsning</h3><p>(Flow #2)</p>
     <section id="flow3" class="red-background">
       <article>
         <div class="inner-column-l-1">
-          <div class="go-to-top-row">
-            <div class="go-to-top remowe-show"><i class="fa fa-chevron-right"></i></div>
+          <div class="go-to-row">
+            <div class="go-to remowe-show"><i class="fa fa-chevron-right"></i></div>
           </div>
         </div>
       </article>
@@ -380,8 +337,8 @@ løsning</h3><p>(Flow #2)</p>
     <section id="flow4" class="purple-background">
       <article>
         <div class="inner-column-l-1">
-          <div class="go-to-top-row">
-            <div class="go-to-top remowe-show"><i class="fa fa-chevron-right"></i></div>
+          <div class="go-to-row">
+            <div class="go-to remowe-show"><i class="fa fa-chevron-right"></i></div>
           </div>
         </div>
       </article>
@@ -389,7 +346,7 @@ løsning</h3><p>(Flow #2)</p>
   </div>
   <!--SEMESTER 1 - SIDE START-->
   <section id="semester-1">
-    <div class="go-to-top-row"> <a href="#seneste" class="go-to-top remowe-show"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#eksempler" class="button remowe-show"><i class="fa fa-chevron-down"></i></a></div>
+    <div class="go-to-row"> <a href="#seneste" class="go-to remowe-show"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#eksempler" class="button remowe-show"><i class="fa fa-chevron-down"></i></a></div>
     <div class="semester-description">
       <div class="content-dot-l blue flow1-sub">
         <div class="">
@@ -428,7 +385,7 @@ løsning</h3><p>(Flow #2)</p>
         </div>
       </div>
       <div class="flow5-sub-load">
-        <div class="flow5-sub"><a href="#seneste" class="content-dot-m black grow-on-hover remowe-show">
+        <div class="flow5-sub"><a href="#seneste" class="content-dot-m orange grow-on-hover remowe-show">
           <div class="">
             <h3><strong>Flow #5</strong></h3>
             <h4>Eksamensprojekt<br>
@@ -455,12 +412,11 @@ løsning</h3><p>(Flow #2)</p>
   <!-- EKSEMPLER PÅ TIDLIGERE ARBEJDE - SIDE START-->
   <div class="up-cycling-rapport">
     <section id="ide">
+		<div class="go-to-row-overlay">
+        <div><a href="#beskrivelse" class="button"><i class="fa fa-chevron-down"></i></a>&nbsp;<span class="go-to remowe-show"><i class="fa fa-chevron-right"></i></span></div>
+      </div>
       <article>
-        <div class="inner-column-l-1">
-          <div class="go-to-top-row">
-            <div class="go-to-top wobble up-cycling-rapport-hide-button"><i class="fa fa-chevron-right"></i></div>
-          </div>
-        </div>
+        
         <h1 class="">Upcycling – Design projekt</h1>
         <div class="row ">
           <div class="inner-column">
@@ -495,12 +451,9 @@ løsning</h3><p>(Flow #2)</p>
       </article>
     </section>
     <section id="beskrivelse">
+		<div class="go-to-row-overlay"> <a href="#ide" class="go-to"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#skitser" class="button"><i class="fa fa-chevron-down"></i></a></div>
       <article>
-        <div class="row go-to-top-row">
-          <div> </div>
-          <a href="#ide" class="go-to-top"> <i class="fa fa-chevron-up"></i> </a>
-          <div> </div>
-        </div>
+        
         <div class="row">
           <div class="inner-column-l-2 inner-column-l-1">
             <h2 >Beskrivelse af kampagnen</h2>
@@ -526,12 +479,9 @@ løsning</h3><p>(Flow #2)</p>
       </article>
     </section>
     <section id="skitser">
+		<div class="go-to-row-overlay"> <a href="#beskrivelse" class="go-to"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#prototype" class="button"><i class="fa fa-chevron-down"></i></a></div>
       <article>
-        <div class="row go-to-top-row">
-          <div> </div>
-          <a href="#ide" class="go-to-top"> <i class="fa fa-chevron-up"></i> </a>
-          <div> </div>
-        </div>
+        
         <div class="row">
           <div class="inner-column-l-2 inner-column-l-1">
             <h2 >Skitser, grafik og layout</h2>
@@ -547,12 +497,9 @@ løsning</h3><p>(Flow #2)</p>
         </div>
       </article>
     </section>
-    <div class="row go-to-top-row">
-      <div> </div>
-      <a href="#ide" class="go-to-top"> <i class="fa fa-chevron-up"></i> </a>
-      <div> </div>
-    </div>
+    
     <section id="prototype">
+		<div class="go-to-row-overlay"> <a href="#skitser" class="go-to"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#prototype" class="button"><i class="fa fa-chevron-down"></i></a></div>
       <article>
         <div class="row">
           <div class="inner-column-l-1">
@@ -571,8 +518,8 @@ løsning</h3><p>(Flow #2)</p>
   <div class="mums-rapport">
     <article>
       <div class="inner-column-l-1">
-        <div class="go-to-top-row">
-          <div class="go-to-top wobble mums-rapport-hide-button"><i class="fa fa-chevron-left"></i></div>
+        <div class="go-to-row">
+          <div class="go-to wobble mums-rapport-hide-button"><i class="fa fa-chevron-left"></i></div>
           <embed id="mums" src="documents/MUMSProjektplan.pdf"> 
         </div>
       </div>
@@ -584,7 +531,7 @@ løsning</h3><p>(Flow #2)</p>
   <!-- Eksempler på tidligere hjemmesider -->
   <section id="eksempler"> 
     <!--SIDESCROLL TEST START-->
-    <div class="go-to-top-row"> <a href="#semester-1" class="go-to-top"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#profil" class="button remowe-show"><i class="fa fa-chevron-down"></i></a></div>
+    <div class="go-to-row"> <a href="#semester-1" class="go-to"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#profil" class="button remowe-show"><i class="fa fa-chevron-down"></i></a></div>
     <h1 class="uppercase">Tidligere arbejde
       <h1></h1>
     </h1>
@@ -630,7 +577,7 @@ løsning</h3><p>(Flow #2)</p>
   </section>
   
   <!-- Profil og Kontakt -->
-  <section id="profil"> <a href="#eksempler" class="go-to-top"> <i class="fa fa-chevron-up"></i> </a>
+  <section id="profil"> <a href="#eksempler" class="go-to"> <i class="fa fa-chevron-up"></i> </a>
     <h1 class="hide-on-desktop uppercase">Profil &amp;<br>
       kontakt </h1>
     <article>

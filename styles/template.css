@@ -76,7 +76,7 @@ article {/* Desktop */
 	padding: 0 4px;
 	justify-content: space-between;
 }
-.button, .go-to-top, .square-button {
+.button, .go-to, .square-button {
 	text-decoration: none;
 	font-size: 24px;
 	text-align: center;
@@ -90,7 +90,7 @@ article {/* Desktop */
 	border-radius: 50%;
 	line-height: 47.6px;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.50);
-	z-index: 110;
+	
 }
 .square-button {
 	width: auto;
@@ -101,17 +101,26 @@ article {/* Desktop */
 	font-size: 24px;
 	line-height: 47.6px;
 }
-.button:hover, .wobble:hover, .go-to-top:hover, .square-button:hover {
+.button:hover, .wobble:hover, .go-to:hover, .square-button:hover {
 	background-color: rgba(15, 91, 38, 0.75);
 }
 
 
-.go-to-top {
+.go-to {
 	margin-top: 20px;
+	
 }
 
-.go-to-top-row {
+.go-to-row, .go-to-row-overlay {
 	text-align: center;
+	z-index: 90;
+	position: sticky;
+	top: 0px;
+}
+.go-to-row-overlay {
+	height: 100px;
+	z-index: 95;
+	background-color: rgba(0,0,0,0.40);
 }
 .grow-on-hover:hover {
 	transform: scale(1.1);
@@ -159,11 +168,11 @@ article {/* Desktop */
 	line-height: 4vh;
 	font-size: 3.8vh;
 }
-.content-dot-m h3, .content-dot-s h2 {
+.content-dot-xl h4, .content-dot-l h4,.content-dot-m h3, .content-dot-s h2 {
 	line-height: 3.5vh;
 	font-size: 2.8vh;
 }
-.content-dot-s h3 {
+.content-dot-m h4, .content-dot-s h3 {
 	line-height: 3.5vh;
 	font-size: 2.3vh;
 }
@@ -275,7 +284,7 @@ div.inner-column.round-image > a > img {
 .eksamen2-sub {
 	position: absolute;
 	top: 29vh;
-	right: calc(50% + 46.5vh);
+	right: calc(50% + 46vh);
 }
 .eksamen5-sub {
 	position: absolute;
@@ -383,8 +392,12 @@ iframe {
 
 #eksempler {
 	padding-bottom: 5vh;
-	background: rgba(72,32,16,1.00);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-image: url(../images/raindrop-3402550_1920.jpg); 
 }
+
 
 #eksempler p {
 	line-height: 24px;
