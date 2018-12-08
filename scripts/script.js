@@ -33,18 +33,19 @@ $(document).ready(function () {
 		
 	});
 
-//	
-//	$(".up-cycling-rapport-button").click(function () {
-//		$(".up-cycling-rapport").removeClass("up-cycling-hide");
-//		$(".up-cycling-rapport").addClass("up-cycling-show");
-//
-//	});
-//
-//	$(".up-cycling-rapport-hide-button").click(function () {
-//		$(".up-cycling-rapport").removeClass("up-cycling-show");
-//		$(".up-cycling-rapport").addClass("up-cycling-hide");
-//	});
-
+	var scrollTop = 0;
+  $(document).scroll(function(){
+    scrollTop = $(window).scrollTop();
+    
+    if (scrollTop >= 100) {
+      $(".nav-bacground").addClass("nav-bacground-scroll");
+    } else if (scrollTop < 100) {
+      $(".nav-bacground").removeClass("nav-bacground-scroll");
+    } 
+    
+  }); 
+	
+	
 
 	$(".up-cycling-rapport-button").click(function () {
 		
@@ -74,6 +75,7 @@ $(document).ready(function () {
 		$(".up-cycling-rapport").removeClass("up-cycling-show");
 		$(".mums-rapport").removeClass("mums-show");
 		$(".burgerMenu").removeClass("open");
+		$(".askForm").removeClass("askForm-open");
 		$(".burgerMenuButton").removeClass("toggle");
 		$(".flow1-container").removeClass("show-flow1");
 		$(".flow2-container").removeClass("show-flow2");

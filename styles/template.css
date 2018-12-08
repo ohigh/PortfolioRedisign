@@ -32,7 +32,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a {
 }
 p {
 	margin: 0 0 10px;
-	font-size: 14px;
+	font-size: 1em;
 }
 h1 {
 	margin: 20px 0;
@@ -118,8 +118,9 @@ article {/* Desktop */
 	top: 0px;
 }
 .go-to-row-overlay {
-	height: 100px;
-	z-index: 95;
+/*	margin-top: -100px;
+*/	height: 100px;
+	z-index: 90;
 	background-color: rgba(0,0,0,0.40);
 }
 .grow-on-hover:hover {
@@ -312,6 +313,10 @@ div.inner-column.round-image > a > img {
 	transform: scaleX(1);
 	transition: 1.0s;
 }
+#opgave {
+	position: relative;
+	top: -100px;
+}
 #eksamen1-oprindlige-flow2 h3 {
 	text-align: center;
 	    transition: all 300ms ease-in-out;
@@ -419,6 +424,10 @@ iframe {
 	line-height: 1.1;
 	font-size: 36px;
 	color: inherit;
+}
+#ide {
+	position: relative;
+	top: -100px;
 }
 
 /* Min Profil*/

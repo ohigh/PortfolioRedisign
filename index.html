@@ -7,9 +7,7 @@
 <title>Designish by Ole Sandvang Høj</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="scripts/script.js"></script>
-<script src="scripts/valideringKontaktOs.js"></script>
 <script src="scripts/valideringKontaktMig.js"></script>
-<!--	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">-->
 <link href="styles/template.css" rel="stylesheet" type="text/css">
 <link href="styles/slide-css.css" rel="stylesheet" type="text/css">
 <link href="styles/menu-css.css" rel="stylesheet" type="text/css">
@@ -24,38 +22,44 @@
 
 <!-- Header Start - Landing -->
 <header class="header-areea ">
-  <nav ><a class="homeButton button remowe-show" href="#home"><i class="fa fa-home" aria-hidden="true"></i></a> </nav>
+<!-- NAV START-->
+  <nav ><a class="homeButton button remowe-show" href="#"><i class="fa fa-home" aria-hidden="true"></i></a> </nav>
   <nav class="askForm">
     <button class="burgerAskButton button"> <i class="fa fa-question" aria-hidden="true"></i> </button>
-    <form id="kontaktMig"	>
+<!-- FORMULAR START-->
+    <form id="kontaktMig" method="post"	 action="https://formspree.io/ole.hoj@gmail.com">
       <div class="form_description">
         <h2>Kontakt mig</h2>
-        <p>Send os navn og nummer, <br>
-          Så giver dig et kald.</p>
+        <p>Har du spørgsmål eller ønsker at blive kontaktet, kan du sende mig en besked eller dit telefonnummer. </p>
       </div>
       <label class="description" for="InputNavn2">Navn </label>
       <div>
-        <input id="InputNavn2" name="navn1" class="element text medium" type="text" maxlength="255" value="" placeholder="Dit navn"/>
+        <input id="InputNavn" name="navn" class="element text medium" type="text" maxlength="255" value="" placeholder="Dit navn (Skal udfyldes)"/>
       </div>
       <label class="description" for="InputTelnummer2">Telefon </label>
       <div>
-        <input id="InputTelnummer2" name="telefon1" class="element text medium" type="text" maxlength="255" value="" placeholder="Dit telefonnummer"/>
+        <input id="InputTelnummer" name="telefon" class="element text medium" type="text" maxlength="255" value="" placeholder="Dit telefonnummer (Skal udfyldes)"/>
       </div>
-      <p>Vedrørende</p>
-      <label class="formContainer">Min hjemmeside
-        <input type="checkbox" >
+	  <label class="description" for="InputMail">Email </label>
+            <div>
+              <input id="InputMail" name="email" class="element text medium" type="text" maxlength="255" value="" placeholder="Din mailadresse (Skal udfyldes)"/>
+            </div>
+		<p>Vedrørende:</p>
+		<label class="formContainer">Tilbud på ny hjemmeside
+        <input type="checkbox" name="Hjemmeside">
         <span class="checkmark"></span> </label>
-      <label class="formContainer">Min webshop
-        <input type="checkbox">
+      <label class="formContainer">Tilbud om job / praktikplads
+        <input type="checkbox" name="Job">
         <span class="checkmark"></span> </label>
-      <label class="formContainer">Mit brand
-        <input type="checkbox">
-        <span class="checkmark"></span> </label>
-      <label class="formContainer">Min sikkerhed
-        <input type="checkbox">
-        <span class="checkmark"></span> </label>
-      <input id="Formular02" class="button square-button" type="submit" value="Submit" name="submit"/>
+      <textarea id="InputBesked" placeholder="Skriv din besked her..." name="Besked"></textarea>
+      <div class="submit">
+        <input id="Formular01" class="button square-button" type="submit" value="Submit" name="submit"/>
+      </div>
     </form>
+	  
+<!-- FORMULAR SLUT -->
+	  
+<!-- MENU START -->
   </nav>
   <nav class="burgerMenu shadow">
     <button	class="burgerMenuButton"> <span></span> </button>
@@ -144,11 +148,12 @@
 
 <main> 
   <!-- EKSAMEN1 - Dokumentation -->
-  <div class="eksamen1-container">
-    <section id="opgave" class="dark-blue-background">
-      <div class="go-to-row-overlay">
-        <div><a href="#eksamen1-oprindlige-flow2" class="button"><i class="fa fa-chevron-down"></i></a>&nbsp;<span class="go-to remowe-show"><i class="fa fa-chevron-right"></i></span></div>
-      </div>
+  <div class="eksamen1-container dark-blue-background">
+          <div class="go-to-row-overlay">      </div>
+
+<section id="opgave" class="">
+      <div class="go-to-row">
+        <a href="#eksamen1-oprindlige-flow2" class="button"><i class="fa fa-chevron-down"></i></a>&nbsp;<span class="go-to remowe-show"><i class="fa fa-chevron-right"></i></span></div>
       <article>
         <h1 class="">Eksamensprojekt – 1. Semester 2018</h1>
         <div class="row ">
@@ -236,7 +241,7 @@
       </article>
     </section>
     <section id="eksamen1-oprindlige-flow2" class="dark-blue-background">
-      <div class="go-to-row-overlay"> <a href="#opgave" class="go-to"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#semester-1" class="button"><i class="fa fa-chevron-down"></i></a></div>
+      <div class="go-to-row"> <a href="#semester-1" class="button"><i class="fa fa-chevron-down"></i></a>&nbsp;<a href="#opgave" class="go-to"> <i class="fa fa-chevron-up"></i> </a></div>
       <h1>Oprindlige løsning – FLOW #2 opgave</h1>
       <h3 class="grow-on-hover"><a href="https://school.ohigh.dk/portfolio/" target="_blank">Åben den oprinlige portfolio i en ny fane</a></h3>
       <iframe src="https://school.ohigh.dk/portfolio"></iframe>
@@ -250,7 +255,7 @@
   
   <!-- SENESTE ARBEJDE - SIDE START -->
   <section id="seneste">
-    <div class="go-to-row"> <a href="#" class="go-to remowe-show"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#semester-1" class="button remowe-show"><i class="fa fa-chevron-down"></i></a></div>
+    <div class="go-to-row"> <a href="#semester-1" class="button remowe-show"><i class="fa fa-chevron-down"></i></a>&nbsp;<a href="#" class="go-to remowe-show"> <i class="fa fa-chevron-up"></i> </a></div>
     <div class="semester-description">
       <div class="eksamen1-sub"><a href="#opgave" class="content-dot-l black grow-on-hover remowe-show eksamen1-button">
         <div class="">
@@ -346,7 +351,7 @@
   </div>
   <!--SEMESTER 1 - SIDE START-->
   <section id="semester-1">
-    <div class="go-to-row"> <a href="#seneste" class="go-to remowe-show"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#eksempler" class="button remowe-show"><i class="fa fa-chevron-down"></i></a></div>
+    <div class="go-to-row"> <a href="#eksempler" class="button remowe-show"><i class="fa fa-chevron-down"></i></a>&nbsp;<a href="#seneste" class="go-to remowe-show"> <i class="fa fa-chevron-up"></i> </a></div>
     <div class="semester-description">
       <div class="content-dot-l blue flow1-sub">
         <div class="">
@@ -411,8 +416,9 @@
   
   <!-- EKSEMPLER PÅ TIDLIGERE ARBEJDE - SIDE START-->
   <div class="up-cycling-rapport">
+	  <div class="go-to-row-overlay"></div>
     <section id="ide">
-		<div class="go-to-row-overlay">
+		<div class="go-to-row">
         <div><a href="#beskrivelse" class="button"><i class="fa fa-chevron-down"></i></a>&nbsp;<span class="go-to remowe-show"><i class="fa fa-chevron-right"></i></span></div>
       </div>
       <article>
@@ -451,7 +457,7 @@
       </article>
     </section>
     <section id="beskrivelse">
-		<div class="go-to-row-overlay"> <a href="#ide" class="go-to"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#skitser" class="button"><i class="fa fa-chevron-down"></i></a></div>
+		<div class="go-to-row"> <a href="#skitser" class="button"><i class="fa fa-chevron-down"></i></a>&nbsp;<a href="#ide" class="go-to"> <i class="fa fa-chevron-up"></i> </a></div>
       <article>
         
         <div class="row">
@@ -479,7 +485,7 @@
       </article>
     </section>
     <section id="skitser">
-		<div class="go-to-row-overlay"> <a href="#beskrivelse" class="go-to"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#prototype" class="button"><i class="fa fa-chevron-down"></i></a></div>
+		<div class="go-to-row"> <a href="#prototype" class="button"><i class="fa fa-chevron-down"></i></a>&nbsp;<a href="#beskrivelse" class="go-to"> <i class="fa fa-chevron-up"></i> </a></div>
       <article>
         
         <div class="row">
@@ -499,7 +505,7 @@
     </section>
     
     <section id="prototype">
-		<div class="go-to-row-overlay"> <a href="#skitser" class="go-to"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#prototype" class="button"><i class="fa fa-chevron-down"></i></a></div>
+		<div class="go-to-row"> <a href="#skitser" class="go-to"> <i class="fa fa-chevron-up"></i> </a></div>
       <article>
         <div class="row">
           <div class="inner-column-l-1">
@@ -519,7 +525,7 @@
     <article>
       <div class="inner-column-l-1">
         <div class="go-to-row">
-          <div class="go-to wobble mums-rapport-hide-button"><i class="fa fa-chevron-left"></i></div>
+          <div class="go-to mums-rapport-hide-button"><i class="fa fa-chevron-left"></i></div>
           <embed id="mums" src="documents/MUMSProjektplan.pdf"> 
         </div>
       </div>
@@ -531,7 +537,7 @@
   <!-- Eksempler på tidligere hjemmesider -->
   <section id="eksempler"> 
     <!--SIDESCROLL TEST START-->
-    <div class="go-to-row"> <a href="#semester-1" class="go-to"> <i class="fa fa-chevron-up"></i> </a>&nbsp;<a href="#profil" class="button remowe-show"><i class="fa fa-chevron-down"></i></a></div>
+    <div class="go-to-row"> <a href="#profil" class="button remowe-show"><i class="fa fa-chevron-down"></i></a>&nbsp;<a href="#semester-1" class="go-to"> <i class="fa fa-chevron-up"></i> </a></div>
     <h1 class="uppercase">Tidligere arbejde
       <h1></h1>
     </h1>

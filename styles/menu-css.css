@@ -138,8 +138,8 @@ ul li a:hover {
 .askForm-open {
 	padding: 55px 210px;
 	left: 25px;
-	width: 80vh;
-	height: 80vh;
+	width: 90vh;
+	height: 90vh;
 	border: 3px solid rgba(255,255,255,1.0);
     border-radius: 50%;
 	background: rgba(2,25,114,0.90);
@@ -151,7 +151,9 @@ ul li a:hover {
 	top: 20px;
 	left: 120px;
 }
-
+.askForm-open form h2 {
+	text-align: center;
+}
 /* FORMULAR */
 
 #form_container {
@@ -164,7 +166,10 @@ input[type=text] {
 	padding: 12px 20px;
 	margin: 8px 0;
 	box-sizing: border-box;
-	font-size: 1.2em;
+	font-size: 1em;
+}
+.submit {
+	text-align: center;
 }
 .formContainer {
 	display: block;
@@ -244,7 +249,7 @@ textarea {
 	border-radius: 4px;
 	background-color: #f8f8f8;
 	resize: none;
-	font-size: 1.5em;
+	font-size: 1.2em;
 }
 
 
