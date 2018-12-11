@@ -26,13 +26,13 @@
 
 @keyframes puls {
     0% {
-        top: 44.8vh;
+        top: 46vh;
     }
     50% {
-        top: 46.8vh;
+        top: 48vh;
     }
     100% {
-        top: 44.8vh;
+        top: 46vh;
     }
 }
 .flow-dot-container {

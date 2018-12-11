@@ -317,25 +317,25 @@ height: 100px;
 }
 
 .blue {
-	background: rgba(34,115,240,0.50);
+	background: rgba(34,115,240,0.75);
 }
 .dark-blue {
-	background: rgba(2,25,114,0.50);
+	background: rgba(2,25,114,0.75);
 }
 
 .green {
-	background: rgba(38,165,28,0.50);
+	background: rgba(38,165,28,0.75);
 }
 
 .red {
-	background: rgba(251,0,0,0.50);
+	background: rgba(251,0,0,0.75);
 }
 
 .purple {
-	background: rgba(92,26,175,0.50);
+	background: rgba(92,26,175,0.75);
 }
 .brown {
-	background: rgba(72,32,16,0.50);
+	background: rgba(72,32,16,0.75);
 
 }
 .black {
