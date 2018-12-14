@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* CSS Document */
 
-/* Reset */
+/* Reset - Ikke den optimale måde, men effektivt og enkelt */
 * {
 	margin: 0;
 	padding: 0;
@@ -23,12 +23,15 @@ body {
 	color: rgba(255,255,255,1.00);
 	background-size: cover;
 }
+
+
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, a {
 	font-family: 'Trebuchet MS';
 	font-weight: 500;
 	line-height: 1.1;
 	text-decoration: none;
 	color: rgba(255,255,255,1.00);
+	transition: all 300ms ease-in-out;
 }
 p {
 	margin: 0 0 10px;
@@ -54,6 +57,21 @@ h4 {
 .uppercase {
 	text-transform: uppercase;
 }
+.center {
+	margin-top: 10px;
+	width: 100%;
+	text-align: center;
+}
+
+/* Effekt når indholde i tabs loades*/
+.tabcontent {
+  animation: fadeEffect 1s; 
+}
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 /* Main content */
 section {
 		min-height: 100vh;
@@ -71,16 +89,42 @@ article {/* Desktop */
 strong a{ 
   font-weight: bold;
 }
-/*figure {
-	display: inline-block;
-}*/
 .row {
+	width: 100%;
 	display: -ms-flexbox; /* IE 10 */
 	display: flex;
 	-ms-flex-wrap: wrap; /* IE 10 */
 	flex-wrap: wrap;
 	padding: 0 4px;
 	justify-content: space-between;
+}
+.tab {
+	display: -ms-flexbox; /* IE 10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE 10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+	justify-content: center;
+}
+.flow5-tab {
+	position: sticky;
+	top: 130px;
+	display: -ms-flexbox; /* IE 10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE 10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+	justify-content: center;
+}
+.flow5-tab .square-button, .tab .square-button, .tabinator .square-button {
+	font-size: 18px;
+	text-align: center;
+	margin: 0 10px;
+	line-height: 32px;
+	border-radius: 15px;
+}
+.flow5-tab .square-button {
+	background-color: rgba(25,110,18,1.00);
 }
 .button, .go-to, .square-button {
 	text-decoration: none;
@@ -95,8 +139,7 @@ strong a{
 	border: 3px solid rgba(255,255,255,1.00);
 	border-radius: 50%;
 	line-height: 47.6px;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.50);
-	
+	box-shadow: 0 2px 5px rgba(0,0,0,0.50);	
 }
 .square-button {
 	margin: 10px;
@@ -110,16 +153,15 @@ strong a{
 	font-size: 24px;
 	line-height: 47.6px;
 }
-.button:hover, .wobble:hover, .go-to:hover, .square-button:hover {
+.button:hover, .wobble:hover, .go-to:hover, .square-button:hover, .tab-active {
 	background-color: rgba(15, 91, 38, 0.75);
 }
-
-
-.go-to {
-	margin-top: 20px;
-	
+input#Formular01.button.square-button:hover {
+	background-color: rgba(245,83,11,0.75);
 }
-
+.go-to {
+	margin-top: 20px;	
+}
 .go-to-row, .go-to-row-overlay {
 	text-align: center;
 	z-index: 90;
@@ -127,8 +169,7 @@ strong a{
 	top: 0px;
 }
 .go-to-row-overlay {
-/*	margin-top: -100px;
-*/	height: 100px;
+	height: 100px;
 	z-index: 90;
 	background-color: rgba(0,0,0,0.40);
 }
@@ -137,7 +178,8 @@ strong a{
 	transition: all 300ms ease-in-out;
 }
 .link-on-hover a:hover {
-	background-color: rgba(255,255,255,0.40)
+	text-decoration: underline;
+	transition: all 300ms ease-in-out;
 }
 .column-l-1 {
 	width: 100%;
@@ -152,6 +194,29 @@ strong a{
 	position: relative;
 	width: 100%;
 	margin-top: 20px;
+}
+div.inner-column.round-image > a > img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: auto;
+}
+.inner-column-l-2 {
+	width: 48%;
+	margin-top: 15px;
+}
+.inner-column-l-1-3 {
+	width: 33%;
+	margin-top: 15px;
+}
+.inner-column-l-2-3 {
+	width: 64%;
+	margin-top: 15px;
+}
+.inner-column a img, .inner-column img, .inner-column-l-2 img {
+	width: 100%;
+	margin: auto;
 }
 .content-dot-xl, .content-dot-l, .content-dot-m, .content-dot-s {
 	margin: auto;
@@ -224,22 +289,7 @@ strong a{
 }
 
 
-div.inner-column.round-image > a > img {
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: auto;
-}
-.inner-column-l-2 {
-	width: 48%;
-	margin-top: 15px;
-}
 
-.inner-column a img, .inner-column img, .inner-column-l-2 img {
-	width: 100%;
-	margin: auto;
-}
 
 .orange-background {
 	background: rgba(245,83,11,1);
@@ -270,7 +320,7 @@ div.inner-column.round-image > a > img {
 #eksempler, #profil, #semester-1 {
 	text-align: center;
 }
-#opgave, #flow1, #flow2, #flow3, #flow4, #ide {
+#eksamen1, #flow1, #flow2, #flow3, #flow4, #ide {
 	position: relative;
 	margin: -100px 0 0;
 	
@@ -302,18 +352,33 @@ div.inner-column.round-image > a > img {
 	top: 29vh;
 	right: calc(50% + 46vh);
 }
+.eksamen3-sub {
+	position: absolute;
+    top: 49.5vh;
+    right: calc(50% + 32.5vh);
+}
+.eksamen4-sub {
+	position: absolute;
+    top: 49.5vh;
+    left: calc(50% + 6.5vh);
+}
 .eksamen5-sub {
 	position: absolute;
-	top: 5vh;
-	left: calc(50% + 15.5vh);
+    top: 29vh;
+    left: calc(50% + 20vh);
 }
 .eksamen6-sub {
 	position: absolute;
-	top: 29vh;
-	left: calc(50% + 20.5vh);
+    top: 5vh;
+    left: calc(50% + 16.5vh);
+}
+.eksamen7-sub {
+	position: absolute;
+    top: 62vh;
+    left: calc(50% - 10.5vh);
 }
 
-.eksamen1-container{
+/*.eksamen1-container{
 		position: absolute;
 	width: 100%;
 	
@@ -327,7 +392,8 @@ div.inner-column.round-image > a > img {
 	z-index: 99;
 	transform: scaleX(1);
 	transition: 1.0s;
-}
+	min-height: 350vh;
+}*/
 #opgave {
 	position: relative;
 	margin: -100px 0 0;
@@ -338,10 +404,9 @@ h3.grow-on-hover {
 }
 
 iframe {
-	margin: -12vh auto;
-	width: 100%;
-	height: 100vh;
-	transform: scale(0.75);
+	margin: 10px auto;
+    width: 100%;
+    height: 65vh;
 }
 /* 1. SEMESTER */
 
@@ -393,7 +458,7 @@ iframe {
 }
 
 
-.flow1-container, .flow2-container, .flow3-container, .flow4-container{
+.flow1-container, .flow2-container, .flow3-container, .flow4-container, .eksamen1-container {
 		position: absolute;
 	width: 100%;
 	
@@ -401,18 +466,21 @@ iframe {
 	left: 100vw;
 	transition: .8s;
 }
-.show-flow1, .show-flow2, .show-flow3, .show-flow4 {
+.show-flow1, .show-flow2, .show-flow3, .show-flow4, .show-eksamen1 {
 	width: 100%;
 	left: 0;
 	z-index: 99;
 	transform: scaleX(1);
 	transition: 1.0s;
-	min-height: 350vh;
+	min-height: 450vh;
 }
 
-/* 1. SEMESTER - FLOW 1*/
-
-
+/* 1. SEMESTER - FLOW 4*/
+.org-sweetbot-iframe {
+	width: 375px;
+	height: 667px; 
+}
+ 
 
 /* TIDLIGER PROJEKTER */
 
@@ -549,7 +617,7 @@ img.postit-image {
 	left: 100vw;
 	position: absolute;
 	width: 100%;
-	background: rgba(72,32,16,1.00);
+	background: rgba(55,35,20,1.00);
 	transition: .8s;
 }
 /*.up-cycling-hide {
@@ -589,7 +657,7 @@ img.skitser  {
 	left: -100vw;
 	position: absolute;
 	width: 100%;
-	background: rgba(72,32,16,1.00);
+	background: rgba(55,35,20,1.00);
 	transition: .8s;
 }
 /*.up-cycling-rapport-hide-button {
@@ -609,17 +677,21 @@ img.skitser  {
 	z-index: 99;
 	transform: scaleX(1);
 }
-#mums-rapport, #libhaver-rapport {
+#mums-rapport {
 	display: block;
 	padding: 20px;
 	margin: auto;
 	width: 90%;
 	height: 90vh;
 }
-#libhaver-rapport {
+
+
+.flow-rapport-portrait, .flow-rapport-landscape {
+	
+	display: block;
+	margin: 10px auto ;
 	width: 100%;
-	height: 45vh;
-    padding: 0;
+	height: 65vh;
 }
 /* All over element design */
 

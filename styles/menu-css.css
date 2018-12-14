@@ -56,7 +56,6 @@ ul li a:hover {
 	transition: 0.25s;
 }
  input[type="submit"], button::-moz-focus-inner {
- border: 0;
  outline: none;
 }
 .homeButton, .burgerMenuButton, .burgerAskButton {
@@ -143,6 +142,12 @@ ul li a:hover {
 	border: 3px solid rgba(255,255,255,1.0);
     border-radius: 50%;
 	background: rgba(15, 91, 38, 0.90);
+}
+@-moz-document url-prefix() {
+    .askForm-open {
+	padding: 45px 185px;
+	
+}
 }
 .askForm-open form {
 	display: block;

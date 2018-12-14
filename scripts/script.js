@@ -1,7 +1,10 @@
-// default script
+
+
 
 $(document).ready(function () {
 	"use strict";
+	
+	
 	function logoSwitch() {
 		$('.altLogo').each(function () {
 			$(this).css('top',
@@ -86,6 +89,7 @@ $(document).ready(function () {
 	
 	
 	$(".flow1-button").click(function () {
+		
 		$(".flow1-container").toggleClass("show-flow1");
 	});
 
@@ -101,8 +105,47 @@ $(document).ready(function () {
 		$(".flow4-container").toggleClass("show-flow4");
 	});
 	
+	//$(".flow5-button").click(function () {
+//		$(".eksamen1-container").toggleClass("show-eksamen1");
+//	});
+	
 	$(".eksamen1-button").click(function () {
 		$(".eksamen1-container").toggleClass("show-eksamen1");
 	});
 	
+	
+	
+	
+	
+	
+	$(".eksamen1-sub").click(function () {
+		$("#eksamen1-tab1").prop("checked", true);
+	});
+	$(".eksamen2-sub").click(function () {
+		$("#eksamen1-tab2").prop("checked", true);
+	});
+	$(".eksamen3-sub").click(function () {
+		$("#eksamen1-tab3").prop("checked", true);
+	});
+	$(".eksamen4-sub").click(function () {
+		$("#eksamen1-tab4").prop("checked", true);
+	});
+	$(".eksamen5-sub").click(function () {
+		$("#eksamen1-tab5").prop("checked", true);
+	});
+	$(".eksamen6-sub").click(function () {
+		$("#eksamen1-tab6").prop("checked", true);
+	});
+	$(".eksamen7-sub").click(function () {
+		$("#flow2-tab3").prop("checked", true);
+	});
+	
+	
+	
+	
+	
+	
+	
+	
+
 });
