@@ -36,6 +36,11 @@ $(document).ready(function () {
 		
 	});
 
+	$(".profil-besked").click(function () {
+		$(".askForm").toggleClass("askForm-open");
+		
+	});
+	
 	var scrollTop = 0;
   $(document).scroll(function(){
     scrollTop = $(window).scrollTop();

@@ -30,7 +30,7 @@
     <form id="kontaktMig" method="post"	 action="https://formspree.io/ole.hoj@gmail.com">
       <div class="form_description">
         <h2>Kontakt mig</h2>
-        <p>Har du spørgsmål eller ønsker at blive kontaktet, kan du sende mig en besked eller dit telefonnummer. </p>
+        <p>Har du spørgsmål eller ønsker du at blive kontaktet, kan du sende mig en besked og dit telefonnummer. </p>
       </div>
       <label class="description" for="InputNavn">Navn </label>
       <div>
@@ -53,7 +53,7 @@
         <span class="checkmark"></span> </label>
       <textarea id="InputBesked" placeholder="Skriv din besked her..." name="Besked"></textarea>
       <div class="submit">
-        <input id="Formular01" class="button square-button" type="submit" value="Submit" name="submit"/>
+        <input id="Formular01" class="button square-button" type="submit" value="Send" name="submit"/>
       </div>
     </form>
     
@@ -64,11 +64,11 @@
   <nav class="burgerMenu shadow">
     <button	class="burgerMenuButton"> <span></span> </button>
     <ul>
-      <li><a class="burgerLink remowe-show" href="#home">Min portfolio</a></li>
+      <li><a class="burgerLink remowe-show" href="#home">Introduktion</a></li>
       <li><a class="burgerLink remowe-show" href="#seneste">Seneste Projekt</a></li>
       <li><a class="burgerLink remowe-show" href="#semester-1">Flow Projekter - 1. Semester</a></li>
       <li><a class="burgerLink remowe-show" href="#eksempler">Tidligere Projekter</a></li>
-      <li><a class="burgerLink remowe-show" href="#profil">Min Profil</a></li>
+      <li><a class="burgerLink remowe-show" href="#profil">Hvem er Ole</a></li>
     </ul>
   </nav>
   <section id="home" class="header-sec zoomIn">
@@ -116,9 +116,33 @@
               <h3>design med fokus <br>
                 på formål og brugervenlighed</h3>
             </div>
+			<div class="slide-text-4">
+              <h2>Hvad er det her for noget?</h2>
+               <p>Dette er min portfolio af de flow projekter jeg har lavet på 1. semester af Multimediadesigner uddannelsen.</p>
+            </div>
           </div>
         </div>
-      </div>
+        <!--<div class="header-overlay-hover">
+          <div class="content-dot-xl">
+            <div class="slide-text-1">
+              <h1 > Webdesign </h1>
+              <h3>– inspireret af naturens funktioner, former og farver</h3>
+            </div>
+            <div class="slide-text-2">
+              <h1> Budskaber </h1>
+              <h3>– kommunikation målrettet brugersegmentet</h3>
+            </div>
+            <div class="slide-text-3">
+              <h1> Brugerflade </h1>
+              <h3>design med fokus <br>
+                på formål og brugervenlighed</h3>
+            </div>
+			<div class="slide-text-4">
+              <h3>Hvad er det her for noget?<br>
+                på formål og brugervenlighed</h3>
+            </div>
+          </div>
+        </div>-->      </div>
     </div>
     <div class="layoutbox-1"> <a href="#profil">
       <div class="header-image  grow-on-hover"> </div>
@@ -131,163 +155,278 @@
 <main> 
   <!-- ******************** EKSAMEN1 - Dokumentation ******************** -->
   <div class="eksamen1-container green-background">
-  <div class="go-to-row-overlay"> </div>
-  <section id="eksamen1">
-    <div class="go-to-row"> <span class="go-to remowe-show"><i class="fa fa-chevron-right"></i></span></div>
-    <h1 class="">Eksamensprojekt – 1. Semester 2018</h1>
-    <article>
-      <div class = "flow5-tab tabinator tab">
-        <input type = "radio" id = "eksamen1-tab1" name = "tabs5" checked>
-        <label class="square-button" for = "eksamen1-tab1">Refleksioner</label>
-        <input type = "radio" id = "eksamen1-tab2" name = "tabs5">
-        <label class="square-button" for = "eksamen1-tab2">Opgave</label>
-        <input type = "radio" id = "eksamen1-tab3" name = "tabs5">
-        <label class="square-button" for = "eksamen1-tab3">Projektplan</label>
-        <input type = "radio" id = "eksamen1-tab4" name = "tabs5">
-        <label class="square-button" for = "eksamen1-tab4">Designproces</label>
-        <input type = "radio" id = "eksamen1-tab5" name = "tabs5">
-        <label class="square-button" for = "eksamen1-tab5">Brugertest</label>
-        <input type = "radio" id = "eksamen1-tab6" name = "tabs5">
-        <label class="square-button" for = "eksamen1-tab6">Læring</label>
-        <div id="eksamen1-refleksioner" class="row tabcontent">
-			<div class="inner-column">
-            <h2>Refleksioner</h2>
+    <div class="go-to-row-overlay"> </div>
+    <section id="eksamen1">
+      <div class="go-to-row"> <a href="#seneste" class="go-to remowe-show"><i class="fa fa-chevron-right"></i></a></div>
+      <h1 class="">Eksamensprojekt – 1. Semester 2018</h1>
+      <article>
+        <div class = "flow5-tab tabinator tab">
+          <input type = "radio" id = "eksamen1-tab1" name = "tabs5" checked>
+          <label class="square-button" for = "eksamen1-tab1">Refleksion</label>
+          <input type = "radio" id = "eksamen1-tab2" name = "tabs5">
+          <label class="square-button" for = "eksamen1-tab2">Opgaven</label>
+          <input type = "radio" id = "eksamen1-tab3" name = "tabs5">
+          <label class="square-button" for = "eksamen1-tab3">Projektplan</label>
+          <input type = "radio" id = "eksamen1-tab4" name = "tabs5">
+          <label class="square-button" for = "eksamen1-tab4">Designvalg</label>
+          <input type = "radio" id = "eksamen1-tab5" name = "tabs5">
+          <label class="square-button" for = "eksamen1-tab5">Brugertest</label>
+          <input type = "radio" id = "eksamen1-tab6" name = "tabs5">
+          <label class="square-button" for = "eksamen1-tab6">Læring</label>
+          <div id="eksamen1-refleksioner" class="row tabcontent">
+            <div class="inner-column">
+              <h2>Refleksion over flow #5</h2>
+            </div>
+            <div class="inner-column-l-2 inner-column-l-1">
+              <p>Det er en pudsig oplevelse at skulle forholde sig til et igangværende projekt. Har jeg overhovedet gjort mig nogen tanker over processen? Da jeg gik i gang, var jeg fuld af forventning. Jeg havde hovedet fyldt med idéer, lidt af en luksus når man står på tærsklen af et nyt projekt – næ – ovenikøbet en nytænkning af et allerede eksisterende projekt, med de faldgruber det indebærer.</p>
+			  <p>Jeg kom friskt i gang dagen efter at vi var orienteret om projektet. Jeg sloges fra start med min trang til bare at kaste mig ud i at få materialiseret nogle af mine idéer. Men jeg havde jo lovet mig selv at prøve en mere ”professionel” tilgang til projektplanlægningen. Tvivlen ramte mig – er jeg overhovedet i stand til at gennemføre det her?</p>
+			  <p>Nu er det jo ikke fordi jeg ikke kan se værdien af en gennemarbejdet projektplan. Tværtimod har jeg selverkendelse nok til at vide, at jeg om nogen har brug for at have nogle rammer at arbejde inden for. Jeg er nemlig verdensmester i ”scope creeping”. </p>
+			  <p>Jeg fik mandet mig op og gik i gang med min PBS. Jeg havde bestemt mig for at prøve at skrive ”indkommende” design og kode idéer ned, i stedet for at prøve dem af med det samme, som jeg normalt har tendens til at gøre. Der gik ikke lang tid før mit skrivebord flød med sedler, med mere eller mindre utydelige notater. Men det virkede egentlig meget godt. Og selvom jeg ikke havde det fulde overblik og en fiks og færdig WBS og tidsplan på plads, da jeg gav mig selv lov til gå i gang med designprocessen, følte jeg mig alligevel bedre organiseret end nogen sinde før.</p>
+            </div>
+            <div class="inner-column-l-2 inner-column-l-1">
+              <figure><img src="images/skrivebord.jpg" alt="Mit skrivebord under arbejdet med denne portfolio"/>
+              <figcaption>Jeg valgte at arbejde hjemme, da faciliteterne bedre imødekommer min måde at arbejde på. Her et øjebliksbillede af mit skrivebord under arbejdet med min portfolio.</figcaption></figure>
+            </div>
           </div>
-          <div class="inner-column-l-2 inner-column-l-1">
-            <h3 >Formål</h3>
+          <!-- OPGAVE -->
+          <div id="eksamen1-opgave" class="row tabcontent">
+            <div class="inner-column">
+              <h2>Opgavebeskrivelse</h2>
+            </div>
+            <div class="inner-column-l-2 inner-column-l-1">
+              <h3 >Formål</h3>
+              <p>Formålet med portfolien er at præsentere og dokumentere dit faglige niveau og vise din faglige udvikling samt gøre dig bevidst om, hvad du har arbejdet med og hvad du har lært.</p>
+              <p>Det afsluttende eksamensprojekt på 1. semester har to fokusområder:</p>
+              <p>1. Komplet redesign af din  portfolio</p>
+              <p>2. Opdatering af portfoliens indhold</p>
+              <br>
+              <h3 >Redesign af nuværende portfolio</h3>
+              <p>Med udgangspunkt i det du har lært i løbet af 1. semester, skal du viderevikle det website, der udgør din nuværende portfolio.</p>
+              <p>Den nye portfolio skal fungere som udstillingsvindue for alt det du indtil nu har arbejdet med på uddannelsen, samt fremover kunne indeholde det arbejde du kommer til at udføre i løbet af de kommende semestre. Din portfolio er dit ansigt udadtil, der viser hvem du er, og hvad du kan over for virksomheder, studiekammerater, lærere mv.</p>
+            </div>
+            <div class="inner-column-l-2 inner-column-l-1">
+              <p>Udformningen af din nye portfolio skal demonstrere dine evner inden for fagområderne design og visualisering samt interaktionsudvikling. Dokumentation af udviklingen skal desuden demonstrere at du kan planlægge dit projekt bl.a. ved at udarbejde PBS, WBS og Gantt-kor</p>
+              <p>Det er vigtigt, at du tager nogle konkrete beslutninger i forhold til portfoliens visuelle udtryk (typografi, farver, layout, ikoner, evt logo samt stemning osv.), og at du forholder dig konsekvent i forhold til disse beslutninger.</p>
+              <p>Du skal altså både designe websitet og begrunde dine designvalg og designprincipper ud fra de modeller og  metoder du har lært i undervisningen. Designbeslutninger og -udvikling skal begrundes og være indeholdt i portfolien.</p>
+              <p>Du skal ligeledes kunne redegøre for, hvordan dit re-design tager udgangspunkt i en brugertest af portfolien.</p>
+              <p>Den tekniske del af arbejdet skal demonstrere, at du er i stand til at anvende de redskaber og metoder, som har været gennemgået i undervisningen.</p>
+              <p>Det er derfor et krav, at portfolien udvikles fra grunden uden brug af content management systemer eller CSS-frameworks af nogen art (eks. Wordpress, Bootstrap  og lignende).</p>
+            </div>
+            <div class="inner-column-l-2 inner-column-l-1  extra-topmargin">
+              <h3>Opdatering af portfoliens indhold</h3>
+              <h4>1. Portfolioudvikling</h4>
+              <p>Portfolien skal dokumentere den udviklingsproces, der ligger til grund for det nye portfoliodesign, projektplan-lægning, informationsarkitektur, designskitser, wirefra-mes, mockups etc. Altså skal portfolien indeholde udviklingsdokumentation „fortælle om sin egen tilblivelse” – som 1. semester eksamensprojekt.</p>
+              <h4>2. Dokumentation af tidligere projekter</h4>
+              <p>Portfolien skal præsentere og dokumentere resultatet af de 4 flowprojekter, som du har arbejdet med på semestret:</p>
+              <p>• Drøm din portfolio<br>
+                • Byg din portfolio<br>
+                • Byg en app<br>
+                • Byg Sweetbot responsive website</p>
+              <p>Der skal som minimum være link til:</p>
+              <p>• Projektbeskrivelsen<br>
+                • Den oprindelige løsning<br>
+                • Rapporter (hvor de er udarbejdet som en del af et projekt)</p>
+              <h4>3. Remake af tidligere opgaver</h4>
+              <p>Du skal nu forholde dig til de resultater du tidligere er nået frem til i de tidligere projekter.</p>
+              <p>De produkter og projektrapporter, du har afleveret individuelt eller som gruppe, skal nu have en hel eller delvis „make over”.</p>
+            </div>
+            <div class="inner-column-l-2 inner-column-l-1 extra-topmargin">
+              <p>Udgangspunktet skal være de kommentarer og den feedback, du har modtaget i forbindelse med de enkelte projekter.</p>
+              <p>Der kan også være løsninger, som du undervejs mente kunne være blevet anderledes. Dette skal nu udføres og implementeres i portfolien. Forbedringer vil desuden kunne bygge på dialog med en vejleder mv. Du er også velkommen til at præsentere andre/egne design- og medieløsninger i portfolien.</p>
+              <p>Der skal altså være link til:</p>
+              <p>• Den forbedrede løsning (udover tidligere nævnte link til den oprindelige løsning)</p>
+              <h4>4.Reflektioner over din læring</h4>
+              <p>Portfolien skal præsentere din læring på en måde så man direkte og kronologisk kan se din udvikling. Du må selvfølgelig linke fra opgaverne til læringsdelen af portfolien, men det er vigtigt at læring har sit eget område/placering i portfolien.</p>
+              <p>Refleksionsspørgsmål du kan bruge, når du arbejder med din læring:</p>
+              <p>• Hvad har jeg lært under forløbet?<br>
+                • Hvordan hænger det sammen med min forhåndskendskab til emnet og denne opgavetype?<br>
+                • Hvad forventede jeg at lære?<br>
+                • Hvad har jeg mere brug for at lære?<br>
+                • Hvad vil jeg foretage mig for at komme til at lære dette?</p>
+            </div>
+            <div class="inner-column-l-2 inner-column-l-1 extra-topmargin">
+              <h3>Skema</h3>
+              <p>Check skemaet på Timeedit om vejledning vedrørende de enkelte underviseres tilstedeværelse. </p>
+              <p>Ditlev: dsk@cphbusiness.dk<br>
+                Frederik: fdta@cphbusiness.dk<br>
+                Jesper: jhi@cphbusiness.dk<br>
+                Marc: klu@cphbusiness.dk<br>
+                Merete: mli@cphbusiness.dk<br>
+                Morten: moro@cphbusiness.dk</p>
+              <br>
+              <h3>Formalia</h3>
+              <p>Den enkelte studerende er ansvarlig for egen portfolio og den afleveres individuelt. Arbejdet med opdatering af indhold i flow 4 kan udføres helt eller delvist i den gruppe der oprindeligt udarbejdede projektet.</p>
+              <p>Alle punkter skal præsenteres i din portfolio. Dokumentationen af portfolioens udvikling skal være tilgængelig på portfolien som en integreret del af indholdet og/eller som link til dokument i PDF-format.</p>
+            </div>
+            <div class="inner-column-l-2 inner-column-l-1 extra-topmargin">
+              <h3>Aflevering</h3>
+              <p>Du afleverer projektet ved at uploade en pdf-fil med dit navn, din Cphbusiness e-mailadresse samt et link til din portfolio på Wiseflow.Portfolien skal uploades senest:</p>
+              <h4>21. december 2018, kl. 12:00.</h4>
+              <br>
+              <h3>1. semester eksamen</h3>
+              <p>Eksamen er mundtlig og finder sted den </p>
+              <h4>14 - 16 januar 2018.</h4>
+              <p>Eksamen har en varighed af 25 minutter – 5 min præsentation fra den studerende med efterfølgende 15 min. diskussion af portfolien og 5 min votering.</p>
+              <p>Skema for eksamensrækkefølge vil blive uploadet på Moodle i starten af januar 2019.</p>
+            </div>
           </div>
-          <div class="inner-column-l-2 inner-column-l-1">
-            <p>Udformningen.</p>
+          <div id="eksamen1-projekt" class="row tabcontent">
+            <div class="inner-column">
+              <h2>Projektplan</h2>
+            </div>
+     
+            <div class="inner-column">
+              <h3>Product Breakdown Structure</h3>
+              <img src="images/PBS.png" alt="PBS oversigt"/> </div>
+			  <div class="inner-column">
+				  <h3>Work Breakdown Structure</h3>
+				  <img src="images/WBS.png" alt="PBS oversigt"/> </div>
+            <div class="inner-column">
+              <h3 >Tidsplan</h3>
+				<img src="images/Asset 1.png" alt="PBS oversigt"/> </div>
+            </div>
+            
+            <div class="inner-column-l-2 inner-column-l-1"> </div>
+          
+          
+          <!-- DESIGN -->
+          
+          <div id="eksamen1-design" class="row tabcontent">
+            <div class="inner-column">
+              <h2>Designvalg</h2>
+            </div>
+            <div class="inner-column-l-2 inner-column-l-1">
+              <h3 >Navigationsdesign / informations arkitektur</h3>
+				<p>Med min PBS og WBS som udgangspunkt, begyndte jeg hele designprocesen med at tænke over sidens struktur og arkitektur.</p>
+              <h4>Formål:</h4>
+			  <p>•	Brugervenlig navigation<br>
+                •	Intuitiv navigation<br>
+                •	Enkel navigation<br>
+                •	Inspirerende navigation<br>
+                •	Logisk struktur i informationerne<br>
+              </p>
+              <h4>Målsætning:</h4>
+              <p>•	At kunne navigere uden brug af menuen<br>
+                •	At kunne navigere som om siden er en – enhed<br>
+                •	At navigationen viser brugeren rundt på siden<br>
+                •	At navigationen kan åbne/lukke, tænde/slukke for information<br>
+                •	At navigationen kan huske hvor bgrugerne var og kom fra<br>
+                •	At navigationen giver brugeren lyst til at udforske siden<br>
+                •	At navigationen leder brugeren til den forventede information </p>
+              
+				<p>Det er ikke uden udfordringer at lave en navigation der virker ”dynamisk” på en statisk side. Og da jeg ydermere havde truffet beslutning om at forfølge min oprindelige idé om at lave en ”one-page” side, var jeg tvunget til at søge nye veje i forhold til hvad jeg tidligere har lavet.</p>
+				<p>Jeg er overordnet endt med at være godt tilfreds med resultatet. Selvom jeg har måtte gå på kompromis med en række løsninger, er jeg lykkedes med at få indfriet de fleste målsætninger. </p>
+            </div>
+            <div class="inner-column-l-2 inner-column-l-1"> <img src="images/Sitemap.png" alt="Sitemap"/> 
+			  </div>
+			<div class="inner-column-l-2 inner-column-l-1">
+              <h3 >Visuelt design</h3>
+				<p>Med en plan for struktur og navigation, var turen kommet til at overveje det visuelle udtryk. Planen var at være tro over for mine oprindelige tanker.</p>
+              <h4>Formål:</h4>
+              <p>•	Organisk udtryk<br>
+                •	Dynamisk udtryk<br>
+                •	Personligt udtryk
+              </p>
+              <h4>Målsætning:</h4>
+              <p>•	At skabe opmærksomhed<br>
+                •	At skabe interesse for budskabet<br>
+                •	At skabe et ønske om at udforske<br>
+                •	At få brugeren til at søge informationer<br>
+                •	At brugeren føler sig underholdt<br>
+                •	At der er en rød tråd gennem siden</p>
+				<p>Jeg begyndte med at lave skitsere de idéer jeg havde. De runde former skulle være et gennemgående tema og skabe det organiske og dynamiske udtryk jeg havde planer om. Herefter lagde jeg mig fast på hvilke farver jeg ville bruge og begyndte af finde baggrundsbilleder. Jeg lavede også nogle muckups i af forskellige skærmstørrelser, for at afprøve om mine idéer holdt vand.</p>
+				<h3>Typografi</h3>
+				<p>Jeg følte at former, faver og billeder skabte tilstrækkeligt med visuelle virkemidler, og traf derfor et sikkert omend lidt kedeligt valg af typografi. Verdana kunne læses på de farverige baggrunder og er tilgængelig på stort set alle platforme. </p>
+            </div>
+            <div class="inner-column-l-2 inner-column-l-1"> 
+				<figure><img src="images/tidlige-skitser.jpg" alt="Eksempler på tidlige skitser"/><figcaption>Eksempler på nogle af de tidlige skitser</figcaption></figure>
+				<figure><img src="images/muckup.png" alt="Eksempler på muckups"/><figcaption>Eksempler på muckups</figcaption></figure> </div>
+            <div class="inner-column-l-2 inner-column-l-1">
+              <h3>Farvevalg</h3>
+              <p>Jeg har valgt rene/klare farver da de skaber liv og opmærksomhed. Samtidig har hver af farverne en symbolik/signalværdi som jeg har ønsket at gøre brug af:</p>
+              <div class="color-dark-green"></div>
+              <p>&nbsp;rgba (15, 91, 38, 1.00) – Mørk grøn</p>
+              <p>Med den mørkegrønne farve ønsker jeg at symboliserer: Håb, fornyelse og fornuft. </p>
+              <div class="color-light-green"></div>
+              <p>&nbsp;rgba (50, 35, 20, 1.00) – Lys grøn</p>
+              <p>Med den lysegrønne farve ønsker jeg at symboliserer: Fornyelse og friskhed. </p>
+              <div class="color-brown"></div>
+              <p>&nbsp;rgba (50, 35, 20, 1.00) – Brun</p>
+              <p>Med den brune farve ønsker jeg at symboliserer: Stabilitet, grobund og udholdenhed. </p>
+              <div class="color-dark-blue"></div>
+              <p>&nbsp;rgba (2,25,114, 1.00) – Mørk blå</p>
+              <p>Med den mørkeblå farve ønsker jeg at symboliserer: Ro og kvalitet. </p>
+              <div class="color-white"></div>
+              <div class="color-gray"></div>
+              <div class="color-black"></div>
+              <p>&nbsp;Hvid – Grå – Sort</p>
+              <p>Jeg valgte at benytte sort, hvid og gråtoner til afsnittet om mig selv. Dels for at nedtone denne sektion i forhold til, at meningen med min portfolio snare er at vise mine kompetencer end at vise mig selv frem. Samtidig signalerer S/H visdom og elegance.</p>
+            </div>
+            <div class="inner-column-l-2 inner-column-l-1 extra-topmargin">
+              <div class="color-orange"></div>
+              <p>&nbsp;rgba (245,83,11, 1.00) – Orange</p>
+              <p>Med den orange farve ønsker jeg at symboliserer, at flow1 var fyldt med glæde over at komme i gang med en ny uddannelse og det gå på mod der fulgte med denne. </p>
+              <div class="color-light-blue"></div>
+              <p>&nbsp;rgba (34,115,240, 1.00) – Lys blå</p>
+              <p>Med den lyseeblå farve ønsker jeg at symboliserer, at der i flow 2 var mere overskud til koncentration og fordybelse. </p>
+              <div class="color-red"></div>
+              <p>&nbsp;rgba (251,0,0, 1.00) – Rød</p>
+              <p>Med den røde farve ønsker jeg at symboliserer, at vi i flow 3 nu var fuld gan og at aktiviteten var høj. </p>
+              <div class="color-purple"></div>
+              <p>&nbsp;rgba (92,26,175, 1.00) – Lilla</p>
+              <p>Med den lilla farve ønsker jeg at symboliserer, at jeg i flow 4 følte en smule uro over at afgive kontrol men også muligheden for at give fantasien fri løb, på det område der interessere mig mest. </p>
+              <figure><img src="images/Color-Scheme.png" alt="Farveskema for projektet"/>
+                <figcaption>Illustration af farvernes primære funktioner</figcaption>
+              </figure>
+            </div>
+            <div class="inner-column-l-2 inner-column-l-1">
+              <h3 >Billedvalg</h3>
+              <p>Jeg har valgt at benytte naturbilleder alle de steder hvor billederne bliver brugt som baggrunde/dekoration. Årsagen er at jeg primært finder min inspiration i naturen og at de både skaber den stemning jeg ønsker og sender et signal om hvem jer er.</p>
+              <p>Billederne er udvalgt ud fra følgende kriterier:</p>
+              <p>•	Billederne på ”landingssiden” er valg ud fra farverne, der i vidt omfang repræsenterer hele portfolioen. Vandliljen signalerer ting der folder sig ud, de flydende blade – at dette kun er overfladen og svampene – at det du ser, også findes når du ikke lige kan se det.</p>
+              <p>•	Billedet på ”seneste projekt - flow 5 siden” er valg ud fra at farven og at et topskud signalerer noget nyt og friskt.</p>
+              
+              <p>•	Billedet på ”1. semester siden” er valg ud fra farverne, den grønne signalerer en ny uddannelse og den røde signalerer høj aktivitet, og at og at motivet signalerer at 1 semester var et efterårssemester.</p>
+              <p>•	Billedet på ”tidligere projekter siden” er valg ud fra at farven og motivet, der signalerer grobunden og det der har været.</p>
+              <p>•	Billedet på ”profil siden” er valg ud fra at farven og motivet, der signalerer viljestyrke, balance og noget der er flygtigt og foranderligt.</p>
+              <p>Alle billederne er downloadet fra pixabay.com under følgende licens: CC0 Creative Commons – Gratis for kommerciel brug og Ingen navngivelse påkrævet.</p>
+            </div>
           </div>
-		  </div>
-        <div id="eksamen1-opgave" class="row tabcontent">
-          <div class="inner-column">
-            <h2>Opgavebeskrivelse</h2>
+          <div id="eksamen1-test" class="row tabcontent">
+            <div class="inner-column">
+              <h2>Brugertest</h2>
+				
+
+            </div>
+            <div class="inner-column-l-2 inner-column-l-1">
+				<h3>Pre-design test</h3>
+              <p>Jeg havde inde jeg gik i gang med re-designet af min portfolio, foretaget to ”tænke højt test” på min eksisterende portfolio fra flow2. Ikke at jeg fik specielt mange brugbare data ud af dem. Men jeg fik dog bekræftet det jeg havde lært af den feedback jeg havde fået på flow 2 projektet og måske vigtigst af alt – der var muligheder i de runde former, som var værd at arbejde videre med.</p>
+				<h3>Midtvejs test</h3>
+<p>Jeg havde bevidst fravalgt at lave en kortsorteringstest. Jeg frygtede at den kunne lede mig på vildspor i forhold til den idé jeg havde, og som jeg troede fuldt og fast på. I stedet besluttede jeg at lave en midtvejs ”tænke højt test” når struktur og navigation var nogenlunde på plads. Det viste sig at fungere godt og jeg var efterfølgende vældig tilfreds med resultatet. Min testperson kom rundt i alle kroge af siden og havde spontant lagt mærke til og rost, nogle af de mere specielle løsninger jeg havde lavet.</p>
+            </div>
+            <div class="inner-column-l-2 inner-column-l-1">
+              <p>Udformningen.</p>
+            </div>
           </div>
-          <div class="inner-column-l-2 inner-column-l-1">
-            <h3 >Formål</h3>
-            <p>Formålet med portfolien er at præsentere og dokumentere dit faglige niveau og vise din faglige udvikling samt gøre dig bevidst om, hvad du har arbejdet med og hvad du har lært.</p>
-            <p>Det afsluttende eksamensprojekt på 1. semester har to fokusområder:</p>
-            <p>1. Komplet redesign af din  portfolio</p>
-            <p>2. Opdatering af portfoliens indhold</p>
-            <br>
-            <h3 >Redesign af nuværende portfolio</h3>
-            <p>Med udgangspunkt i det du har lært i løbet af 1. semester, skal du viderevikle det website, der udgør din nuværende portfolio.</p>
-            <p>Den nye portfolio skal fungere som udstillingsvindue for alt det du indtil nu har arbejdet med på uddannelsen, samt fremover kunne indeholde det arbejde du kommer til at udføre i løbet af de kommende semestre. Din portfolio er dit ansigt udadtil, der viser hvem du er, og hvad du kan over for virksomheder, studiekammerater, lærere mv.</p>
-          </div>
-          <div class="inner-column-l-2 inner-column-l-1">
-            <p>Udformningen af din nye portfolio skal demonstrere dine evner inden for fagområderne design og visualisering samt interaktionsudvikling. Dokumentation af udviklingen skal desuden demonstrere at du kan planlægge dit projekt bl.a. ved at udarbejde PBS, WBS og Gantt-kor</p>
-            <p>Det er vigtigt, at du tager nogle konkrete beslutninger i forhold til portfoliens visuelle udtryk (typografi, farver, layout, ikoner, evt logo samt stemning osv.), og at du forholder dig konsekvent i forhold til disse beslutninger.</p>
-            <p>Du skal altså både designe websitet og begrunde dine designvalg og designprincipper ud fra de modeller og  metoder du har lært i undervisningen. Designbeslutninger og -udvikling skal begrundes og være indeholdt i portfolien.</p>
-            <p>Du skal ligeledes kunne redegøre for, hvordan dit re-design tager udgangspunkt i en brugertest af portfolien.</p>
-            <p>Den tekniske del af arbejdet skal demonstrere, at du er i stand til at anvende de redskaber og metoder, som har været gennemgået i undervisningen.</p>
-            <p>Det er derfor et krav, at portfolien udvikles fra grunden uden brug af content management systemer eller CSS-frameworks af nogen art (eks. Wordpress, Bootstrap  og lignende).</p>
-          </div>
-          <div class="inner-column-l-2 inner-column-l-1  extra-topmargin">
-            <h3>Opdatering af portfoliens indhold</h3>
-            <h4>1. Portfolioudvikling</h4>
-            <p>Portfolien skal dokumentere den udviklingsproces, der ligger til grund for det nye portfoliodesign, projektplan-lægning, informationsarkitektur, designskitser, wirefra-mes, mockups etc. Altså skal portfolien indeholde udviklingsdokumentation „fortælle om sin egen tilblivelse” – som 1. semester eksamensprojekt.</p>
-            <h4>2. Dokumentation af tidligere projekter</h4>
-            <p>Portfolien skal præsentere og dokumentere resultatet af de 4 flowprojekter, som du har arbejdet med på semestret:</p>
-            <p>• Drøm din portfolio<br>
-              • Byg din portfolio<br>
-              • Byg en app<br>
-              • Byg Sweetbot responsive website</p>
-            <p>Der skal som minimum være link til:</p>
-            <p>• Projektbeskrivelsen<br>
-              • Den oprindelige løsning<br>
-              • Rapporter (hvor de er udarbejdet som en del af et projekt)</p>
-            <h4>3. Remake af tidligere opgaver</h4>
-            <p>Du skal nu forholde dig til de resultater du tidligere er nået frem til i de tidligere projekter.</p>
-            <p>De produkter og projektrapporter, du har afleveret individuelt eller som gruppe, skal nu have en hel eller delvis „make over”.</p>
-          </div>
-          <div class="inner-column-l-2 inner-column-l-1 extra-topmargin">
-            <p>Udgangspunktet skal være de kommentarer og den feedback, du har modtaget i forbindelse med de enkelte projekter.</p>
-            <p>Der kan også være løsninger, som du undervejs mente kunne være blevet anderledes. Dette skal nu udføres og implementeres i portfolien. Forbedringer vil desuden kunne bygge på dialog med en vejleder mv. Du er også velkommen til at præsentere andre/egne design- og medieløsninger i portfolien.</p>
-            <p>Der skal altså være link til:</p>
-            <p>• Den forbedrede løsning (udover tidligere nævnte link til den oprindelige løsning)</p>
-            <h4>4.Reflektioner over din læring</h4>
-            <p>Portfolien skal præsentere din læring på en måde så man direkte og kronologisk kan se din udvikling. Du må selvfølgelig linke fra opgaverne til læringsdelen af portfolien, men det er vigtigt at læring har sit eget område/placering i portfolien.</p>
-            <p>Refleksionsspørgsmål du kan bruge, når du arbejder med din læring:</p>
-            <p>• Hvad har jeg lært under forløbet?<br>
-              • Hvordan hænger det sammen med min forhåndskendskab til emnet og denne opgavetype?<br>
-              • Hvad forventede jeg at lære?<br>
-              • Hvad har jeg mere brug for at lære?<br>
-              • Hvad vil jeg foretage mig for at komme til at lære dette?</p>
-          </div>
-          <div class="inner-column-l-2 inner-column-l-1 extra-topmargin">
-            <h3>Skema</h3>
-            <p>Check skemaet på Timeedit om vejledning vedrørende de enkelte underviseres tilstedeværelse. </p>
-            <p>Ditlev: dsk@cphbusiness.dk<br>
-              Frederik: fdta@cphbusiness.dk<br>
-              Jesper: jhi@cphbusiness.dk<br>
-              Marc: klu@cphbusiness.dk<br>
-              Merete: mli@cphbusiness.dk<br>
-              Morten: moro@cphbusiness.dk</p>
-            <br>
-            <h3>Formalia</h3>
-            <p>Den enkelte studerende er ansvarlig for egen portfolio og den afleveres individuelt. Arbejdet med opdatering af indhold i flow 4 kan udføres helt eller delvist i den gruppe der oprindeligt udarbejdede projektet.</p>
-            <p>Alle punkter skal præsenteres i din portfolio. Dokumentationen af portfolioens udvikling skal være tilgængelig på portfolien som en integreret del af indholdet og/eller som link til dokument i PDF-format.</p>
-          </div>
-          <div class="inner-column-l-2 inner-column-l-1 extra-topmargin">
-            <h3>Aflevering</h3>
-            <p>Du afleverer projektet ved at uploade en pdf-fil med dit navn, din Cphbusiness e-mailadresse samt et link til din portfolio på Wiseflow.Portfolien skal uploades senest:</p>
-            <h4>21. december 2018, kl. 12:00.</h4>
-            <br>
-            <h3>1. semester eksamen</h3>
-            <p>Eksamen er mundtlig og finder sted den </p>
-            <h4>14 - 16 januar 2018.</h4>
-            <p>Eksamen har en varighed af 25 minutter – 5 min præsentation fra den studerende med efterfølgende 15 min. diskussion af portfolien og 5 min votering.</p>
-            <p>Skema for eksamensrækkefølge vil blive uploadet på Moodle i starten af januar 2019.</p>
+          <div id="eksamen1-laering" class="row tabcontent">
+            <div class="inner-column">
+              <h2>Læring</h2>
+            </div>
+            <div class="inner-column-l-2 inner-column-l-1">
+              <p>Det er svært at vurdere hvad jeg har lært i flow 5, da det i skrivende stund ikke rigtigt er nået at bundfælde sig endnu. En ting er dog helt sikkert – jeg har både hvad angår design og kode bevæget mig ud i ukendt terræn med dette projekt. Og det har resulteret i en masse nye erfaringer.</p> 
+<p>Jeg er også blevet klogere på nogle af mine egne styrker og svagheder. Med klogere mener jeg, at jeg har oplevet nye sider af mig selv og på nogle områder har rykket mig, i den rigtige retning, mens jeg på andre områder har måtte erkende at jeg falder i de samme huller, som jeg er kravlet op af så mange gange før.</p>
+
+            </div>
+			  
+            <div class="inner-column-l-2 inner-column-l-1">
+              <div class="inner-column">
+              <h2>Plads til forbedringer</h2>
+            </div>
+            </div>
           </div>
         </div>
-        <div id="eksamen1-projekt" class="row tabcontent">
-          <div class="inner-column">
-            <h2>Projektplan</h2>
-          </div>
-          <div class="inner-column-l-2 inner-column-l-1">
-            <h3 >Formål</h3>
-          </div>
-          <div class="inner-column-l-2 inner-column-l-1">
-            <p>Udformningen.</p>
-          </div>
-        </div>
-		<div id="eksamen1-design" class="row tabcontent">
-          <div class="inner-column">
-            <h2>Designproces</h2>
-          </div>
-          <div class="inner-column-l-2 inner-column-l-1">
-            <h3 >Formål</h3>
-          </div>
-          <div class="inner-column-l-2 inner-column-l-1">
-            <p>Udformningen.</p>
-          </div>
-        </div>
-		<div id="eksamen1-test" class="row tabcontent">
-          <div class="inner-column">
-            <h2>Brugertest</h2>
-          </div>
-          <div class="inner-column-l-2 inner-column-l-1">
-            <h3 >Formål</h3>
-          </div>
-          <div class="inner-column-l-2 inner-column-l-1">
-            <p>Udformningen.</p>
-          </div>
-        </div>
-		<div id="eksamen1-laering" class="row tabcontent">
-          <div class="inner-column">
-            <h2>Læring</h2>
-          </div>
-          <div class="inner-column-l-2 inner-column-l-1">
-            <h3 >Formål</h3>
-          </div>
-          <div class="inner-column-l-2 inner-column-l-1">
-            <p>Udformningen.</p>
-          </div>
-        </div>
-      </div>
-    </article>
-  </section>
+      </article>
+    </section>
   </div>
   
   <!-- ******************** SENESTE PROJEKT - SIDE START ******************** -->
@@ -295,16 +434,16 @@
     <div class="go-to-row"> <a href="#semester-1" class="button remowe-show"><i class="fa fa-chevron-down"></i></a>&nbsp;<a href="#" class="go-to remowe-show"> <i class="fa fa-chevron-up"></i> </a></div>
     <div class="semester-description">
       <div class="eksamen1-sub"><a href="#eksamen1" class="content-dot-l black grow-on-hover remowe-show eksamen1-button">
-        <h3>Intro &amp; Refleksion</h3>
+        <h3>Refleksion</h3>
         </a> </div>
       <div class="eksamen2-sub"> <a href="#eksamen1" class="content-dot-l black grow-on-hover remowe-show eksamen1-button">
-        <h3>Opgave-beskrivelse</h3>
+        <h3>Opgaven</h3>
         </a> </div>
       <div class="eksamen3-sub"><a href="#eksamen1" class="content-dot-l black grow-on-hover remowe-show eksamen1-button">
         <h3>Projektplan</h3>
         </a> </div>
       <div class="eksamen4-sub"><a href="#eksamen1" class="content-dot-l black grow-on-hover remowe-show eksamen1-button">
-        <h3>Designproces</h3>
+        <h3>Designvalg</h3>
         </a> </div>
       <div class="eksamen5-sub"><a href="#eksamen1" class="content-dot-l black grow-on-hover remowe-show eksamen1-button">
         <h3>Brugertest</h3>
@@ -340,9 +479,9 @@
       <article>
         <div class = "tabinator tab">
           <input type = "radio" id = "flow1-tab1" name = "tabs1" checked>
-          <label class="square-button" for = "flow1-tab1">Refleksioner</label>
+          <label class="square-button" for = "flow1-tab1">Refleksion</label>
           <input type = "radio" id = "flow1-tab2" name = "tabs1">
-          <label class="square-button" for = "flow1-tab2">Opgave</label>
+          <label class="square-button" for = "flow1-tab2">Opgaven</label>
           <input type = "radio" id = "flow1-tab3" name = "tabs1">
           <label class="square-button" for = "flow1-tab3">Løsning</label>
           <input type = "radio" id = "flow1-tab4" name = "tabs1">
@@ -351,7 +490,7 @@
           <label class="square-button" for = "flow1-tab5">Læring</label>
           <div id="flow1-refleksioner" class="row tabcontent">
             <div class="inner-column-l-2 inner-column-l-1">
-              <h2>Refleksioner over flow #1</h2>
+              <h2>Refleksion over flow #1</h2>
               <p>Efter at have ”rodet” ganske lidt med Adobe XD, traf jeg en beslutning om at løse flowopgaven ved at lave min prototype som et Joomla site. Årsagen var at jeg så flere begrænsninger end muligheder, ved at benytte XD.</p>
               <p>Efterfølgende har jeg indset at XD’s begrænsninger, et langt stykke hen ad vejen også er dets styrke. XD rummer således mulighed for at afprøve forskellige design- og navigationsidéer af, uden at være begrænset af hvad jeg selv er i stand til at kode.</p>
             </div>
@@ -392,7 +531,7 @@
             </div>
             <div class="inner-column-l-2 inner-column-l-1">
               <h2>Feedback på opgaven</h2>
-              <p>Det var den første gang vi skulle præsentere en flowopgave og det var tydeligt at der var en spændt stemning. Jeg har lavet præsentationer mange gang, professionelt, i undervisningssituationer og som underviser, så jeg meldte mig gladeligt som den første. </p>
+              <p>Det var den første gang vi skulle præsentere en flowopgave og det var tydeligt at der var en spændt stemning. Jeg har lavet præsentationer mange gang, professionelt, i forbindelse med uddannelse og som underviser, så jeg meldte mig gladeligt som den første. </p>
               <p>Jeg gennemgik det jeg havde lavet og nogle af tankerne bag udtrykket, farvevalg m.m. Jeg havde en fornemmelse af at det gik meget godt, og havde et svar parat på de spørgsmål som Ditlev og Marc stillede. MEN det var kun indtil Marc spurgte om jeg ville vise dem koden. Det ville jeg som sådan gerne, men forklarede at siden var en Joomla CMS-side og at koden derfor ville have en vis kompleksitet. </p>
               <p>Jeg skal da lige love for at piben fik en anden lyd. Marc var på ingen måde imponeret og mente at det nærmest var snyd at benytte et CMS-system. Han fik dog pulsen lidt ned igen da jeg forklarede at jeg selv havde designet og lavet skabelonen, om end jeg havde fået hjælp fra et skabelon værktøj (Themler), til at generere koden. Jeg oplevede det som om at mine medstuderende syntes at det var meget fedt, det jeg havde lavet.</p>
             </div>
@@ -459,7 +598,7 @@
   </div>
   
   <!-- ******************** FLOW 2 ******************** -->
-  <div class="flow2-container purple-background">
+  <div class="flow2-container blue-background">
     <div class="go-to-row-overlay"> </div>
     <section id="flow2">
       <div class="go-to-row"><a href="#semester-1"  class="go-to remowe-show"><i class="fa fa-chevron-right"></i></a></div>
@@ -474,23 +613,23 @@
           <div> <a href="#" class="square-button">Re-design</a></div>
         </div>-->
         <div class = "tabinator tab">
-          <input type = "radio" id = "flow2-tab1" name = "tabs2tabs3" checked>
-          <label class="square-button" for = "flow2-tab1">Refleksioner</label>
-          <input type = "radio" id = "flow2-tab2" name = "tabs2tabs3">
-          <label class="square-button" for = "flow2-tab2">Opgave</label>
-          <input type = "radio" id = "flow2-tab3" name = "tabs2tabs3">
+          <input type = "radio" id = "flow2-tab1" name = "tabs2" checked>
+          <label class="square-button" for = "flow2-tab1">Refleksion</label>
+          <input type = "radio" id = "flow2-tab2" name = "tabs2">
+          <label class="square-button" for = "flow2-tab2">Opgaven</label>
+          <input type = "radio" id = "flow2-tab3" name = "tabs2">
           <label class="square-button" for = "flow2-tab3">Løsning</label>
-          <input type = "radio" id = "flow2-tab4" name = "tabs2tabs3">
+          <input type = "radio" id = "flow2-tab4" name = "tabs2">
           <label class="square-button" for = "flow2-tab4">Repository</label>
-          <input type = "radio" id = "flow2-tab5" name = "tabs2tabs3">
+          <input type = "radio" id = "flow2-tab5" name = "tabs2">
           <label class="square-button" for = "flow2-tab5">Læring</label>
           <div> <a href="#" class="square-button">Re-design</a></div>
           <div id="flow2-refleksioner" class="row tabcontent">
             <div class="inner-column-l-2 inner-column-l-1">
-              <h2>Refleksioner over flow #2</h2>
-              <p>Da jeg så flowopgaven til flow #2 var min tanke umiddelbart, at det ville jeg komme rimeligt nemt om ved. Prototypen jeg havde lavet i flow #1 var jo en fuldt funktionsdygtig hjemmeside og den lå allerede online. Jeg skulle således ”bare lige” opdaterer den med en profil-side og oprette et repository på GitHub.</p>
+              <h2>Refleksion over flow #2</h2>
+              <p>Da jeg så flowopgaven til flow 2 var min tanke umiddelbart, at det ville jeg komme rimeligt nemt om ved. Prototypen jeg havde lavet i flow 1 var jo en fuldt funktionsdygtig hjemmeside og den lå allerede online. Jeg skulle således ”bare lige” opdaterer den med en ”profil side” og oprette et repository på GitHub.</p>
               <p>Men næ nej – så nemt skulle det naturligvis ikke være. Jeg havde jo fået lidt på puklen over at have lavet ”prototypen” i et CMS system, så det blev gjort meget klart at opgaven skulle løses, udelukkende med HTML og CSS.</p>
-              <p>Normalt er jeg jo ”ikke” stædig, men fanden to ved mig og jeg besluttede at gøre et forsøg på at kode en side der lignede min prototype. Det skulle vise sig at give en del udfordringer. Jeg besluttede mig desuden for at give min portfolio et lidt mere personligt præ, i form af profil-siden.</p>
+              <p>Normalt er jeg jo ”ikke” stædig, men fanden tog ved mig og jeg besluttede at gøre et forsøg på at kode en side der lignede min prototype. Det skulle vise sig at give en del udfordringer. Jeg besluttede mig desuden for at give min portfolio et lidt mere personligt præ, i form af profil-siden.</p>
             </div>
             <div class="inner-column-l-2 inner-column-l-1"><br>
               <figure><img src="images/org-profil-screendump.JPG" alt="Portfolio - Min Profil"/>
@@ -539,16 +678,16 @@
           </div>
           <div id="flow2-laering" class="row tabcontent">
             <div class="inner-column-l-2 inner-column-l-1" >
-              <h2>Læring i dette flow</h2>
+              <h2>Læring i flow 2</h2>
               <p>I lighed med flow 1 – har jeg tidligere beskæftiget mig med de emner som vi havde i flow 2. Det var således ikke nyt for mig at arbejde med HTML 5 og CSS 3 i Dreamweaver. Og upload til web-hotel med FTP har jeg gjort et utal af gange, mens jeg kun har snuset til GitHub.</p>
               <p>Nu er det muligt at jeg nogle gange tager tingene lidt for bogstaveligt. Men når jeg får til opgave at genskabe en tabel fra Word i HTML og CSS, og der står at den skal komme så tæt på som muligt, så forsøger jeg at lave det ”pixel-perfect”. Det var lærerigt om end det tog sin tid.</p>
-              <p>At jeg havde arbejdet en del med HTML og CSS tidligere, betød at jeg havde oversku til at assistere nogle af mine medstuderende. For mig er det en god måde at lære på. Dels fordi at jeg er nødt til at formulere en given problemstilling på en måde som andre tå og dels fordi at jeg bliver stillet over for nogle problemer som jeg ikke selv har oplevet.</p>
+              <p>At jeg havde arbejdet en del med HTML og CSS tidligere, betød at jeg havde overskud til at assistere nogle af mine medstuderende. For mig er det en god måde at lære på. Dels fordi at jeg er nødt til at formulere en given problemstilling på en måde som andre forstår og dels fordi at jeg bliver stillet over for nogle problemer som jeg ikke selv har oplevet.</p>
               <p>Jeg oplevede det desuden som vældigt givtigt at få opdateret noget ”design-teori” i form af AIDA og CRAP modellerne og gestalt-lovene.</p>
             </div>
-			<div class="inner-column-l-2 inner-column-l-1">
+            <div class="inner-column-l-2 inner-column-l-1">
               <h2>Feedback på opgaven</h2>
               <p>Jeg struttede af selvtillid da jeg skulle præsentere den ”nye” version af min portfolio. Nu havde jeg chancen for at bevise at jeg var i stand til at kode min prototype fra bunden. Det udløste da også en smule anerkendelse.</p>
-              <p>Det visuelle indtryk var der helt bevidst ikke ændret ved. Bortset fra profilsiden, der var en ny tilføjelse i forhold til prototypen. Mit forsøg på at personliggøre siden ved at gå i en helt anden retning med ”profil siden” blev isoleret set modtaget positivt. Men det var helt fair at jeg fik kritik for at den visuelt var stukket noget af, i forhold til resten af siden.</p>
+              <p>Det visuelle indtryk var der helt bevidst ikke ændret ved. Bortset fra ”profil siden”, der var en ny tilføjelse i forhold til prototypen. Mit forsøg på at personliggøre siden ved at gå i en helt anden retning med ”profil siden” blev isoleret set modtaget positivt. Men jeg fik, hvilket var helt fair, en del kritik for at den var stukket noget af i forhold til resten af siden.</p>
               <p>Siden fungerede som sådan meget godt med det indhold der var på nuværende tidspunkt. Men der blev stillet spørgsmål til, hvor godt den ville fungere når der kom yderligere indhold på.</p>
             </div>
           </div>
@@ -573,9 +712,9 @@
         </div>-->
         <div class = "tabinator tab">
           <input type = "radio" id = "flow3-tab1" name = "tabs3" checked>
-          <label class="square-button" for = "flow3-tab1">Refleksioner</label>
+          <label class="square-button" for = "flow3-tab1">Refleksion</label>
           <input type = "radio" id = "flow3-tab2" name = "tabs3">
-          <label class="square-button" for = "flow3-tab2">Opgave</label>
+          <label class="square-button" for = "flow3-tab2">Opgaven</label>
           <input type = "radio" id = "flow3-tab3" name = "tabs3">
           <label class="square-button" for = "flow3-tab3">Løsning</label>
           <input type = "radio" id = "flow3-tab4" name = "tabs3">
@@ -586,9 +725,10 @@
           <label class="square-button" for = "flow3-tab6">Re-design</label>
           <div id="flow3-refleksioner" class="row tabcontent">
             <div class="inner-column-l-2 inner-column-l-1">
-              <h2>Refleksioner over dette flow</h2>
-              <p>Efter at have ”rodet” ganske lidt med Adobe XD, traf jeg en beslutning om at løse flowopgaven ved at lave min prototype som et Joomla site. Årsagen var at jeg så flere begrænsninger end muligheder, ved at benytte XD.</p>
-              <p>Efterfølgende har jeg indset at XD’s begrænsninger, et langt stykke hen ad vejen også er dets styrke. XD rummer således mulighed for at afprøve forskellige design- og navigationsidéer af, uden at være begrænset af hvad jeg selv er i stand til at kode.</p>
+              <h2>Refleksion over flow #3</h2>
+              <p>Ikoner, symbolik, typografi, farverteori og logo-design. Alt sammen emner som jeg holder meget af og har beskæftiget mig en lidt med tidligere. Det var dermed næsten uundgåeligt at flow 3 ville blive et højdepunkt i første semester. </p>
+              <p>Tænk hvis men en dag kunne ramme hovedet på sømmet og designe et ikon eller logo, der ville symbolisere en genstand, en stemning, en følelse, en funktion eller en handling. Et index som mennesker i generationer fremover ville kunne se og forstå, uden en nærmere forklaring. Så ville man vel nærmest være udødeliggjort.</p>
+              <p>Og da det så blev krydret med målgruppesegmentering og brugertest, som jeg i høj grad betragter som nogle af grundstenene for at kunne lykkedes med at lave et godt brugerfladedesign, hvilket er hvad jeg brænder efter at beskæftige mig med i fremtiden, så kunne det kun gå hen at blive et helt igennem fantastisk flow. </p>
             </div>
             <div class="inner-column-l-2 inner-column-l-1"><br>
               <figure><img src="images/bolig-app-prototype.png" alt="Bolig-app prototype"/>
@@ -628,12 +768,11 @@
                 • 5 point for aflevering af app prototype i Adobe XD<br>
                 • 5 points for deltagelse i præsentationsdagen</p>
               <p>Flowet afsluttes med en fælles præsentationsdag, hvor vi vurderer og diskuterer løsninger i plenum. Du vil desuden få en kort skriftlig kommentar på Moodle. Har du brug for yderligere feedback, kommentarer eller forslag til din portfolio, kan du kontakte underviserne efterfølgende.</p>
-              <br>
             </div>
           </div>
           <div id="flow3-loesning" class="row tabcontent">
             <div class="link-on-hover center"><a  href="https://xd.adobe.com/view/888ca4b0-43ea-4b5a-6f90-6154c0f7ed9c-febd/?fullscreen" target="_blank">Åben prototypen i et nyt faneblad <i class="fa fa-external-link" aria-hidden="true"></i></a></div>
-            <iframe width="375" height="667" src="https://xd.adobe.com/embed/888ca4b0-43ea-4b5a-6f90-6154c0f7ed9c-febd/?fullscreen" frameborder="0" allowfullscreen></iframe>
+            <iframe width="375" height="667" src="https://xd.adobe.com/embed/888ca4b0-43ea-4b5a-6f90-6154c0f7ed9c-febd/?fullscreen"  allowfullscreen></iframe>
           </div>
           <div id="flow3-rapport" class="row tabcontent">
             <div class="link-on-hover center"><a  href="documents/RapportLiebhaverBoligerApp.pdf" target="_blank">Åben rapporten i et nyt faneblad <i class="fa fa-external-link" aria-hidden="true"></i></a></div>
@@ -641,20 +780,26 @@
           </div>
           <div id="flow3-laering" class="row tabcontent">
             <div class="inner-column-l-2 inner-column-l-1">
-              <h2>Læring i dette flow</h2>
-              <p>De emner vi har beskæftiget os med i flow 1, er alle sammen emner jeg tidligere er blevet undervist i og har arbejdet med på Web-integrator uddannelsen. I mit tidligere erhverv som grafiker, har jeg desuden arbejdet en del med Photoshop.</p>
-              <p>Det til trods, fandt jeg det yderst berigende at gennemse flere af de Lynda tutorials om Photoshop, der var linket til i flow 1. Jeg blev bevidst om hvor meget jeg har at lære om Photoshop og fik genopfrisket en del af de helt grundlæggende funktioner.</p>
-              <p>Ligeledes er jeg ved at læse i ” Designing for the Web” af Mark Boulton, blevet bekræftet i at des mere man lære, des mere står det klart, hvor meget man ikke ved. </p>
+              <h2>Læring i flow #3</h2>
+              <p>Flow 3 var ubetinget det flow jeg, ind til videre, havde fået mest ud af. Jeg har en smule viden om brugertest fra tidligere og har selv deltaget i en fokusgruppe for Erhvervs og Selskabsstyrelsen. Men det var meget begrænset hvor meget jeg havde benyttet det på egne projekter.</p>
+              <p>Det har således været lærerigt at opleve, hvordan en kortsorteringstest allerede i idé og udviklingsfasen kan være med til at spore mig i den rigtige retning i arbejdet med navigationsdesign og informations arkitektur. Tilsvarende har både ”gangster test” og ”tænke højt test” vist sig meget værdifulde til at blive be- eller afkræftet i de forestillinger jeg selv måtte have, om hvordan brugeren oplever og navigererr på en given side.</p>
+              <p>I den forbindelse har jeg måtte sluge en kamel. Om jeg ligefrem har set lyset i Adobe XD er måske nok lige at stramme den, men jeg er ikke længere i tvivl om fornuften i at lave test på en prototype, inden jeg bruger for meget tid på en endelig produktion. </p>
+            </div>
+            <div class="inner-column-l-2 inner-column-l-1">
+              <h2>Feedback på opgaven</h2>
+              <p>Jeg følte at jeg var nået meget godt i mål med mange af de tanker jeg havde gjort mig da jeg skulle idéudvikle min app. Det skulle være en liebhaver bolig app. Mere specifikt – skulle det være en app, der indeholdte en kombination af de bedste søgemuligheder og funktioner, fra eksisterende app’s og boligportaler.</p>
+              <p>Jeg så derfor frem til at vise hvad jeg var kommet op med. Det var en fin præsentation, hvor jeg fik vist og fortalt om de tanker jeg havde gjort mig. Der var enkelte spørgsmål og en del positive tilbagemeldinger fra mine medstuderende og specielt en udmelding om at funktionen til at skjule uinteressant boliger, gjorde mig helt opløftet.</p>
+              <p>Jeg var via en sidste øjebliks brugertest, blevet brutalt bevist om at selve søgeknappen var skræmmende anonym, grænsende til det usynlige. Og det undgik naturligvis heller ikke Frederiks opmærksomhed. Han påpegede desuden at den grå farve på flere af funktionskapperne, kunne opfattes som om at de var inaktive. Jeg fik efterfølgende en fin kritik af den vedlagte rapport. </p>
             </div>
           </div>
           <div id="flow3-re-design" class="row tabcontent">
             <div class="inner-column-l-1-3 inner-column-l-1">
               <div class="link-on-hover center"><a  href="https://xd.adobe.com/view/c3edcdb7-47d6-412a-6ad4-c4a3852a6d7a-b5dc/?fullscreen" target="_blank">Åben "phone" prototypen i et nyt faneblad <i class="fa fa-external-link" aria-hidden="true"></i></a></div>
-              <iframe width="375" height="667" src="https://xd.adobe.com/embed/c3edcdb7-47d6-412a-6ad4-c4a3852a6d7a-b5dc/?fullscreen" frameborder="0" allowfullscreen></iframe>
+              <iframe width="375" height="667" src="https://xd.adobe.com/embed/c3edcdb7-47d6-412a-6ad4-c4a3852a6d7a-b5dc/?fullscreen" allowfullscreen></iframe>
             </div>
             <div class="inner-column-l-2-3 inner-column-l-1">
               <div class="link-on-hover center"><a  href="https://xd.adobe.com/view/fadb09dd-435e-4b6b-792a-e40949827541-8cea/?fullscreen" target="_blank">Åben "tablet" prototypen i et nyt faneblad <i class="fa fa-external-link" aria-hidden="true"></i></a></div>
-              <iframe width="1024" height="768" src="https://xd.adobe.com/embed/fadb09dd-435e-4b6b-792a-e40949827541-8cea/?fullscreen" frameborder="0" allowfullscreen></iframe>
+              <iframe width="1024" height="768" src="https://xd.adobe.com/embed/fadb09dd-435e-4b6b-792a-e40949827541-8cea/?fullscreen" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -665,7 +810,7 @@
   <div class="flow4-container purple-background">
     <div class="go-to-row-overlay"> </div>
     <section id="flow4">
-      <div class="go-to-row"> <a href="#flow4-laering" class="button"><i class="fa fa-chevron-down"></i></a>&nbsp;<a href="#semester-1"  class="go-to remowe-show"><i class="fa fa-chevron-right"></i></a></div>
+      <div class="go-to-row"><a href="#semester-1"  class="go-to remowe-show"><i class="fa fa-chevron-right"></i></a></div>
       <h1>Flow #4 – Sweetbot.design</h1>
       <article> 
         <!--<div class="tab">
@@ -679,9 +824,9 @@
         
         <div class = "tabinator tab">
           <input type = "radio" id = "flow4-tab1" name = "tabs4" checked>
-          <label class="square-button" for = "flow4-tab1">Refleksioner</label>
+          <label class="square-button" for = "flow4-tab1">Refleksion</label>
           <input type = "radio" id = "flow4-tab2" name = "tabs4">
-          <label class="square-button" for = "flow4-tab2">Opgave</label>
+          <label class="square-button" for = "flow4-tab2">Opgaven</label>
           <input type = "radio" id = "flow4-tab3" name = "tabs4">
           <label class="square-button" for = "flow4-tab3">Løsning</label>
           <input type = "radio" id = "flow4-tab4" name = "tabs4">
@@ -692,13 +837,14 @@
           <label class="square-button" for = "flow4-tab6">Re-design</label>
           <div id="flow4-refleksioner" class="row tabcontent">
             <div class="inner-column-l-2 inner-column-l-1 extra-topmargin">
-              <h2>Refleksioner over flow #4</h2>
-              <p>Efter at have ”rodet” ganske lidt med Adobe XD, traf jeg en beslutning om at løse flowopgaven ved at lave min prototype som et Joomla site. Årsagen var at jeg så flere begrænsninger end muligheder, ved at benytte XD.</p>
-              <p>Efterfølgende har jeg indset at XD’s begrænsninger, et langt stykke hen ad vejen også er dets styrke. XD rummer således mulighed for at afprøve forskellige design- og navigationsidéer af, uden at være begrænset af hvad jeg selv er i stand til at kode.</p>
+              <h2>Refleksion over flow #4</h2>
+              <p>Det kan både være en befrielse og en forbandelse, når man får en styleguide som man skal holde sig til. I dette tilfælde var det både og. En forbandelse fordi vi i dette tilfælde var låst til et farvevalg, der i sin kombination lå langt fra hvad jeg normalt ville arbejde med. Og en befrielse fordi det gav mulighed for at fokusere mere på navigationsdesignet end det visuelle. Det ville jo alligevel komme til at se rædderligt ud.</p>
+              <p>Når det så er sagt, ville præsentationsdage gå hen og vise hvor forskelligt et udtryk man kan ende op med, selvom man har samme udgangspunkt. Og jeg må da indrømme at jeg så noget fra de andre grupper, der æstetisk langt overgik det resultat vi var kommet op med.</p>
+              <p>Men vores fokus havde som sagt mere været på at skabe en velfungerende brugerfladen og en kommunikationsform, der hang sammen med den stil vi havde lagt og den målgruppe vi ville prøve at ramme. Så måtte udfoldelsen af vores kunstneriske evner vente til en anden gang. Og det lykkedes egentlig meget godt.</p>
             </div>
             <div class="inner-column-l-2 inner-column-l-1 extra-topmargin"><br>
-              <figure><img src="images/portfolio-prototype-responcive.png" alt="Portfolio prototype"/>
-                <figcaption>Portfolio prototype lavet i som Joomla CMS site.</figcaption>
+              <figure><img src="images/sweetbot-skitser.png" alt="Skitser af design til mobiltelefon"/>
+                <figcaption>De første skitser – til mobil venligt web-design.</figcaption>
               </figure>
             </div>
           </div>
@@ -733,7 +879,7 @@
           </div>
           <div id="flow4-loesning" class="row tabcontent">
             <div class="link-on-hover center"><a  href="https://school.ohigh.dk/sweetbot/" target="_blank">Åben sweetbot i et nyt faneblad <i class="fa fa-external-link" aria-hidden="true"></i></a></div>
-            <iframe class="org-sweetbot-iframe" src="https://school.ohigh.dk/sweetbot/" frameborder="0" allowfullscreen></iframe>
+            <iframe class="org-sweetbot-iframe" src="https://school.ohigh.dk/sweetbot/" allowfullscreen></iframe>
           </div>
           <div id="flow4-rapport" class="row tabcontent">
             <div class="link-on-hover center"><a  href="documents/Sweetbot-rapport.pdf" target="_blank">Åben rapporten i et nyt faneblad <i class="fa fa-external-link" aria-hidden="true"></i></a></div>
@@ -741,20 +887,26 @@
           </div>
           <div id="flow4-laering" class="row tabcontent">
             <div class="inner-column-l-2 inner-column-l-1">
-              <h2>Læring i dette flow</h2>
-              <p>De emner vi har beskæftiget os med i flow 1, er alle sammen emner jeg tidligere er blevet undervist i og har arbejdet med på Web-integrator uddannelsen. I mit tidligere erhverv som grafiker, har jeg desuden arbejdet en del med Photoshop.</p>
-              <p>Det til trods, fandt jeg det yderst berigende at gennemse flere af de Lynda tutorials om Photoshop, der var linket til i flow 1. Jeg blev bevidst om hvor meget jeg har at lære om Photoshop og fik genopfrisket en del af de helt grundlæggende funktioner.</p>
-              <p>Ligeledes er jeg ved at læse i ” Designing for the Web” af Mark Boulton, blevet bekræftet i at des mere man lære, des mere står det klart, hvor meget man ikke ved. </p>
+              <h2>Læring i flow #4</h2>
+              <p>I dette flow var de specielt to emner der fangede min opmærksomhed. Design brief og projektplanlægning. Det skyldes formentligt at det er områder hvor jeg er klar over at jeg har nogle åbenlyse svagheder. Det var således positivt at få nogle konkrete værktøjer og metoder til dels at tilgå en designproces mere analytisk og ikke mindst til at strukturere planlægningen af et projekt.</p>
+              <p>Om jeg ligefrem har lært noget nyt i forhold til at indgå i et samarbejde om udarbejdelse af et projekt, ved jeg nu ikke. Men i dette projekt blev jeg meget bevidst om styrken ved at udnytte gruppens forskellige kompetencer. Omvendt blev jeg også bekræftet i at jeg bruger relativ mange resurser på at få samarbejdet til at fungere, resurser som jeg dybest set heller ville bruge på selve projektet.</p>
+              <p>Det var dog rat at opleve at jeg er blevet væsentlig bedre til at lægge de ting fra mig, som andre i gruppen har påtaget sig, og efterfølgende acceptere at de er blevet løst anderledes end jeg selv ville have gjort.</p>
+            </div>
+            <div class="inner-column-l-2 inner-column-l-1">
+              <h2>Feedback på opgaven</h2>
+              <p>Vi skulle præsentere det resultat som vi var nået frem til, som gruppe. Noget vi med fordel kunne have lagt en plan for – men det havde vi ikke. Det gik vel egentlig meget godt alligevel og vi fik fremhævet de ting vi havde haft fokus på.</p>
+              <p>Overordnet høstede vi roser for vores lidt alternative navigation og vores velovervejede valg af kommunikationsform.  Vi havde et langt stykke hen ad vejen holdt os inden for de grænser der var udstukket i styleguiden og havde bevist truffet nogle designvalg, der kunne begrundes med vores forestilling om målgruppen.</p>
+              <p>Eneste anke var at et af vores ikoner faldt lidt ved siden af, i forhold til vores begrundelse for valg af henholdsvis runde og firkantede former. Derudover skulle vi være beviste om at måden vi brugte ”logoet” på i vores navigation, udfordrede nogle af de uskrevne konventioner, der er almindeligt anerkendt.</p>
             </div>
           </div>
           <div id="flow4-re-design" class="row tabcontent">
             <div class="inner-column-l-1-3 inner-column-l-1">
               <div class="link-on-hover center"><a  href="https://xd.adobe.com/view/c3edcdb7-47d6-412a-6ad4-c4a3852a6d7a-b5dc/?fullscreen" target="_blank">Åben "phone" prototypen i et nyt faneblad <i class="fa fa-external-link" aria-hidden="true"></i></a></div>
-              <iframe width="375" height="667" src="https://xd.adobe.com/embed/c3edcdb7-47d6-412a-6ad4-c4a3852a6d7a-b5dc/?fullscreen" frameborder="0" allowfullscreen></iframe>
+              <iframe width="375" height="667" src="https://xd.adobe.com/embed/c3edcdb7-47d6-412a-6ad4-c4a3852a6d7a-b5dc/?fullscreen" allowfullscreen></iframe>
             </div>
             <div class="inner-column-l-2-3 inner-column-l-1">
               <div class="link-on-hover center"><a  href="https://xd.adobe.com/view/fadb09dd-435e-4b6b-792a-e40949827541-8cea/?fullscreen" target="_blank">Åben "tablet" prototypen i et nyt faneblad <i class="fa fa-external-link" aria-hidden="true"></i></a></div>
-              <iframe width="1024" height="768" src="https://xd.adobe.com/embed/fadb09dd-435e-4b6b-792a-e40949827541-8cea/?fullscreen" frameborder="0" allowfullscreen></iframe>
+              <iframe width="1024" height="768" src="https://xd.adobe.com/embed/fadb09dd-435e-4b6b-792a-e40949827541-8cea/?fullscreen" allowfullscreen></iframe>
             </div>
           </div>
         </div>
@@ -765,7 +917,7 @@
   <section id="semester-1">
     <div class="go-to-row"> <a href="#eksempler" class="button remowe-show"><i class="fa fa-chevron-down"></i></a>&nbsp;<a href="#seneste" class="go-to remowe-show"> <i class="fa fa-chevron-up"></i> </a></div>
     <div class="semester-description">
-      <div class="content-dot-l purple flow1-sub">
+      <div class="content-dot-l orange flow1-sub">
         <div class="">
           <p>Photoshop<br>
             Adobe XD<br>
@@ -774,7 +926,7 @@
             Designteori</p>
         </div>
       </div>
-      <div class="content-dot-l orange flow2-sub">
+      <div class="content-dot-l blue flow2-sub">
         <div class="">
           <p>Dreamweaver<br>
             HTML 5/CSS 3<br>
@@ -792,7 +944,7 @@
             Brugertest</p>
         </div>
       </div>
-      <div class="content-dot-l blue flow4-sub">
+      <div class="content-dot-l purple flow4-sub">
         <div class="">
           <p>Style guide<br>
             Visuel identitet<br>
@@ -819,10 +971,10 @@
       </div>
     </div>
     <div class="flow-dot-container">
-      <div class="flow1-dot semester-dot "><a href="#flow1" class="semester-dot-button button purple remowe-show flow1-button">Flow #1</a></div>
-      <div class="flow2-dot semester-dot "><a href="#flow2" class="semester-dot-button button orange remowe-show flow2-button">Flow #2</a></div>
+      <div class="flow1-dot semester-dot "><a href="#flow1" class="semester-dot-button button orange remowe-show flow1-button">Flow #1</a></div>
+      <div class="flow2-dot semester-dot "><a href="#flow2" class="semester-dot-button button blue remowe-show flow2-button">Flow #2</a></div>
       <div class="flow3-dot semester-dot "><a href="#flow3" class="semester-dot-button button red remowe-show flow3-button">Flow #3</a></div>
-      <div class="flow4-dot semester-dot "><a href="#flow4" class="semester-dot-button button blue remowe-show flow4-button">Flow #4</a></div>
+      <div class="flow4-dot semester-dot "><a href="#flow4" class="semester-dot-button button purple remowe-show flow4-button">Flow #4</a></div>
     </div>
   </section>
   
@@ -983,7 +1135,69 @@
   </section>
   
   <!-- **************************************** Profil og Kontakt **************************************** -->
-  <section id="profil"> <a href="#eksempler" class="go-to"> <i class="fa fa-chevron-up"></i> </a>
+  <section id="profil"> 
+	  <div class="go-to-row"> <a href="#eksempler" class="go-to remowe-show"><i class="fa fa-chevron-up"></i></a>      </div>
+    <article>
+<div class = "tabinator tab">
+          <input type = "radio" id = "profil-tab1" name = "tabs6">
+          <label class="content-dot-l black profil-mig grow-on-hover" for = "profil-tab1"><h3>Hvem er<br>
+Ole</h3></label>
+          <input type = "radio" id = "profil-tab2" name = "tabs6">
+          <label class="content-dot-l black profil-baggrund grow-on-hover" for = "profil-tab2"><h3>Min<br>
+baggrund</h3></label>
+          <input type = "radio" id = "profil-tab3" name = "tabs6">
+          <label class="content-dot-l black profil-fritid grow-on-hover" for = "profil-tab3"><h3>Min<br>
+fritid</h3></label>
+          <input type = "radio" id = "profil-tab4" name = "tabs6">
+          <label class="content-dot-l black profil-kontakt grow-on-hover" for = "profil-tab4"><h3>Fang<br>
+mig på</h3></label>
+          <input type = "radio" id = "profil-tab5" name = "tabs6" checked>
+          <label class="content-dot-m black profil-besked grow-on-hover" for = "profil-tab5"><h3>Send mig en besked</h3></label>
+          <div id="profil-mig" class="content-dot-xl black tabcontent profil-content">
+            <p>• Jeg er positiv.<br>
+• Jeg værdsætter samarbejde og sparring med andre.<br>
+• Jeg er videbegærlig og bliver motiveret af at skulle tilegne mig nye kompetencer.<br>
+
+
+• Jeg er løsningsorienteret,<br>
+
+engageret, vedholden,<br>
+
+loyal og fleksibel.</p>
+			  
+          </div>
+          <div id="profil-baggrund" class="content-dot-xl black tabcontent profil-content">
+			  
+            <p>• Jeg har mere end 20 års erfaring med grafisk produktion og formidling.<br>
+• Jeg er vant til at finde kreative løsninger, når jeg bliver stillet en udfordring.<br>
+• Jeg har en uddannelse som Web-integrator.</p>
+
+			  
+          </div>
+          <div id = "profil-fritid" class="content-dot-xl black tabcontent profil-content">
+           <p>•	Bruger jeg på hunde.<br>
+Dels med træning af mine egne labradorer og som hundeinstruktør.<br>
+•	Derudover både spiller jeg og lytter en del til – musik.<br>
+•	Og så er jeg stor nyder af malt whisky.</p>
+			  
+          </div>
+          <div id = "profil-kontakt" class="content-dot-xl black tabcontent profil-content">
+           
+			  <h3>Kollensøvej 8,<br>
+3550 Slangerup<br><br>
+eller telefon:<br>
+
++45 40 29 22 21</h3>
+          </div>
+          <div id = "profil-besked" class="content-dot-xl black tabcontent profil-content">
+            
+			  <div class="header-image-profil"> </div>
+          </div>
+        </div>
+    </article>
+  </section>
+	
+	<!--<section id="profil"> <a href="#eksempler" class="go-to"> <i class="fa fa-chevron-up"></i> </a>
     <h1 class="hide-on-desktop uppercase">Profil &amp;<br>
       kontakt </h1>
     <article>
@@ -1029,7 +1243,7 @@
       <p>Kollensøvej • Buresø • 3550 Slangerup</p>
       </address>
     </article>
-  </section>
+  </section>-->
 </main>
 <!--<script>
 	function openTab(evt, activeTab) {

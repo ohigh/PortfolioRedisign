@@ -43,7 +43,7 @@ h1 {
 	text-align: center;
 }
 h2 {
-	margin: 10px 0 10px;
+	margin: 5px 0 10px;
 	font-size: 36px;
 }
 h3 {
@@ -62,7 +62,14 @@ h4 {
 	width: 100%;
 	text-align: center;
 }
-
+figure {
+	margin: 20px auto;
+	max-width: 550px;
+	height: auto;
+}
+figcaption {
+	font-style: italic;
+}
 /* Effekt når indholde i tabs loades*/
 .tabcontent {
   animation: fadeEffect 1s; 
@@ -119,7 +126,7 @@ strong a{
 .flow5-tab .square-button, .tab .square-button, .tabinator .square-button {
 	font-size: 18px;
 	text-align: center;
-	margin: 0 10px;
+	margin: 5px 10px;
 	line-height: 32px;
 	border-radius: 15px;
 }
@@ -279,8 +286,8 @@ div.inner-column.round-image > a > img {
 .round-image {
 	position: relative;
 	margin: auto;
-	max-width: 100%;
-	padding-top: 100%;
+	max-width: 90%;
+	padding-top: 90%;
 	border: 3px solid rgba(255,255,255,1.00);
 	border-radius: 50%;
 	box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.5);
@@ -407,6 +414,48 @@ iframe {
 	margin: 10px auto;
     width: 100%;
     height: 65vh;
+	border: 0;
+}
+.color-dark-green, .color-light-green, .color-dark-blue, .color-light-blue, .color-brown, 
+.color-orange, .color-red, .color-purple, .color-black, .color-gray, .color-white  {
+	width: 30px;
+	height: 30px;
+	border: 2px solid #fff;
+	border-radius: 100%;
+	float: left;
+}
+.color-dark-green {
+	background-color: rgba(15,91,38,1.00);
+}
+.color-light-green {
+	background-color: rgba(38,165,28,1.00);
+}
+.color-dark-blue {
+	background-color: rgba(2,25,114,1.00);
+}
+.color-white {
+	background-color: white;
+}
+.color-gray {
+	background-color: gray;
+}
+.color-black {
+	background-color: black;
+}
+.color-light-blue {
+	background-color: rgba(34,115,240,1.00);
+}
+.color-orange {
+	background-color: rgba(245,83,11,1.00);
+}
+.color-red {
+	background-color: rgba(251,0,0,1.00);
+}
+.color-purple {
+	background-color: rgba(92,26,175,1.00);
+}
+.color-brown {
+	background-color: rgba(50, 35, 20,1.00);
 }
 /* 1. SEMESTER */
 
@@ -418,28 +467,32 @@ iframe {
 }
 
 
-.semester-header {
+.semester-header, .profil-content {
 	position: absolute;
 	top: 2vh;
 	left: 50%;
 	transform: translate(-50%);
 }
-.flow1-sub {
+.profil-content {
+	border-radius: 100%;
+	padding: 50px 55px;
+}
+.flow1-sub, .profil-mig {
 	position: absolute;
 	top: 5vh;
 	right: calc(50% + 20.5vh);
 }
-.flow2-sub {
+.flow2-sub, .profil-baggrund {
 	position: absolute;
 	top: 29vh;
 	right: calc(50% + 16.5vh);
 }
-.flow3-sub {
+.flow3-sub, .profil-fritid {
 	position: absolute;
 	top: 5vh;
 	left: calc(50% + 20.5vh);
 }
-.flow4-sub {
+.flow4-sub, .profil-kontakt {
 	position: absolute;
 	top: 29vh;
 	left: calc(50% + 16.5vh);
@@ -447,7 +500,7 @@ iframe {
 .flow5-sub-load {
 	animation: fade-dot 1s;
 }
-.flow5-sub {
+.flow5-sub, .profil-besked {
 	position: absolute;
 	left: calc(50% - 10.5vh);
 	transition: all .2s ease-in-out;
@@ -489,7 +542,7 @@ iframe {
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
-	background-image: url(../images/raindrop-3402550_1920.jpg); 
+	background-image: url(../images/forest-opt.jpg); 
 }
 
 
@@ -518,12 +571,16 @@ iframe {
 
 /* Min Profil*/
 #profil {
-	background-image: url(../images/Baggrund_1_ny.jpg);
+	background-image: url(../images/dandelion-opt.jpg);
+		background-size: cover;
+
 	background-repeat: no-repeat;
-	background-size: 2050px;
 	background-position: top;
 }
-#profil h1 {
+#profil > article{
+	margin-top: 10vh;
+}
+/*#profil h1 {
 	padding: 10px 100px;
 	font-family: 'The Girl Next Door', cursive;
 	font-size: 48px;
@@ -608,7 +665,7 @@ img.postit-image {
 #profil .inner-column.profile-col-con, #profil .inner-column.profile-col-int {
 	margin: 20px 0 0 20px;
 	line-height: 32px;
-}
+}*/
 /* Up-Cycling*/
 
 .up-cycling-rapport {
@@ -735,11 +792,31 @@ img.skitser  {
  transform: translate3d(0, 0, 0);
 }
 }
-.wobble {
+
+.latest-work-dot, .flow1-work-dot, .flow2-work-dot, .flow3-work-dot, .flow4-work-dot , .semester1-work-dot, .early-work-dot  {
 	-webkit-animation-name: wobble;
 	animation-name: wobble;
-	animation-duration: 1s;
-	animation-delay: 1s;
+	animation-duration: 1.5s;
+	animation-delay: 2s;
+}
+.flow1-work-dot {
+
+	animation-delay: 6.5s;
+}.flow2-work-dot {
+
+	animation-delay: 8s;
+}.flow3-work-dot {
+
+	animation-delay: 9.5s;
+}.flow4-work-dot {
+
+	animation-delay: 11s;
+}.semester1-work-dot {
+
+	animation-delay: 5s;
+}
+.early-work-dot {
+	animation-delay: 3.5s;
 }
 /* Responciv design */
 
