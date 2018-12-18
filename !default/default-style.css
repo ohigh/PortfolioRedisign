@@ -80,121 +80,6 @@ figcaption {
 	overflow: hidden;
 	transition: all 300ms ease-in-out;
 }
-/* ---------- TABS & KNAPPER ----------*/
-
-/* Effekt når indholde i tabs loades*/
-.tabcontent {
-	animation: fadeEffect 1s;
-}
-@keyframes fadeEffect {
- from {
-opacity: 0;
-}
- to {
-opacity: 1;
-}
-}
-/* Vis / skjul indhold i tabs */
-.tabinator input {
-	display: none;
-}
-.tabinator input:checked + label {
-	background-color: rgba(0,0,0,0.25);
-}
-#flow1-refleksioner, #flow1-opgave, #flow1-loesning, #flow1-rapport, #flow1-laering, #flow2-refleksioner, #flow2-opgave, #flow2-loesning, #flow2-github, #flow2-laering, #flow3-refleksioner, #flow3-opgave, #flow3-loesning, #flow3-rapport, #flow3-laering, #flow3-re-design, #flow4-refleksioner, #flow4-opgave, #flow4-loesning, #flow4-rapport, #flow4-laering, #flow4-re-design, #eksamen1-refleksioner, #eksamen1-opgave, #eksamen1-projekt, #eksamen1-design, #eksamen1-test, #eksamen1-laering, #profil-besked, #profil-mig, #profil-baggrund, #profil-fritid, #profil-kontakt {
-	display: none;
-}
-#flow1-tab1:checked ~ #flow1-refleksioner, #flow1-tab2:checked ~ #flow1-opgave, #flow1-tab3:checked ~ #flow1-loesning, #flow1-tab4:checked ~ #flow1-rapport, #flow1-tab5:checked ~ #flow1-laering, #flow2-tab1:checked ~ #flow2-refleksioner, #flow2-tab2:checked ~ #flow2-opgave, #flow2-tab3:checked ~ #flow2-loesning, #flow2-tab4:checked ~ #flow2-github, #flow2-tab5:checked ~ #flow2-laering, #flow3-tab1:checked ~ #flow3-refleksioner, #flow3-tab2:checked ~ #flow3-opgave, #flow3-tab3:checked ~ #flow3-loesning, #flow3-tab4:checked ~ #flow3-rapport, #flow3-tab5:checked ~ #flow3-laering, #flow3-tab6:checked ~ #flow3-re-design, #flow4-tab1:checked ~ #flow4-refleksioner, #flow4-tab2:checked ~ #flow4-opgave, #flow4-tab3:checked ~ #flow4-loesning, #flow4-tab4:checked ~ #flow4-rapport, #flow4-tab5:checked ~ #flow4-laering, #flow4-tab6:checked ~ #flow4-re-design, #eksamen1-tab1:checked ~ #eksamen1-refleksioner, #eksamen1-tab2:checked ~ #eksamen1-opgave, #eksamen1-tab3:checked ~ #eksamen1-projekt, #eksamen1-tab4:checked ~ #eksamen1-design, #eksamen1-tab5:checked ~ #eksamen1-test, #eksamen1-tab6:checked ~ #eksamen1-laering, #profil-tab5:checked ~ #profil-besked, #profil-tab1:checked ~ #profil-mig, #profil-tab2:checked ~ #profil-baggrund, #profil-tab3:checked ~ #profil-fritid, #profil-tab4:checked ~ #profil-kontakt {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-}
-/* Tab & knapper - Styling */
-.tab {
-	display: -ms-flexbox; /* IE 10 */
-	display: flex;
-	-ms-flex-wrap: wrap; /* IE 10 */
-	flex-wrap: wrap;
-	padding: 0 4px;
-	justify-content: center;
-}
-.flow5-tab {
-	position: sticky;
-	top: 130px;
-	display: -ms-flexbox; /* IE 10 */
-	display: flex;
-	-ms-flex-wrap: wrap; /* IE 10 */
-	flex-wrap: wrap;
-	padding: 0 4px;
-	justify-content: center;
-}
-
-.button, .go-to, .square-button {
-	text-decoration: none;
-	font-size: 24px;
-	text-align: center;
-	color: rgba(255,255,255,1.00);
-	display: inline-block;
-	transition: all 300ms ease-in-out;
-	height: 70px;
-	width: 70px;
-	padding: 9px 20px;
-	border: 3px solid rgba(255,255,255,1.00);
-	border-radius: 50%;
-	line-height: 47.6px;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.50);
-}
-.square-button {
-	margin: 10px;
-	width: auto;
-	height: auto;
-	padding: 0 20px;
-	border-radius: 20px;
-	background-color: transparent;
-}
-.flow5-tab .square-button, .tab .square-button, .tabinator .square-button {
-	font-size: 18px;
-	text-align: center;
-	margin: 5px 10px;
-	line-height: 32px;
-	border-radius: 15px;
-}
-.flow5-tab .square-button {
-	background-color: rgba(25,110,18,1.00);
-}
-/*#eksempler .square-button p {
-	font-size: 24px;
-	line-height: 47.6px;
-}*/
-.button:hover, .wobble:hover, .go-to:hover, .square-button:hover, .tab-active {
-	background-color: rgba(15, 91, 38, 0.75);
-}
-input#Formular01.button.square-button:hover {
-	background-color: rgba(245,83,11,0.75);
-}
-.go-to {
-	margin-top: 20px;
-}
-.go-to-row, .go-to-row-overlay {
-	text-align: center;
-	z-index: 90;
-	position: sticky;
-	top: 0px;
-}
-.go-to-row-overlay {
-	height: 100px;
-	z-index: 90;
-	background-color: rgba(0,0,0,0.40);
-}
-.grow-on-hover:hover {
-	transform: scale(1.1);
-	transition: all 300ms ease-in-out;
-}
-.link-on-hover a:hover {
-	text-decoration: underline;
-	transition: all 300ms ease-in-out;
-}
 /* ---------- STRUKTUR ---------- */
 /* Main content */
 section {
@@ -403,7 +288,7 @@ nav {
 }
 .slider {
 	position: relative;
-	background-image: url(../images/slider2.jpg);
+	background-image: url( images/slider2.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -755,14 +640,14 @@ ul li a:hover {
 	right: 25px;
 }
 .burgerMenuButton span {
-/*	display: block;
-*/	width: 35px;
+	display: block;
+	width: 35px;
 	height: 3px;
 	background: #FFFFFF;
 	position: absolute;
 	left: 14.5px;
-/*	top: 31px;
-*/	transition: .3s;
+	top: 31px;
+	transition: .3s;
 }
 .burgerMenuButton span:before {
 	content: "";
@@ -929,7 +814,121 @@ input.formInvalid:-ms-input-placeholder { /* IE 10+ */
 input.formInvalid:-moz-placeholder { /* Firefox 18- */
  color: red;
 }
+/* ---------- TABS & KNAPPER ----------*/
 
+/* Effekt når indholde i tabs loades*/
+.tabcontent {
+	animation: fadeEffect 1s;
+}
+@keyframes fadeEffect {
+ from {
+opacity: 0;
+}
+ to {
+opacity: 1;
+}
+}
+/* Vis / skjul indhold i tabs */
+.tabinator input {
+	display: none;
+}
+.tabinator input:checked + label {
+	background-color: rgba(0,0,0,0.25);
+}
+#flow1-refleksioner, #flow1-opgave, #flow1-loesning, #flow1-rapport, #flow1-laering, #flow2-refleksioner, #flow2-opgave, #flow2-loesning, #flow2-github, #flow2-laering, #flow3-refleksioner, #flow3-opgave, #flow3-loesning, #flow3-rapport, #flow3-laering, #flow3-re-design, #flow4-refleksioner, #flow4-opgave, #flow4-loesning, #flow4-rapport, #flow4-laering, #flow4-re-design, #eksamen1-refleksioner, #eksamen1-opgave, #eksamen1-projekt, #eksamen1-design, #eksamen1-test, #eksamen1-laering, #profil-besked, #profil-mig, #profil-baggrund, #profil-fritid, #profil-kontakt {
+	display: none;
+}
+#flow1-tab1:checked ~ #flow1-refleksioner, #flow1-tab2:checked ~ #flow1-opgave, #flow1-tab3:checked ~ #flow1-loesning, #flow1-tab4:checked ~ #flow1-rapport, #flow1-tab5:checked ~ #flow1-laering, #flow2-tab1:checked ~ #flow2-refleksioner, #flow2-tab2:checked ~ #flow2-opgave, #flow2-tab3:checked ~ #flow2-loesning, #flow2-tab4:checked ~ #flow2-github, #flow2-tab5:checked ~ #flow2-laering, #flow3-tab1:checked ~ #flow3-refleksioner, #flow3-tab2:checked ~ #flow3-opgave, #flow3-tab3:checked ~ #flow3-loesning, #flow3-tab4:checked ~ #flow3-rapport, #flow3-tab5:checked ~ #flow3-laering, #flow3-tab6:checked ~ #flow3-re-design, #flow4-tab1:checked ~ #flow4-refleksioner, #flow4-tab2:checked ~ #flow4-opgave, #flow4-tab3:checked ~ #flow4-loesning, #flow4-tab4:checked ~ #flow4-rapport, #flow4-tab5:checked ~ #flow4-laering, #flow4-tab6:checked ~ #flow4-re-design, #eksamen1-tab1:checked ~ #eksamen1-refleksioner, #eksamen1-tab2:checked ~ #eksamen1-opgave, #eksamen1-tab3:checked ~ #eksamen1-projekt, #eksamen1-tab4:checked ~ #eksamen1-design, #eksamen1-tab5:checked ~ #eksamen1-test, #eksamen1-tab6:checked ~ #eksamen1-laering, #profil-tab5:checked ~ #profil-besked, #profil-tab1:checked ~ #profil-mig, #profil-tab2:checked ~ #profil-baggrund, #profil-tab3:checked ~ #profil-fritid, #profil-tab4:checked ~ #profil-kontakt {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+/* Tab & knapper - Styling */
+.tab {
+	display: -ms-flexbox; /* IE 10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE 10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+	justify-content: center;
+}
+.flow5-tab {
+	position: sticky;
+	top: 130px;
+	display: -ms-flexbox; /* IE 10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE 10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+	justify-content: center;
+}
+
+.button, .go-to, .square-button {
+	text-decoration: none;
+	font-size: 24px;
+	text-align: center;
+	color: rgba(255,255,255,1.00);
+	display: inline-block;
+	transition: all 300ms ease-in-out;
+	height: 70px;
+	width: 70px;
+	padding: 9px 20px;
+	border: 3px solid rgba(255,255,255,1.00);
+	border-radius: 50%;
+	line-height: 47.6px;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.50);
+}
+.square-button {
+	margin: 10px;
+	width: auto;
+	height: auto;
+	padding: 0 20px;
+	border-radius: 20px;
+	background-color: transparent;
+}
+.flow5-tab .square-button, .tab .square-button, .tabinator .square-button {
+	font-size: 18px;
+	text-align: center;
+	margin: 5px 10px;
+	line-height: 32px;
+	border-radius: 15px;
+}
+.flow5-tab .square-button {
+	background-color: rgba(25,110,18,1.00);
+}
+/*#eksempler .square-button p {
+	font-size: 24px;
+	line-height: 47.6px;
+}*/
+.button:hover, .wobble:hover, .go-to:hover, .square-button:hover, .tab-active {
+	background-color: rgba(15, 91, 38, 0.75);
+}
+input#Formular01.button.square-button:hover {
+	background-color: rgba(245,83,11,0.75);
+}
+.go-to {
+	margin-top: 20px;
+}
+.go-to-row, .go-to-row-overlay {
+	text-align: center;
+	z-index: 90;
+	position: sticky;
+	top: 0px;
+}
+.go-to-row-overlay {
+	height: 100px;
+	z-index: 90;
+	background-color: rgba(0,0,0,0.40);
+}
+.grow-on-hover:hover {
+	transform: scale(1.1);
+	transition: all 300ms ease-in-out;
+}
+.link-on-hover a:hover {
+	text-decoration: underline;
+	transition: all 300ms ease-in-out;
+}
 /* ---------- SCECTION SPECIFIKT STYLING ---------- */
 #eksempler, #profil, #semester-1 {
 	text-align: center;
@@ -944,18 +943,12 @@ iframe {
 	height: 65vh;
 	border: 0;
 }
-.flow-rapport-portrait, .flow-rapport-landscape {
-	display: block;
-	margin: 10px auto ;
-	width: 100%;
-	height: 65vh;
-}
 /* SENESTE PROJEKT - FLOW 5 */
 #seneste {
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
-	background-image: url(../images/fern-opt.jpg);
+	background-image: url(../images/fern-821293_1920.jpg);
 }
 .seneste-header {
 	position: absolute;
@@ -1010,90 +1003,14 @@ iframe {
 	float: left;
 }
 /* 1. SEMESTER */
+
 #semester-1 {
 	background-position: top;
 	background-size: cover;
 	background-attachment: fixed;
-	background-image: url(../images/maple-leaf-opt.jpg);
-}
-.semester-description {
-	position: relative;
-	margin: auto;
-	max-width: 80vw;
-	height: 66vh;
-}
-@keyframes fade-dot {
-    0%, 50% {
-        opacity: 0;
-        transform: scale(0);
-    }
-}
-@keyframes dot-anim {
-    0% {
-        top: -1vw;
-    }
-    50% {
-        top: 1vw;
-    }
-    100% {
-        top: -1vw;
-    }
+	background-image: url(../images/maple-leaf-3680684_1920.jpg);
 }
 
-@keyframes puls {
-    0% {
-        top: 46vh;
-    }
-    50% {
-        top: 48vh;
-    }
-    100% {
-        top: 46vh;
-    }
-}
-.flow-dot-container {
-	position: relative;
-    width: 100%;
-    animation: fade-dot 1s;
-}
-.semester-dot {
-	line-height: 135px;
-    transition: all .2s ease-in-out;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-duration: 1.6s;
-    animation-name: dot-anim;
-}
-.semester-dot-button {
-	width: 135px;
-	height: 135px;
-	line-height: 110px;
-	font-weight: bold;
-}
-.semester-dot, .semester-dot:before, .semester-dot:after{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-.flow1-dot {
-	left: -60vw;
-	animation-delay: 0s;
-
-}
-.flow2-dot {
-    left: -20vw;
-    animation-delay: .2s;
-}
-.flow3-dot {
-    left: 20vw;
-    animation-delay: .4s;
-}
-.flow4-dot {
-    left: 60vw;
-    animation-delay: .6s;
-}
 .semester-header, .profil-content {
 	position: absolute;
 	top: 2vh;
@@ -1165,11 +1082,17 @@ iframe {
 	background-image: url(../images/forest-opt.jpg);
 }
 #eksempler p {
+	line-height: 24px;
+	font-size: 16px;
 	letter-spacing: 1px;
+	margin: 0 0 20px;
 }
 #eksempler h1 {
-    margin-top: 30px;
-    letter-spacing: 1px;
+	margin: 20px 0;
+	line-height: 57.6px;
+	font-size: 48px;
+	font-weight: 400;
+	letter-spacing: 1px;
 }
 #eksempler h3 {
 	margin: 0 0 20px;
@@ -1235,7 +1158,4 @@ img.skitser {
 }
 #profil > article {
 	margin-top: 10vh;
-}
-.hide-on-desktop, .hide-on-desktop-and-tablet-landscape {
-	display: none;
 }

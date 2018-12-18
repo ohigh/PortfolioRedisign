@@ -1,0 +1,476 @@
+@media only screen and (max-width: 1024px) {
+	.hide-on-desktop {
+	display: block;
+}
+	article {
+    max-width: 90vw;
+}
+h2 {
+    margin: 5px 0 10px;
+    font-size: 1.8em;
+}	
+	
+	
+	.round-image {
+    max-width: 80%;
+    padding-top: 80%;
+	}
+	
+	
+	.content-dot-xl p, .content-dot-l p {
+
+    font-size: 1.8vh;
+}
+	#eksempler > article > div > div:nth-child(1) > div.square-button.hide-on-desktop,
+	#eksempler > article > div > div:nth-child(1) > div.square-button.hide-on-desktop > a {
+		display: inline-block;
+		font-family: 'Verdana', sans-serif;
+	}
+.hide-on-tablet, .hide-on-desktop-and-tablet-landscape {
+	display: none;
+}	
+	
+}
+
+@media only screen and (max-width: 1024px) and (min-height: 900px) {
+/*	.hide-on-desktop, .hide-on-desktop-and-tablet-landscape {
+	display: block;
+}
+}
+@media only screen and (max-width: 768px) {*/
+.hide-on-desktop, .hide-on-desktop-and-tablet-landscape {
+	display: block;
+}
+.askForm-open {
+    left: 5px;
+}	
+	
+.profile-row {
+	width: 100%;
+	margin-top: 0;
+}
+.column-m-2 {
+	width: 49%;
+}
+.column-m-1 {
+	width: 90%;
+}
+.inner-column-m-1{
+	width: 100%;
+}	
+.last-item {
+	order: 99;
+	margin: auto;
+}
+	
+		
+.content-dot-xl, .content-dot-l, .content-dot-m, .content-dot-s {
+   /* margin: auto;
+    position: absolute;
+    height: 46vh;
+    width: 46vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    text-align: center;*/
+    display: flex;
+    /*border: 3px solid rgba(255,255,255,1.00);
+    text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.5);
+    background-color: rgba(15, 91, 38, 0.75);
+    transition: all 300ms ease-in-out;*/
+}	
+/* Dot style */
+.content-dot-xl, .content-dot-l, .content-dot-m, .content-dot-s {
+
+	height: 40vh;
+	width: 40vh;
+	
+}
+.content-dot-xl h1, .content-dot-l h1 {
+	line-height: 6vh;
+	font-size: 5vh;
+	text-transform: uppercase;
+}
+.content-dot-xl h2, .content-dot-l h2, .content-dot-m h1 {
+	line-height: 4.5vh;
+	font-size: 4.0vh;
+}
+.content-dot-xl h3, .content-dot-l h3, .content-dot-m h2 {
+	line-height: 4vh;
+	font-size: 3.2vh;
+}
+.content-dot-xl h4, .content-dot-l h4, .content-dot-m h3, .content-dot-s h2 {
+	line-height: 3.5vh;
+	font-size: 2.5vh;
+}
+.content-dot-m h4, .content-dot-s h3 {
+	line-height: 3.5vh;
+	font-size: 2vh;
+}
+.content-dot-xl p, .content-dot-l p {
+	line-height: 3vh;
+}
+.content-dot-l {
+	height: 22vh;
+	width: 22vh;
+}
+.content-dot-l h1, .content-dot-m h1 {
+	text-transform: uppercase;
+}
+.content-dot-m {
+	height: 18vh;
+	width: 18vh;
+}
+.content-dot-s {
+	height: 14vh;
+	width: 14vh;
+}	
+/* LANDINGPAGE */	
+.header-overlay {
+
+    left: 26%;
+}
+.latest-work-dot {
+    top: 9vh;
+    left: calc(26% - 20vh);
+}	
+.early-work-dot {
+    top: 26vh;
+    left: calc(26% - 7.5vh);
+
+}
+.semester1-work-dot {
+    top: 20vh;
+    right: 23%;
+}	
+	
+	
+/* SENESTE PROJEKT */
+.seneste-header {
+ 
+    transform: translate(-50%, -50%);
+}
+.eksamen1-sub {
+	    top: 5.5vh;
+
+    right: calc(50% + 26.5vh);
+}
+.eksamen2-sub {
+    top: 27vh;
+    right: calc(50% + 36vh);
+}
+.eksamen3-sub {
+    top: 48.5vh;
+    right: calc(50% + 23.5vh);
+}	
+.eksamen4-sub {
+    top: 48.5vh;
+    left: calc(50% + 5.5vh);
+}	
+.eksamen5-sub {
+    top: 27vh;
+    left: calc(50% + 18vh);
+}	
+.eksamen6-sub {
+	    top: 5.5vh;
+
+    left: calc(50% + 8.5vh);
+}
+.eksamen7-sub {
+
+    left: calc(50% - 9vh);
+}	
+
+/* SEMESTER 1 */
+	
+.semester-description {
+    height: 70vh;
+}
+.semester-header, .profil-content {
+    top: 12vh;
+}
+.flow1-sub, .profil-mig {
+    right: calc(50% + 13.5vh);
+}	
+.flow2-sub, .profil-baggrund {
+    top: 38vh;
+	right: calc(50% + 13vh);
+}
+.flow3-sub, .profil-fritid {
+    left: calc(50% + 13.5vh);
+}	
+.flow4-sub, .profil-kontakt {
+    top: 38vh;
+    left: calc(50% + 13vh);
+}	
+.flow5-sub, .profil-besked {
+   
+    left: calc(50% - 9vh);
+   -webkit-transform: translate(0,4vh); /* Safari */
+  transform: translate(0,4vh);
+}	
+	
+	
+
+/* TIDLIGERE */	
+.round-image {
+     max-width: 100%; 
+     padding-top: 100%; 
+}
+	
+	.hide-on-phone-and-tablet-portrait, .hide-on-tablet {
+	display: none;
+}	
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 650px) {
+.hide-on-desktop, .hide-on-desktop-and-tablet-landscape, .hide-on-phone-and-tablet-portrait {
+	display: block;
+}
+	
+.homeButton, .burgerMenuButton, .askButton {
+    width: 50px;
+    height: 50px;
+  
+}
+.button, .go-to, .square-button {
+
+    font-size: 20px;
+    text-align: center;
+
+    height: 50px;
+    width: 50px;
+    padding: 3px 12px;
+    
+    line-height: 40px;
+}
+.square-button {
+    width: auto;
+    height: auto;
+}
+.semester-dot-button {
+	padding: 0;
+	font-size: 16px;
+    width: 70px;
+    height: 70px;
+    line-height: 65px;
+    font-weight: normal;
+}	
+.nav-bacground {
+    height: 85px;
+}
+.burgerMenu {
+    width: 50px;
+    height: 50px;
+}
+.burgerMenuButton span {
+    width: 28px;
+    left: 7.5px;
+    top: 21px;
+}
+.open {
+    right: 12px;
+    width: 350px;
+    height: 350px;
+}
+.askForm {
+	width: 0px;
+    height: 0px;
+    transition: .8s;
+}
+.askForm-open {
+	padding: 35px 20px;
+	top: 0;
+	left: 0;
+    width: 100%;
+    height: 100%;
+     border: 0px; 
+    border-radius: 0;
+    background: rgba(15, 91, 38, 0.90);
+}
+.column-s-1, .inner-column-s-1  {
+	width: 100%;
+}	
+
+/* Dot style */
+.content-dot-xl, .content-dot-l, .content-dot-m, .content-dot-s {
+	display: flex;
+	height: 45vh;
+	width: 45vh;
+}
+.content-dot-l {
+	height: 22vh;
+	width: 22vh;
+}
+.content-dot-m {
+	height: 21vh;
+	width: 21vh;
+}
+.content-dot-s {
+	height: 14vh;
+	width: 14vh;
+}	
+	
+.content-dot-xl h1, .content-dot-l h1 {
+	line-height: 5vh;
+	font-size: 5vh;
+	text-transform: uppercase;
+}	
+	
+	
+.content-dot-xl h2, .content-dot-l h2, .content-dot-m h1 {
+	line-height: 4.3vh;
+	font-size: 3.8vh;
+}	
+	
+	
+.content-dot-xl h3, .content-dot-l h3, .content-dot-m h2 {
+	line-height: 4vh;
+	font-size: 3vh;
+}
+.content-dot-xl h4, .content-dot-l h4, .content-dot-m h3, .content-dot-s h2 {
+	line-height: 3vh;
+	font-size: 3vh;
+}
+.content-dot-m h4, .content-dot-s h3 {
+	margin: 0; 
+	line-height: 3.5vh;
+	font-size: 2vh;
+}
+.content-dot-xl p, .content-dot-l p {
+	line-height: 3vh;
+}
+.content-dot-l h1, .content-dot-m h1 {
+	text-transform: uppercase;
+}
+
+	
+	
+	
+	
+	
+	
+/* LANDINGPAGE */	
+.header-overlay {
+	top: -9vh;
+    left: 25%;
+}
+.latest-work-dot {
+   
+    left: calc(26% - 21vh);
+}	
+.early-work-dot {
+    top: 20.5vh;
+    left: calc(20% - 11.5vh);
+}
+.semester1-work-dot {
+    top: 31vh;
+    right: 23%;
+}	
+	
+	
+/* SENESTE PROJEKT */
+.feature, .semester-description {
+	-webkit-transform: scale(0.75, 0.75); /* Safari */
+  transform: scale(0.75, 0.75);
+}	
+
+.seneste-header {
+ 	top: 62%;
+    transform: translate(-50%, -50%);
+}
+.eksamen1-sub {
+	    top: 6.5vh;
+
+    right: calc(50% + 29.5vh);
+}
+.eksamen2-sub {
+    top: 48vh;
+    right: calc(50% + 35vh);
+}
+.eksamen3-sub {
+    top: 61.5vh;
+    right: calc(50% + 22.5vh);
+}	
+.eksamen4-sub {
+    top: 61.5vh;
+    left: calc(50% + 1.5vh);
+}	
+.eksamen5-sub {
+    top: 48vh;
+    left: calc(50% + 14vh);
+}	
+.eksamen6-sub {
+	top: 6.5vh;
+    left: calc(50% + 8.5vh);
+}
+.eksamen7-sub {
+	top: 77vh;
+    left: calc(50% - 10.5vh);
+}	
+
+/* SEMESTER 1 */
+	
+.semester-description {
+    height: 65vh;
+}
+.semester-header, .profil-content {
+    top: 12vh;
+}
+.flow1-sub, .profil-mig {
+	top: 3vh;
+    right: calc(50% + 13.5vh);
+}	
+.flow2-sub, .profil-baggrund {
+    top: 44.5vh;
+	right: calc(50% + 13vh);
+}
+.flow3-sub, .profil-fritid {
+	top: 3vh;
+    left: calc(50% + 13.5vh);
+}	
+.flow4-sub, .profil-kontakt {
+    top: 44.5vh;
+    left: calc(50% + 13vh);
+}	
+.flow5-sub, .profil-besked {
+   
+    left: calc(50% - 9vh);
+   -webkit-transform: translate(0,4vh); /* Safari */
+  transform: translate(0,9vh);
+}	
+	
+	
+
+/* TIDLIGERE */	
+/*.round-image {
+     max-width: 100%; 
+     padding-top: 100%; 
+}*/
+	
+/* PROFIL */
+.profil-content {
+    border-radius: 100%;
+    padding: 35px 35px;
+}
+.profil-content p {
+	font-size: 2.2vh;
+}
+	/*.header-image, .header-image-profil {
+    height: 100%;
+    width: 100%;
+}*/	
+.hide-on-phone-and-tablet-portrait, .hide-on-phone {
+	display: none;
+}	
+}
