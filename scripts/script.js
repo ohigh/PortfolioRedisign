@@ -31,7 +31,7 @@ $(document).ready(function () {
 		$(".burgerMenuButton").toggleClass("toggle");
 	});
 	
-	$(".burgerAskButton").click(function () {
+	$(".askButton").click(function () {
 		$(".askForm").toggleClass("askForm-open");
 		
 	});

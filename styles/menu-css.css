@@ -58,7 +58,7 @@ ul li a:hover {
  input[type="submit"], button::-moz-focus-inner {
  outline: none;
 }
-.homeButton, .burgerMenuButton, .burgerAskButton {
+.homeButton, .burgerMenuButton, .askButton {
 	position: fixed;
 	width: 70px;
 	height: 70px;
@@ -152,7 +152,7 @@ ul li a:hover {
 .askForm-open form {
 	display: block;
 }
-.burgerAskButton {
+.askButton {
 	top: 20px;
 	left: 120px;
 }
