@@ -1,3 +1,12 @@
+@media only screen and (min-width: 1200px) and (max-height: 800px) {
+	.hide-on-desktop {
+	display: block;
+}
+	.hide-on-tablet {
+		display: none;
+	}
+	
+}
 @media only screen and (max-width: 1024px) {
 	.hide-on-desktop {
 	display: block;
@@ -265,7 +274,8 @@ h2 {
     height: 70px;
     line-height: 65px;
     font-weight: normal;
-}	
+}
+
 .nav-bacground {
     height: 85px;
 }
@@ -354,7 +364,11 @@ h2 {
 	text-transform: uppercase;
 }
 
-	
+.go-to-row-overlay {
+	height: 85px;}
+#eksamen1, #flow1, #flow2, #flow3, #flow4, #ide {
+	margin: -85px 0 0;
+}	
 	
 	
 	

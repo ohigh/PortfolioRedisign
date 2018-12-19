@@ -217,7 +217,7 @@ article {/* Desktop */
 	padding: 0 4px;
 	justify-content: space-between;
 }
-.column-l-1 {
+.column-l-1, .inner-column-l-1 {
 	width: 100%;
 }
 .column-l-3 {
@@ -250,7 +250,8 @@ div.inner-column.round-image > a > img {
 	width: 64%;
 	margin-top: 15px;
 }
-.inner-column a img, .inner-column img, .inner-column-l-2 img {
+.inner-column a img, .inner-column img, .inner-column-l-2 img, .inner-column-l-1 img,
+.inner-column-m-1 img, .inner-column-m-1 a img, .inner-column-s-1 img, .inner-column-s-1 a img{
 	width: 100%;
 	margin: auto;
 }
